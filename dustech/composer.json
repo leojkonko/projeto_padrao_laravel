@@ -1,0 +1,17 @@
+{
+    
+    "require": {
+        "leafs/leaf": "^3.0",
+        "leafs/router": "^0.1.6",
+        "leafs/bareui": "^1.1",
+        "fakerphp/faker": "^1.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Front\\" : "src/Front"
+        },
+        "files": [
+            "src/Front/Helpers/functions.php"
+        ]
+    }
+}

@@ -1,0 +1,243 @@
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: $zindex-offcanvas;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: white;
+  visibility: hidden;
+  background: linear-gradient(90deg, #2E2E2E 0%, #202020 100%);
+  ;
+  background-clip: padding-box;
+  outline: 0;
+  @include box-shadow($offcanvas-box-shadow);
+  @include transition(transform $offcanvas-transition-duration ease-in-out);
+
+
+}
+
+.offcanvas-backdrop {
+  @include overlay-backdrop($zindex-offcanvas-backdrop, $offcanvas-backdrop-bg, $offcanvas-backdrop-opacity);
+}
+
+.offcanvas-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: $offcanvas-padding-y $offcanvas-padding-x;
+
+  .btn-close {
+    display: flex;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: -15px;
+    margin-left: -16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration-color: white;
+    color: white;
+  }
+}
+
+.offcanvas-title {
+  margin-bottom: 0;
+  line-height: $offcanvas-title-line-height;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: $offcanvas-padding-y $offcanvas-padding-x;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0px -10px;
+}
+
+.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: $offcanvas-horizontal-width;
+  border-right: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateX(-100%);
+
+  & .button-cor {
+
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    padding: 6px 10px 12px 16px;
+  }
+
+  & .btn-categorias {
+    border-radius: 5px !important;
+    padding: 20px 40px;
+  }
+}
+
+.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: $offcanvas-horizontal-width;
+  border-left: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateX(100%);
+
+  & ul {
+    margin-right: 20px;
+    font-family: 'Archivo',
+      sans-serif;
+    font-style: normal;
+    margin-left: 0px;
+
+    & .row {
+      margin-left: -40px;
+
+    }
+
+    & .busca {
+      color: white;
+
+      & p {
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 100;
+        line-height: 1px;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      & h2 {
+        font-size: 28px;
+      }
+
+      & input {
+        background: rgba(255, 255, 255, 0.2);
+        border: none !important;
+        color: white;
+        width: 95%;
+
+        @include media-breakpoint-between(350px, 400px) {
+          width: 95%;
+        }
+
+        &::placeholder {
+          color: white;
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    & .buttons {
+      display: flex;
+
+      & .b1 {
+        &:hover {
+          background-color: transparent !important;
+
+          & .solida {
+            color: white;
+          }
+        }
+      }
+
+      & .b2 {
+        &:hover {
+          background-color: white !important;
+
+          & .metalica {
+            color: black;
+          }
+        }
+      }
+
+      & .button-cor {
+        @include media-breakpoint-between(350px, 400px) {
+
+          margin-right: 10px;
+          font-size: 12px;
+        }
+
+        & .solida {
+          color: black;
+        }
+
+
+        & .metalica {
+          color: white;
+        }
+
+
+        margin-right: 23px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  & .logo {
+    margin-top: 40px;
+
+  }
+
+  & .infos {
+    list-style-type: none;
+
+
+    & li a {
+
+      margin: 0px 5px;
+    }
+  }
+}
+
+.offcanvas-top {
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  max-height: 100%;
+  border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateY(-100%);
+
+  & .text-reset {
+    & span {
+      padding-left: 3px;
+    }
+  }
+
+  & ul {
+    display: block !important;
+    margin: 0px auto;
+    list-style-type: none;
+    margin-left: -40px;
+  }
+
+  & li {
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+    & a {
+      color: white;
+    }
+
+    & .cor-solida {
+      & a {
+        color: black;
+      }
+    }
+  }
+
+  & li:hover {
+    border-bottom: 2px solid #C44438;
+  }
+}
+
+.offcanvas-bottom {
+  right: 0;
+  left: 0;
+  height: $offcanvas-vertical-height;
+  max-height: 100%;
+  border-top: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateY(100%);
+}
+
+.offcanvas.show {
+  transform: none;
+}
