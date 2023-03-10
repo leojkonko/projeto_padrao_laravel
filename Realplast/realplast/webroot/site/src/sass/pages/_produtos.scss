@@ -1,0 +1,198 @@
+#produto {
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+.corporativo {
+    background: #F0F0F0;
+
+    //padding: 0px 60px;
+    @media (min-width:767px)and(max-width:1980px) {
+        padding-right: 40px;
+    }
+
+    margin-top: -60px;
+
+    & .buttons-accordion {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    & .accordion {
+        margin-top: 15px;
+
+        @media (min-width:0px)and(max-width:992px) {
+            padding-top: 60px;
+        }
+
+        & .accordion-item {
+            margin-top: 15px;
+
+            @media (min-width:1600px)and(max-width:2900px) {
+                width: 70%;
+                margin-left: 100px;
+            }
+
+            @media (min-width:1200px)and(max-width:1600px) {
+                width: 75%;
+                margin-left: 60px;
+            }
+
+            @media (min-width:992px)and(max-width:1200px) {
+                width: 90%;
+                margin-left: 40px;
+            }
+
+            @media (min-width:767px)and(max-width:992px) {
+                width: 50% !important;
+                margin: auto;
+            }
+
+            @media (min-width:576px)and(max-width:767px) {
+                width: 65% !important;
+                margin: auto;
+            }
+
+            @media (min-width:0px)and(max-width:576px) {
+                width: 65% !important;
+                padding-left: 0px !important;
+                margin: auto;
+            }
+
+            & button {
+                background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: white;
+                padding: 20px 50px;
+                border-radius: 3px 3px 0px 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                @media (min-width:992px)and(max-width:1550px) {
+                    padding: 20px 15px;
+                    width: 100%;
+                }
+
+                @media (min-width:0px)and(max-width:576px) {
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 20px 10px;
+                }
+            }
+
+            & .disabled {
+                pointer-events: none;
+                opacity: 0.5;
+                /* opcional, para diminuir a opacidade do botão e indicar visualmente que ele está desativado */
+            }
+
+        }
+    }
+
+    & .conteudo {
+        margin-top: 30px;
+        padding-top: 50px;
+        background: white;
+        width: 30%;
+        margin-right: 35px;
+        overflow: hidden;
+        position: relative;
+        //z-index: 1;
+
+        @media (min-width:1200px)and(max-width:1450px) {
+            margin-right: 25px
+        }
+
+        @media (min-width:767px)and(max-width:1200px) {
+            width: 45% !important;
+            margin-right: 0px;
+            margin-left: 32px;
+        }
+
+
+        @media (min-width:0px)and(max-width:767px) {
+            width: 42% !important;
+            margin: auto;
+            margin-top: 20px;
+            //margin-left: 10px;
+        }
+
+        & h2 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 135%;
+            z-index: 9;
+
+            @media (min-width:0px)and(max-width:767px) {
+                font-size: 24px;
+            }
+        }
+
+        & a {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FF3C01;
+            z-index: 9;
+
+            @media (max-width:1600px) {
+                font-size: 16px;
+            }
+
+            @media (min-width:0px)and(max-width:767px) {
+                font-size: 14px;
+            }
+
+            & svg {
+                width: 10px;
+                font-weight: 100;
+
+                @media (min-width:0px)and(max-width:767px) {
+                    width: 6px;
+                }
+            }
+        }
+
+        & img {
+            width: 100%;
+            padding-bottom: 50px;
+            position: relative;
+            z-index: 0;
+
+            @media (min-width:0px)and(max-width:767px) {
+                width: 140%;
+                padding-bottom: 20px;
+            }
+        }
+
+        &:hover {
+            overflow: hidden;
+
+            & img {
+                transform: scale(1.2);
+                /* aumenta a imagem em 10% */
+                transition: transform 0.3s ease-in-out;
+                //position: relative;
+                //z-index: 1;
+            }
+
+            & h2 {
+                z-index: 1;
+            }
+
+            & a {
+                z-index: 3;
+                margin-right: 5px;
+                transition: margin-right 0.3s ease-in-out;
+
+                & svg {
+                    transition: margin-left 0.3s ease-in-out;
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

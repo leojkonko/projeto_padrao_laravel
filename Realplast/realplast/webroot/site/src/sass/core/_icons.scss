@@ -1,0 +1,37 @@
+@font-face {
+	font-family: "Icons";
+	src: url('../fonts/icons/Icons.eot');
+	src: url('../fonts/icons/Icons.eot?#iefix') format('eot'),
+		url('../fonts/icons/Icons.woff') format('woff'),
+		url('../fonts/icons/Icons.ttf') format('truetype'),
+}
+
+.icon {
+	font-family: "Icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+$icones: (
+"segundoteste": "\E001", 
+"teste": "\E002", 
+
+);
+
+
+@each $nome, $unicode in $icones {
+    .icon-#{$nome} {
+        &::before {
+            content: $unicode;
+        }
+    }
+}

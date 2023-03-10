@@ -1,0 +1,207 @@
+.offcanvas {
+  position: fixed;
+  bottom: 0;
+  z-index: $zindex-offcanvas;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: $offcanvas-color;
+  visibility: hidden;
+  background-color: $offcanvas-bg-color;
+  background-clip: padding-box;
+  outline: 0;
+  @include box-shadow($offcanvas-box-shadow);
+  @include transition(transform $offcanvas-transition-duration ease-in-out);
+}
+
+.offcanvas-backdrop {
+  @include overlay-backdrop($zindex-offcanvas-backdrop, $offcanvas-backdrop-bg, $offcanvas-backdrop-opacity);
+}
+
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $offcanvas-padding-y $offcanvas-padding-x;
+
+  .btn-close {
+    padding: ($offcanvas-padding-y * .5) ($offcanvas-padding-x * .5);
+    margin-top: $offcanvas-padding-y * -.5;
+    margin-right: $offcanvas-padding-x * -.5;
+    margin-bottom: $offcanvas-padding-y * -.5;
+  }
+}
+
+.offcanvas-title {
+  margin-bottom: 0;
+  line-height: $offcanvas-title-line-height;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: $offcanvas-padding-y $offcanvas-padding-x;
+  overflow-y: auto;
+}
+
+.offcanvas-start {
+  top: 0;
+  left: 0;
+  width: $offcanvas-horizontal-width;
+  border-right: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateX(-100%);
+}
+
+.offcanvas-end {
+  top: 0;
+  right: 0;
+  width: $offcanvas-horizontal-width;
+  border-left: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateX(100%);
+  background-color: #F0F0F0;
+
+  & .div-input-offcanvas {
+    border: none;
+    color: #253E4F;
+    display: block;
+    width: 100%;
+    transition: border-bottom 0.25s ease-out;
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px 0px !important;
+
+    @media (max-width: 992px) {
+      //display: flex;
+    }
+
+    &::placeholder {
+      color:
+        #253E4F;
+    }
+
+    &:focus {
+      border: none;
+      border-bottom: 3px solid #86A3B7;
+      border-color: #86A3B7 !important;
+      background-color: #86A3B7;
+      box-shadow: none;
+      border-radius: 5px;
+      color: black;
+    }
+
+    & h2 {
+      font-weight: 700;
+      font-size: 34px;
+      text-align: center;
+    }
+
+    & .lupa {
+      padding: 12px;
+      background: linear-gradient(135deg, #FF6A00 0%, #FF3C01 100%);
+      margin-top: 3px;
+      margin-left: -3px;
+      cursor: pointer;
+
+      @media (max-width: 992px) {
+        width: 48px;
+        margin-bottom: 0px !important;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 576px) {
+        width: 42px;
+        margin-bottom: 0px !important;
+        border-radius: 5px;
+      }
+    }
+  }
+
+
+}
+
+.offcanvas-top {
+  top: 0;
+  right: 0;
+  left: 0;
+  //height: $offcanvas-vertical-height;
+  max-height: 100%;
+  background-color: #F0F0F0;
+  border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateY(-100%);
+
+  & .menu-offcanvas {
+    & .links {
+      border: none;
+    }
+
+    & .buttons {
+      display: flex;
+      justify-content: center;
+      padding-left: 40px;
+
+      & .btn-custom {
+        color: white;
+      }
+
+      @media (max-width: 576px) {
+        display: block;
+        padding-left: 0px;
+
+        & div {
+          display: flex;
+          justify-content: center;
+          padding: 20px 0px;
+        }
+      }
+    }
+
+    & li {
+      padding: 15px 0px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      border-bottom: 1px solid #86A3B7;
+
+      &:hover {
+        color: linear-gradient(135deg, #FF6A00 0%, #FF3C01 100%);
+
+        & a {
+          color: linear-gradient(135deg, #FF6A00 0%, #FF3C01 100%);
+        }
+      }
+
+      & a {
+        color: #253E4F;
+      }
+    }
+
+    & img {
+      width: 60%;
+
+      @media (max-width: 992px) {
+        width: 30% !important;
+        margin-bottom: 0px !important;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 576px) {
+        width: 42px;
+        margin-bottom: 0px !important;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.offcanvas-bottom {
+  right: 0;
+  left: 0;
+  height: $offcanvas-vertical-height;
+  max-height: 100%;
+  border-top: $offcanvas-border-width solid $offcanvas-border-color;
+  transform: translateY(100%);
+}
+
+.offcanvas.show {
+  transform: none;
+}

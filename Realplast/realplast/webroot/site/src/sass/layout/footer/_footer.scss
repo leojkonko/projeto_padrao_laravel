@@ -1,0 +1,293 @@
+// Estilos do footer
+
+.footer {
+    background: #F0F0F0;
+    border-top: 1px solid #86A3B7;
+
+    //text-align: center;
+
+    & .footer-div {
+
+        height: 100%;
+
+        & .logo-footer {
+            @media (min-width: 992px) {
+                border-right: 1px solid #86A3B7;
+            }
+
+            & img {
+                width: 80%;
+            }
+        }
+
+
+        & .row {
+            //height: 400px
+        }
+
+        & .row ul li {
+            list-style: none;
+
+            & a {
+                text-decoration: none !important;
+                color: #253E4F;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
+            }
+
+            & a:hover {
+                color: #FF3C01;
+            }
+        }
+
+
+        & .links-site-div {
+            padding: 80px 0px;
+
+            @media (min-width: 1400px) {
+                padding-left: 100px;
+            }
+
+            & .links-site li {
+                margin: 30px 0px;
+            }
+        }
+
+        & .redes {
+            & img {
+                //transition: width 0.3s ease;
+                width: 70%;
+
+                &:hover {
+                    width: 80%;
+                    transition: width 0.2s ease-in-out;
+                }
+
+            }
+        }
+
+        & .infos {
+            & img {
+                margin-right: 10px;
+                margin-bottom: 5px;
+
+            }
+
+            & li {
+                margin: 60px 0px;
+            }
+        }
+
+        & .redes {
+            & li {
+                margin: 30px 0px;
+            }
+        }
+    }
+
+    & .linha {
+        border-top: 1px solid #86A3B7;
+
+        & .copyright {
+            color: #86A3B7;
+
+            & div {
+                padding: 20px 0px;
+                font-size: 20px;
+                font-weight: 100 !important;
+
+                @media (max-width: 1600px) {
+                    font-size: 15px !important;
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: #86A3B7;
+                    border-bottom: 1px solid #86A3B7;
+                }
+            }
+
+            .logo-ellite {
+                & a {
+                    border: none;
+
+                    & img {
+                        &:hover {
+                            width: 110px;
+                            transition: width 0.2s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        background-size: cover;
+        //height: 950px;
+
+        & .logo-footer {
+            justify-content: center !important;
+            padding-top: 40px;
+
+            & img {
+                //width: 150% !important;
+            }
+        }
+
+        & .links-site-div {
+            padding: 0px !important;
+
+            & .links-site {
+                text-align: center;
+                justify-content: center !important;
+
+                & li a {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        & .infos {
+            text-align: center;
+            justify-content: center !important;
+            margin-top: -20px;
+
+            & li {
+                margin: 30px 0px !important;
+
+                & a {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        & .redes {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 20px !important;
+
+            & li {
+                margin: 0px 20px !important;
+            }
+        }
+    }
+
+
+    .copyright {
+        //margin-bottom: -30px;
+        padding-bottom: 20px;
+
+        & .direitos {}
+
+        & div {
+            justify-content: center !important;
+            display: flex;
+            text-align: center;
+
+            & img {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .footer {
+        & ul {
+            & li {
+                text-align: center;
+            }
+        }
+
+        & .logo-footer {
+            justify-content: center !important;
+            padding-top: 40px;
+
+            & img {
+                //width: 150% !important;
+            }
+        }
+
+        & .redes {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            & li {
+                margin: 0px 40px !important;
+
+                & a {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        & .infos {
+
+            & li {
+
+                & a {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        & .links-site-div {
+
+            & .links-site {
+
+                & li a {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        .copyright {
+
+            & div {
+                justify-content: center !important;
+                display: flex;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .copyright {
+
+        & .politica,
+        .logo-ellite {
+            justify-content: center !important;
+            display: flex;
+            //margin-left: 100px;
+        }
+    }
+
+    footer {
+        & .logo-footer {
+            & img {
+                width: 150% !important;
+            }
+        }
+
+        & .redes {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            & li {
+                margin: 0px 40px !important;
+            }
+        }
+    }
+}

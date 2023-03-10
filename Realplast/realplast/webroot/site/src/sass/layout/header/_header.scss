@@ -1,0 +1,355 @@
+// Estilos do header
+// Estilos do header
+html {
+    font-family: 'inter';
+    font-style: normal;
+}
+
+header {
+    background-color: #F0F0F0;
+    position: relative;
+    width: 100%;
+
+    & .bg-img {
+        padding: 20px 0px;
+
+
+        @media (max-width: 992px) {
+            padding: 25px 0px;
+        }
+    }
+
+    & .menu {
+        list-style: none;
+
+        @media (min-width: 1600px)and(max-width: 2080px) {
+            padding-left: 140px;
+        }
+
+        @media (min-width: 1200px)and(max-width: 1600px) {
+            padding-left: 80px;
+        }
+
+        @media (min-width: 992px)and(max-width: 1200px) {
+            padding-left: 50px;
+        }
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+        & .drop {
+            margin-top: 1px;
+        }
+
+        & .contato-li {
+            z-index: 999;
+            //.b/ position: relative;
+        }
+
+        & li {
+            padding: 0px 25px;
+
+            @media (min-width: 1200px)and(max-width: 1400px) {
+                padding: 0px 15px;
+            }
+
+            @media (min-width: 992px)and(max-width: 1200px) {
+                padding: 0px 15px;
+            }
+
+
+            & a {
+                color: #253E4F;
+                font-weight: 400;
+                font-size: 20px;
+
+
+                /*@include media-breakpoint-ul(992px) {
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 0;
+                        background-color: red;
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 0;
+                        //transition: ;
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+                }
+
+                @include media-hover {
+                    &::before {
+                        height: 1px;
+                        opacity: 1;
+                        transform: translateY(0);
+                        margin-top: 30px;
+                        display: flex;
+                        margin-top: 50px;
+                    }
+                }*/
+
+                /*& .active {
+                    &::after {
+                        content: "kkkkkkk";
+                        color: #F0F0F0;
+                        border-bottom: 5px solid #FF6A00;
+                        width: 4%;
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        //left: 0;
+                    }
+                }*/
+
+                @media (max-width: 1600px) {
+                    font-size: 16px;
+                }
+
+                line-height: 22px;
+                white-space: nowrap;
+
+            }
+
+            & .home {
+                @include media-hover {
+                    &::after {
+                        content: "home";
+                        color: #F0F0F0;
+                        border-bottom: 5px solid #FF6A00;
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        //left: 0;
+                    }
+                }
+            }
+
+            & .sobre-nos {
+                @include media-hover {
+                    &::after {
+                        content: "sobre-nos";
+                        color: #F0F0F0;
+                        border-bottom: 5px solid #FF6A00;
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        //left: 0;
+                    }
+                }
+            }
+
+            & .produto {
+                @include media-hover {
+                    &::after {
+                        content: "produtos";
+                        color: #F0F0F0;
+                        border-bottom: 5px solid #FF6A00;
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        //left: 0;
+                    }
+                }
+            }
+
+            & .contato {
+                z-index: 999;
+                //position: relative;
+
+                @include media-hover {
+                    &::after {
+                        content: "contato";
+                        color: #F0F0F0;
+                        border-bottom: 5px solid #FF6A00;
+                        position: absolute;
+                        bottom: 0;
+                        display: flex;
+                        //left: 0;
+                    }
+                }
+            }
+
+            & .seta {
+                width: 20px;
+            }
+        }
+    }
+
+    //menu
+
+    & .div-input {
+        @media (min-width: 1600px)and(max-width: 2980px) {
+            padding-left: 200px;
+
+        }
+
+        @media (min-width: 1400px)and(max-width: 1600px) {
+            padding-left: 160px;
+        }
+
+        @media (min-width: 1200px)and(max-width: 1400px) {
+            padding-left: 120px;
+        }
+
+        @media (min-width: 992px)and(max-width: 1200px) {
+            padding-left: 120px;
+        }
+
+        @media (max-width: 992px) {
+            justify-content: flex-end;
+            margin-top: 0px !important;
+        }
+
+        & input {
+            //color: black;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #86A3B7;
+            color: black;
+            display: block;
+            width: 90%;
+            transition: border-bottom 0.25s ease-out;
+            border-radius: 0px;
+            font-weight: 400;
+            font-size: 20px;
+            padding: 10px 0px !important;
+
+            @media (max-width: 1600px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 992px) {
+                display: none;
+            }
+
+            &::placeholder {
+                color:
+                    #253E4F;
+            }
+
+            &:focus {
+                border: none;
+                border-bottom: 3px solid #86A3B7;
+                background-color: transparent;
+                box-shadow: none;
+                border-radius: 5px;
+                color: black;
+            }
+        }
+
+        & .button-offcanvas {
+            @media (max-width: 992px) {
+                display: flex;
+            }
+        }
+
+        & .button-pesquisa {
+            @media (min-width: 992px) {
+                display: flex;
+            }
+
+            @media (max-width: 1600px) {
+                width: 42px;
+            }
+        }
+
+        & .button-menu {
+            padding: 8px 12px 12px 12px;
+
+            @media (max-width: 576px) {
+                padding: 4px 8px 10px 8px;
+            }
+
+            margin-top: 8px;
+            background: linear-gradient(90deg, #FF3C01 0%, #FF6A00 100%);
+            border-radius: 5px;
+        }
+
+        & img {
+            padding: 12px;
+            background: linear-gradient(135deg, #FF6A00 0%, #FF3C01 100%);
+            margin-top: 3px;
+            margin-left: -3px;
+            cursor: pointer;
+
+            @media (max-width: 992px) {
+                width: 48px;
+                margin-bottom: 0px !important;
+                border-radius: 5px;
+            }
+
+            @media (max-width: 576px) {
+                width: 42px;
+                margin-bottom: 0px !important;
+                border-radius: 5px;
+            }
+        }
+
+        & .div-teste {
+            @media (max-width: 992px) {
+                display: flex;
+            }
+        }
+    }
+}
+
+.breadcrumb-wrapper {
+    padding: 90px 0px;
+    border-bottom: 1px solid #f0f0f0;
+
+    @media (max-width: 992px) {
+        padding: 50px 0px;
+    }
+
+    background-image: url(../images/backgrounds/x-header.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+
+    & div {
+        & h2 {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 77px;
+            color: #253E4F;
+
+            @media (max-width: 1600px) {
+                font-size: 50px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    & .links {
+
+        @media (max-width: 576px) {
+            padding-top: 30px;
+        }
+
+        & a {
+            color: #253E4F;
+            font-size: 18px;
+
+            @media(max-width: 1400px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: #FF3C01;
+            }
+        }
+    }
+}
