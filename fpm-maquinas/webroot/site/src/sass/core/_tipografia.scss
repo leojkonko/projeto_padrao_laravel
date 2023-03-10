@@ -1,0 +1,18 @@
+.title {
+    color: rgba($color: $black, $alpha: 0.2);
+    @include linear-rfs(2rem, 3rem, 375px, 1920px);
+    &-light {
+        color: rgba($color: $white, $alpha: 0.5);
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(sm) {
+}

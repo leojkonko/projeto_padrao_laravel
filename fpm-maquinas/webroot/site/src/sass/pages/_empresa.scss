@@ -1,0 +1,101 @@
+#empresa {
+    background-color: white;
+    background-image: url(../images/backgrounds/riscos2.png);
+    background-repeat: no-repeat;
+    z-index: 5 !important;
+    position: relative;
+    background-position-y: 50%;
+    background-position-x: 100%;
+
+    /*& .riscos2 {
+        position: absolute;
+        right: 0;
+        bottom: 40%;
+    }*/
+}
+
+.empresa {
+    background-image: url(../images/backgrounds/riscos.png);
+    background-repeat: no-repeat;
+    z-index: 2 !important;
+    background-position-y: 50%;
+
+    & .row {
+        border: 1px solid #F0F0F0;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    & .mySwiper-produto {
+        z-index: 2;
+        background-color: white;
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            border: 1px solid #18346E;
+            color: #18346E;
+            width: 30px;
+            height: 30px;
+        }
+
+        & .swiper-button-next {
+            right: 10%;
+
+            @media (max-width: 567px) {
+                right: 5px;
+            }
+        }
+
+        & .swiper-button-prev {
+            left: 10%;
+
+            @media (max-width: 567px) {
+                left: 5px;
+            }
+        }
+    }
+
+    & .conteudo {
+        padding: 80px 120px;
+
+        @media (max-width: 992px) {
+            padding: 40px 60px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 30px 20px;
+            text-align: center;
+
+            & .div-buttons {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.relacionados {
+    & .bg-white:hover {
+        //transform: scale(1.03);
+        margin-top: -20px;
+        transition: margin-top 0.3s ease;
+
+        & .h2 {
+            color: #c81211;
+            transition: color 0.3s ease;
+
+        }
+
+    }
+
+    & .bg-white {
+        margin-top: 0px;
+        transition: margin-top 0.3s ease;
+
+        & .h2 {
+            //color: #c81211;
+            transition: color 0.3s ease;
+
+        }
+
+    }
+}

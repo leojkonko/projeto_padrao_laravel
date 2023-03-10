@@ -1,0 +1,72 @@
+.swiper-pagination {
+    &-bullet {
+        width: 1.25rem;
+        height: 0.3rem;
+        background: rgba($white, 0.5);
+        transition: $transition-base;
+        opacity: 0.75;
+        border-radius: 0;
+        @include media-breakpoint-down(md) {
+        }
+        &-active {
+            width: 2rem;
+            height: 0.3rem;
+            background: rgba($white, 1);
+            opacity: 1;
+            @include media-breakpoint-down(md) {
+            }
+        }
+    }
+    &.dark {
+        .swiper-pagination {
+            &-bullet {
+                background: rgba($gray-700, 0.5);
+                &-active {
+                    background: rgba($gray-700, 1);
+                }
+            }
+        }
+    }
+    &.relative {
+        position: relative;
+    }
+}
+
+.swiper-button {
+    &-prev,
+    &-next {
+        display: flex;
+        width: max-content;
+        height: max-content;
+        color: $white;
+        &::after {
+            content: none;
+        }
+        @include media-hover {
+            color: $secondary;
+        }
+    }
+    &-prev {
+        left: -1%;
+        @include media-breakpoint-down(lg) {
+            left: -0.5%;
+        }
+    }
+    &-next {
+        right: -1%;
+        @include media-breakpoint-down(lg) {
+            right: -0.5%;
+        }
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+}
+@include media-breakpoint-up(xl) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(sm) {
+}

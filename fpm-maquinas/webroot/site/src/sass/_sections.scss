@@ -1,0 +1,64 @@
+.h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+
+    color: #454545;
+
+    @media(max-width: 1220px) {
+        font-size: 36px;
+    }
+}
+
+.h6 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.h5 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 17px;
+
+    color: #454545;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #454545;
+
+    @media(max-width: 1220px) {
+        font-size: 16px;
+    }
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 64px;
+    //line-height: 70px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.2);
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1200px) {
+        font-size: 50px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 40px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 35px;
+    }
+}

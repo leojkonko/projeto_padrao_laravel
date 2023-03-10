@@ -1,0 +1,52 @@
+// Estilos do footer
+.footer {
+    .logo {
+        @include linear-rfs(8rem, 12rem, 375px, 1920px, "max-width");
+        &-wrapper {
+            @include media-breakpoint-up(lg) {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+    &.interno {
+        background: linear-gradient(180deg, rgba($secondary, 0.4) 0%, rgba(32, 109, 77, 0.4) 100%),
+            linear-gradient(0deg, rgba($black, 0.7), rgba($black, 0.7)), url("../images/backgrounds/footer-bg.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .info {
+        @include media-breakpoint-up(lg) {
+            border-radius: 5px 0 0 5px;
+        }
+    }
+    .link {
+        color: $gray-700;
+    }
+    .contact {
+        a {
+            color: $gray-700;
+        }
+    }
+    .social {
+        a {
+            color: $secondary;
+        }
+    }
+    a {
+        transition: $transition-base;
+        @include media-hover {
+            color: $primary;
+        }
+    }
+    .copyright {
+        color: rgba($white, 0.8);
+        a {
+            color: rgba($white, 0.8);
+        }
+        img {
+            opacity: 0.8;
+            filter: brightness(10);
+        }
+    }
+}
