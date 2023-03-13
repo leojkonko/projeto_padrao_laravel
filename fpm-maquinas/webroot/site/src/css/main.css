@@ -179,26 +179,10 @@
   overflow: hidden;
 }
 
-@media (min-width: 1200px) and (max-width: 1450px) {
-  .card-blog {
-    margin-bottom: 100px;
-  }
-}
-
 .blog-card {
   background-position: center center;
   background-size: cover;
   transition: all 0.2s ease-in-out;
-}
-@media (max-width: 767px) {
-  .blog-card {
-    overflow: initial !important;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1450px) {
-  .blog-card {
-    overflow: initial !important;
-  }
 }
 .blog-card .description {
   background-color: #18346e;

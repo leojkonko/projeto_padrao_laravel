@@ -1,6 +1,6 @@
 .card-blog {
     @media(min-width: 1200px)and(max-width: 1450px) {
-        margin-bottom: 100px;
+        //margin-bottom: 100px;
     }
 }
 
@@ -10,11 +10,11 @@
     transition: $transition-base;
 
     @media(max-width: 767px) {
-        overflow: initial !important;
+        //overflow: initial !important;
     }
 
     @media(min-width: 1200px)and(max-width: 1450px) {
-        overflow: initial !important;
+        //overflow: initial !important;
     }
 
 
