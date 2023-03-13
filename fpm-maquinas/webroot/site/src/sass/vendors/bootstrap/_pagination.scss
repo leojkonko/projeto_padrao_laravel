@@ -39,7 +39,7 @@
     color: $pagination-active-color;
     background: linear-gradient(90deg, #18346e, #c81211 150%);
     //@include gradient-bg($pagination-active-bg);
-    border-color: $pagination-active-border-color;
+    //border-color: $pagination-active-border-color;
   }
 
   &.disabled .page-link {

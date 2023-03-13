@@ -1,7 +1,19 @@
+#post {
+    //background-color: white;
+}
+
 .blog-detalhe {
 
     & .swiper,
     .swiper-wrapper {
         position: initial;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background: $primary !important;
+    }
+
+    & .swiper-pagination-bullet {
+        background: rgba(150, 47, 47, 0.5);
     }
 }

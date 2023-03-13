@@ -11,7 +11,7 @@
         </div>
         <div class="row g-1 g-xxl-2">
             <?php foreach(range(0, 7) as $i) : ?>
-                <div class="col-6 col-lg-4 col-xl-3 my-md-2 my-lg-1 my-4 card-blog">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-4 my-md-2 my-lg-1 my-4 card-blog">
                          <?= element('blog/blog-card') ?>
                 </div>
             <?php endforeach ; ?>

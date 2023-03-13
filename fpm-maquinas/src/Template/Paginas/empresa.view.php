@@ -1,4 +1,4 @@
-<main id="empresa" class="pt-1">
+<main id="empresa" class="">
     <!--<img class="riscos2" src="<?= asset('images/backgrounds/riscos2.png') ?>" alt="">-->
     <section class="empresa ">
         <div class="container">

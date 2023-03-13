@@ -10,7 +10,10 @@
     <meta name="author" content="Agência Ellite Digital">
 
     <?php /* ==== Favicons ==== */ ?>
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon.ico') ?>">
+    <!--
+    <link rel="apple-touch-icon" sizes="16x16" href="<?= asset('images/favicons/favicon.ico') ?>">
     <link rel="apple-touch-icon" sizes="60x60" href="<?= asset('images/favicons/apple-icon-60x60.png') ?>">
     <link rel="apple-touch-icon" sizes="72x72" href="<?= asset('images/favicons/apple-icon-72x72.png') ?>">
     <link rel="apple-touch-icon" sizes="76x76" href="<?= asset('images/favicons/apple-icon-76x76.png') ?>">
@@ -22,14 +25,14 @@
     <link rel="icon" type="image/png" sizes="192x192" href="<?= asset('images/favicons/android-icon-192x192.png') ?>">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= asset('images/favicons/favicon-32x32.png') ?>">
     <link rel="icon" type="image/png" sizes="96x96" href="<?= asset('images/favicons/favicon-96x96.png') ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">-->
     <link rel="manifest" href="<?= asset('images/favicons/manifest.json') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= asset('images/favicons/ms-icon-144x144.png') ?>">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?= !empty($title) ? $title . " | FPM Máquinas" : "FPM Máquinas" ?></title>
-
+    <!--<title><?= !empty($title) ? $title . " | FPM Máquinas" : "FPM Máquinas" ?></title>-->
+<title>FPM Máquinas</title>
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
 
@@ -49,7 +52,7 @@
 <body>
 
     <?php ob_start() ?>
-    <header class="w-100 header text-white <?= $pagina_atual === 'home' ? 'position-absolute start-0 top-0' : 'position-relative interno' ?>">
+    <header class="w-100 header text-white z-index-1 <?= $pagina_atual === 'home' ? 'position-absolute start-0 top-0' : 'position-relative interno' ?>">
 
         <?php /* Input search no mobile */ ?>
         <form class="input-mobile w-100 h-100 position-absolute start-0 top-0 bg-white">
@@ -116,7 +119,7 @@
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownHeader">
                                         <li class="">
-                                            <a class="dropdown-item category px-0-50 py-0-25" href="<?= url('/') ?>">Setor Naval</a>
+                                            <a class="dropdown-item category px-0-50 py-0-25" href="<?= url('/produtos') ?>">Setor Naval</a>
                                         </li>
 
                                         <?php /* Com subcategoria */ ?>
@@ -145,7 +148,7 @@
                             </li>
 
                             <li>
-                                <a href="" class="link" title="Serviços">Serviços</a>
+                                <a href="<?= url('/solucoes') ?>" class="link" title="Serviços">Serviços</a>
                             </li>
                             <li>
                                 <a href="<?= url('/blog') ?>" class="link" title="Blog">Blog</a>
@@ -285,6 +288,28 @@
                                           <path d="M1 1L5 5L1 9" stroke="#8F8F8F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
                                         </svg>
                                     <a href="">Contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+    <?php if ($pagina_atual === "solucoes") : ?>
+        <?= $header ?>
+        <div class="header-wrapper">
+            <?php if (!empty($breadcrumbs)) : ?>
+                <section class="breadcrumb-wrapper py-lg-4 py-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <a href="">Home</a>
+                                        <svg width="6" height="10" class=" mx-0-25" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 1L5 5L1 9" stroke="#8F8F8F" stroke-width="1.3" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                        </svg>
+                                    <a href="">Serviços</a>
                                 </div>
                             </div>
                         </div>

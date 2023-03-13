@@ -1,0 +1,70 @@
+.button {
+    padding: 16px 24px;
+    background: #0072BE;
+    color: white;
+    border: NONE;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #252525;
+    line-height: 135%;
+
+    @media(max-width: 1600px) {
+        font-size: 16px;
+    }
+}
+
+.h2-light {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 95%;
+
+    @media(max-width: 1600px) {
+        font-size: 38px;
+    }
+
+    @media(max-width: 992px) {
+        font-size: 45px;
+    }
+}
+
+header {
+    & .button {
+        padding: 16px 24px;
+        background: #0072BE;
+        color: white;
+        border: NONE;
+    }
+
+    & .button::before {
+        content: "Fale com um especialista";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: white;
+
+        @media(max-width: 1600px) {
+            font-size: 16px;
+        }
+
+        @media(max-width: 1200px) {
+            content: "Especialistas";
+        }
+    }
+
+
+    & .p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: white;
+
+        @media(max-width: 1600px) {
+            font-size: 16px;
+        }
+    }
+}
