@@ -1,3 +1,4 @@
+
 <main id="home">
     <section class="banner ratio ratio-custom z-index-background">
         <picture>
@@ -29,26 +30,86 @@
                         </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                    <div class="swiper-scrollbar"></div> 
                 </div>
             </div>
-            <div class="col-lg-8 p-0 areas">
-                <div class="swiper areas-swiper position-relative">
-                        <div class="swiper-wrapper my-lg-4 mx-lg-4">
+            <div class="col-lg-8 areas d-flex">
+                <div class="container d-flex align-items-center">
+                    <div class="swiper areas-swiper position-relative">
+                            <div class="swiper-wrapper">
+                                <?php foreach(range(0,9) as $i) : ?>
+                                    <div class="swiper-slide">
+                                        <img src="<?= asset('images/logos/areas.png') ?>" alt="">
+                                        <h2 class="h4 mt-1">
+                                            Consultoria
+                                        </h2>
+                                        <p class="p">
+                                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
+                                            e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja
+                                        </p>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="nossa-historia">
+        <div class="row p-0">
+            <div class="col-lg-12 col-12">
+                <div class="d-flex align-items-center">
+                    <div class="flex-column conteudo text-center text-lg-start">
+                        <h2 class="h2-blue">Nossa história</h2>
+                        <p class="p-light">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, 
+                            quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. 
+                            Lorem Ipsum sobreviveu não só a cinco séculos, [...]</p>
+                        <button class="btn btn-outline-light">História completa</button>
+                    </div>
+                    <img class="eng d-none d-lg-flex" width="100%" src="<?= asset('images/backgrounds/historia2.png') ?>" alt="">
+                </div>
+            </div>
+            <div class="col-12 d-flex d-lg-none coluna2">
+                <img class="eng2 d-flex d-lg-none ms-auto" width="80%" src="<?= asset('images/backgrounds/historia2.png') ?>" alt="">
+            </div>                 
+        </div>
+    </section>
+
+    <section class="diferenciais p-0 m-0">
+        <div class="row p-0">
+            <div class="col-lg-10 p-0 col-12 m-auto">
+                <div class="swiper diferenciais-swiper position-relative ">
+                        <div class="swiper-wrapper my-lg-4 my-4">
                             <?php foreach(range(0,9) as $i) : ?>
-                                <div class="swiper-slide ">
-                                    <img src="<?= asset('images/logos/areas.png') ?>" alt="">
-                                    <h2 class="h2">
-                                        Consultoria
-                                    </h2>
-                                    <p class="p">
-                                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, 
-                                        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-                                    </p>
+                                <div class="swiper-slide text-center mt-2">
+                                    <img src="<?= asset('images/logos/dif.png') ?>" alt="">
+                                    <h6 class="h6 mt-1 m-auto">
+                                        Assistência técnica
+                                    </h6>
                                 </div>
                             <?php endforeach; ?>
                         </div>
                     <div class="swiper-pagination"></div>
-                </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+    <section class="empresas-parceiras">
+        <div class="row p-0">
+            <div class="col-lg-10 p-0 col-12 m-auto">
+                <div class="swiper empresas-swiper position-relative my-lg-4 my-4">
+                <h2 class="text-center w-100 mb-3">Empresas parceiras</h2>
+                        <div class="swiper-wrapper mb-4">
+                            <?php foreach(range(0,9) as $i) : ?>
+                                <div class="swiper-slide text-center mt-2">
+                                    <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    <div class="swiper-pagination"></div>
+                    <!--<div class="swiper-scrollbar"></div>-->
+                </div>               
             </div>
         </div>
     </section>

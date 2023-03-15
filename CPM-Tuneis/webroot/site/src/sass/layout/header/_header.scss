@@ -7,7 +7,7 @@ body {
 
 header {
     background: transparent;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 139px;
 
@@ -31,9 +31,14 @@ header {
             left: 13%;
             display: flex;
 
+            @media (min-width: 1200px)and(max-width: 1400px) {
+                left: 18% !important;
+                width: 65%;
+            }
+
             @media (min-width: 992px)and(max-width: 1200px) {
                 left: 18% !important;
-                width: 70%;
+                width: 65%;
             }
         }
 
@@ -106,10 +111,10 @@ header {
                 &:hover {
                     &::after {
                         content: "sobre nos";
-                        color: #F0F0F0;
-                        border-bottom: 5px solid #FF6A00;
+                        color: transparent;
+                        border-bottom: 8px solid #0072BE;
                         position: absolute;
-                        bottom: -2px;
+                        bottom: -4px;
                         display: flex;
                         z-index: 2;
                     }
@@ -242,9 +247,14 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
     }
 
+    .riscos2 {
+        position: absolute;
+        top: 138px;
+        right: 0;
+        //z-index: 999;
+    }
 }
 
 .breadcrumb-wrapper {
@@ -304,4 +314,28 @@ header {
         }
     }
 
+}
+
+.breadcrumb-wrapper {
+    padding-top: 250px;
+
+    .h2-blue {
+        font-size: 64px;
+
+        @media (max-width: 767px) {
+            font-size: 50px !important;
+        }
+
+        @media (max-width: 567px) {
+            font-size: 35px !important;
+        }
+    }
+
+    background-image: url(../images/backgrounds/breadcrumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & span:hover {
+        border-bottom: 1px solid white;
+    }
 }

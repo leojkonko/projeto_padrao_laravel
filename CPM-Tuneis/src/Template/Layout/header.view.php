@@ -53,6 +53,9 @@
     <?php ob_start() ?>
     <header class="header text-white">
         <img class="riscos d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos-header.png') ?>" alt="">
+        <svg class="riscos2 d-none d-lg-flex" width="133" height="723" viewBox="0 0 133 723" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M133 1L1.00003 1.00004L0.999998 723" stroke="white"/>
+        </svg>
         <div class="container d-flex align-items-center h-100 p-0">
             <div class="row w-100 p-0 m-0">
                 <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center bg-img">
@@ -75,12 +78,12 @@
                     </ul>
                 </div> 
                 <div class="col-lg-5 col-md-7 col-5 div-button d-flex justify-content-end align-items-center">
-                        <button class="button p d-none d-lg-flex">
+                        <button class="button p d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <svg class="ms-1" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.44444 8.63636C6.44444 8.63636 6.44444 15.9091 12 15.9091C17.5556 15.9091 17.5556 8.63636 17.5556 8.63636M4.59259 8.63636L19.4074 8.63637M6.07407 6.81818C6.07407 6.81818 6.07407 1 12 1C17.9259 1 17.9259 6.81818 17.9259 6.81818M2 25C2 25 2 18.4545 12 18.4545C22 18.4545 22 25 22 25" stroke="white" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <img src="<?= asset('images/icones/especialista.png') ?>" width="50" class="mb-1 button-offcanvas d-none" alt="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <img src="<?= asset('images/icones/especialista.png') ?>" width="50" class="mb-1 button-offcanvas d-none" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0 ms-1 button-menu mb-0-25" type="button"
                                 data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,46 +101,25 @@
         <!--offcanvas-->
         <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
             <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><span></span></button>
+                <button type="button" class="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"><span>X</span></button>
             </div>
             <div class="offcanvas-body">
                 <div class="row">
-                    <ul class="menu-offcanvas">
+                    <div class="text-center w-100">
+                        <img width="30%" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
+                   </div>
+                    <ul class="menu-offcanvas mt-4">
                         <li>
-                            <a href="<?= url('/') ?>">Home</a>
+                            <a href="<?= url('/empresa') ?>">Sobre nós</a>
                         </li>
                         <li>
-                            <a href="<?= url('empresa') ?>">Sobre nós</a>
+                            <a href="<?= url('/solucoes') ?>">Soluções</a>
                         </li>
                         <li>
-                            <!--<div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Produtos
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <ul>
-                                            <?php foreach(range(0,4) as $i) : ?>
-                                                <li>
-                                                    <a href="">
-                                                        <button>
-                                                            Corporativo
-                                                        </button>
-                                                    </a>
-                                                </li>
-                                                <?php endforeach; ?>
-                                            </ul>    
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-                            <a href="<?= url('produtos') ?>">Produtos</a>
+                            <a href="<?= url('/') ?>">Parceiros</a>
                         </li>
                         <li>
-                            <a href="<?= url('contato') ?>">Contato</a>
+                            <a href="<?= url('/contato') ?>">Contato</a>
                         </li>
                     </ul>
                     <div class="col-12 d-flex justify-content-center mt-4">
@@ -145,51 +127,67 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!--offcanvas-->
-        <!--offcanvas-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel"></h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="container">
-                    <div class="div-input-offcanvas">
-                        <div class="col-12 d-flex justify-content-center mt-4">
-                            <h2>Pesquise seu produto desejado</h2>
-                        </div>
-                        <input type="text" class="form-control mb-1 mt-4" placeholder="Busque por produtos">
-                        <div class="col-12 d-flex justify-content-center mt-2">
-                        <button class="btn btn-custom text-white">Pesquisar</button>
-                        </div>
-                        <div class="col-12 d-flex justify-content-center mt-4">
-                            <img src="<?= asset('images/logos/logo.svg') ?>" class="mt-4" alt="">
-                        </div>
+        </div>        
+        <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form">
+                            <div class="flex-column py-4 div-form-modal text-center px-2">
+                                <h2>Fale com um especialista</h2>
+                                <form action="" class="flex-column mt-2">
+                                    <input type="text" placeholder="Nome *" class="form-control">
+                                    <input type="email" placeholder="Email" class="form-control">
+                                    <input type="text" placeholder="Telefone *" class="mask-telefone form-control">
+                                    <select name="" id="" class="form-select">
+                                        <option value="" selected>Solução de interesse</option>
+                                        <option value="">opção 1</option>
+                                        <option value="">opção 2</option>
+                                        <option value="">opção 3</option>
+                                    </select>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem *" class="form-control"></textarea>
+                                    <div class="d-flex">
+                                        <input type="checkbox" class="input-checkbox">
+                                        <p class="mt-1 ms-1">Li e aceito os termos da <span>Política de privacidade</span> da CMP</p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button class="button-azul mt-2  m-auto mb-2">Enviar formulário
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 16.0005L18 12.0005M18 12.0005L14 8.00049M18 12.0005L6 12.0005" stroke="white"/>
+                            </svg>
+                        </button>
+                    </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--offcanvas-->
+        <!--modal-->
     </header>
     <?php
     $header = ob_get_contents();
     ob_end_clean();
     ?>
+    <?php if ($pagina_atual === "home") : ?>
+                <?= $header ?>
+    <?php endif; ?>
 
     <?php /* Remover essa primeira condicional */ ?>
-        <?php if ($pagina_atual === "home") : ?>
-            <?= $header ?>
-        <?php else : ?>
+        <?php if ($pagina_atual === "solucoes") : ?>
             <div class="header-wrapper">
                 <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper py-lg-4 bg-primary">
-                        <?php if (!empty($title)) : ?>
-                            <h1 class="h2 text-center text-white lh-1 mb-1">
-                                <?= $title ?>
+                            <h1 class="h2-blue text-center text-white lh-1 mb-1">
+                                Nossas soluções
                             </h1>
-                        <?php endif; ?>
                         <nav class="breadcrumb justify-content-center">
                             <?php
                             $i = -1;
@@ -203,6 +201,9 @@
                                             <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
                                         </span>
                                     </a>
+                                <svg class="mt-0-50 mx-0-25" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
                                 <?php else : ?>
                                     <span class="breadcrumb-item active" aria-current="page">
                                         <span>

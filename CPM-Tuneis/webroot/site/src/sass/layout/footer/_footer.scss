@@ -1,1 +1,60 @@
 // Estilos do footer
+footer {
+    a {
+        width: 366px;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+
+        @media(max-width:1600px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: #dad6d6;
+        }
+    }
+
+    .bg-azul {
+        background-image: url(../images/backgrounds/footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        & .site {
+            padding-left: 14%;
+
+            @media(min-width: 992px)and(max-width: 1200px) {
+                padding-left: 6%;
+            }
+
+            @media(max-width:992px) {
+                padding-left: 0px;
+            }
+
+            & li {
+                list-style: none;
+                margin-bottom: 15px;
+            }
+        }
+
+        & .infos {
+            & .redes {
+                & button {
+                    border-radius: 50%;
+                    padding: 10px 11px 11px 11px;
+                    border: 1px solid white;
+                }
+            }
+
+            & .svg-alinhamento {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    & .politica {
+        border-bottom: 1px solid white;
+    }
+}
