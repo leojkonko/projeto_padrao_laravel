@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="<?php echo ($pagina_atual == "contato" || $pagina_atual == "solucoes") ? 'bg-cinza' : 'classe-2'; ?>">
     <div class="row p-0">
         <div class="col-lg-5 bg-dark">
             <div class="d-flex justify-content-center py-4">

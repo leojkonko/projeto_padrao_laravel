@@ -36,6 +36,21 @@ Router::get('/', function () {
         ],
     ]);
 });
+Router::get('/parceiros', function () {
+    app()->view->render('parceiros', [
+        'pagina_atual' => 'parceiros',
+        'title' => 'Parceiros',
+        'breadcrumbs' => [
+            [
+                'title' => 'Home',
+                'url' => url('/')
+            ],
+            [
+                'title' => 'Parceiros',
+            ],
+        ],
+    ]);
+});
 
 Router::get('/empresa', function () {
     app()->view->render('empresa', [

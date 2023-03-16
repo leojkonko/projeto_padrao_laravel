@@ -446,7 +446,7 @@ header .riscos2 {
   }
 }
 .breadcrumb-wrapper span:hover {
-  border-bottom: 1px solid white;
+  color: #eaeaea;
 }
 
 footer a {
@@ -501,6 +501,7 @@ footer .politica {
 
 #home {
   overflow: hidden;
+  z-index: 999;
 }
 #home .ratio-custom {
   --bs-aspect-ratio: 42.8571428571%;
@@ -752,9 +753,34 @@ footer .politica {
   height: 6px;
 }
 
+#empresa {
+  z-index: 99;
+}
+
+.empresa .valores .h2-blue {
+  font-size: 40px !important;
+}
+.empresa .swiper .swiper-button-next,
+.empresa .swiper .swiper-button-prev {
+  --swiper-navigation-size: 20px;
+  --swiper-theme-color: white;
+  padding: 18px;
+  background: linear-gradient(86.09deg, #0072BE 0%, #2EB4FF 100%);
+}
+
+#contato {
+  margin-top: -1px;
+  z-index: 999;
+}
+
+#parceiros {
+  z-index: 99;
+}
+
 #solucoes {
   overflow: hidden;
   margin-top: -1px;
+  z-index: 999;
 }
 
 html {
@@ -1214,7 +1240,7 @@ html {
 @media (max-width: 1300px) {
   .form .div-form,
 .form .div-form-modal {
-    width: 70%;
+    width: 80%;
   }
 }
 .form .div-form h2,
@@ -1258,6 +1284,23 @@ html {
   .form .bg-cinza img {
     width: 100%;
   }
+}
+
+.parceiros .row .col-custom {
+  height: 100%;
+}
+.parceiros .row .col-custom img {
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+}
+@media (max-width: 450px) {
+  .parceiros .row .col-custom img {
+    width: 150px;
+  }
+}
+.parceiros .row .col-custom:hover img {
+  transition: transform 0.25s ease-in-out;
+  transform: scale(1.1);
 }
 
 .button {

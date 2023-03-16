@@ -70,7 +70,7 @@
                             <a href="<?= url('solucoes') ?>">Soluções</a>
                         </li>
                         <li>
-                            <a href="<?= url('produtos') ?>">Parceiros</a>
+                            <a href="<?= url('/parceiros') ?>">Parceiros</a>
                         </li>
                         <li class="contato">
                             <a class="contato" href="<?= url('contato') ?>">Contato</a>
@@ -116,7 +116,7 @@
                             <a href="<?= url('/solucoes') ?>">Soluções</a>
                         </li>
                         <li>
-                            <a href="<?= url('/') ?>">Parceiros</a>
+                            <a href="<?= url('/parceiros') ?>">Parceiros</a>
                         </li>
                         <li>
                             <a href="<?= url('/contato') ?>">Contato</a>
@@ -187,6 +187,117 @@
                     <section class="breadcrumb-wrapper py-lg-4 bg-primary">
                             <h1 class="h2-blue text-center text-white lh-1 mb-1">
                                 Nossas soluções
+                            </h1>
+                        <nav class="breadcrumb justify-content-center">
+                            <?php
+                            $i = -1;
+                            $breadcrumbsLength = count($breadcrumbs) - 1;
+                            foreach ($breadcrumbs as $breadcrumb) :
+                                $i++;
+                            ?>
+                                <?php if ($i !== $breadcrumbsLength) : ?>
+                                    <a class="breadcrumb-item" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </a>
+                                <svg class="mt-0-50 mx-0-25" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                                <?php else : ?>
+                                    <span class="breadcrumb-item active" aria-current="page">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </span>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </nav>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "parceiros") : ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4 bg-primary">
+                            <h1 class="h2-blue text-center text-white lh-1 mb-1">
+                                Nossos parceiros
+                            </h1>
+                        <nav class="breadcrumb justify-content-center">
+                            <?php
+                            $i = -1;
+                            $breadcrumbsLength = count($breadcrumbs) - 1;
+                            foreach ($breadcrumbs as $breadcrumb) :
+                                $i++;
+                            ?>
+                                <?php if ($i !== $breadcrumbsLength) : ?>
+                                    <a class="breadcrumb-item" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </a>
+                                <svg class="mt-0-50 mx-0-25" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                                <?php else : ?>
+                                    <span class="breadcrumb-item active" aria-current="page">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </span>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </nav>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "empresa") : ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4 bg-primary">
+                            <h1 class="h2-blue text-center text-white lh-1 mb-1">
+                                Sobre nós
+                            </h1>
+                        <nav class="breadcrumb justify-content-center">
+                            <?php
+                            $i = -1;
+                            $breadcrumbsLength = count($breadcrumbs) - 1;
+                            foreach ($breadcrumbs as $breadcrumb) :
+                                $i++;
+                            ?>
+                                <?php if ($i !== $breadcrumbsLength) : ?>
+                                    <a class="breadcrumb-item" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </a>
+                                <svg class="mt-0-50 mx-0-25" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                </svg>
+                                <?php else : ?>
+                                    <span class="breadcrumb-item active" aria-current="page">
+                                        <span>
+                                            <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
+                                        </span>
+                                    </span>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </nav>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "contato") : ?>
+            <div class="header-wrapper">
+                <?= $header ?>
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4 bg-primary">
+                            <h1 class="h2-blue text-center text-white lh-1 mb-1">
+                                Contato
                             </h1>
                         <nav class="breadcrumb justify-content-center">
                             <?php

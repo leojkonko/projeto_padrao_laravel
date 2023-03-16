@@ -392,7 +392,7 @@
     </section>
     <section class="form">
         <div class="row p-0">
-            <div class="col-lg-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
+            <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
                 <div class="flex-column py-4 div-form text-center text-lg-start">
                     <h2>Fale com um especialista</h2>
                     <form action="" class="flex-column mt-2">
@@ -419,7 +419,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-lg-5 col-12 p-0 bg-cinza">
+            <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
                 <img class="objectf-fit-cover h-100" src="<?= asset('images/banners/form.png') ?>" alt="">
             </div>
         </div>

@@ -1,0 +1,22 @@
+#empresa {
+    z-index: 99;
+}
+
+.empresa {
+    & .valores {
+        & .h2-blue {
+            font-size: 40px !important;
+        }
+    }
+
+    & .swiper {
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-navigation-size: 20px;
+            --swiper-theme-color: white;
+            padding: 18px;
+            background: linear-gradient(86.09deg, #0072BE 0%, #2EB4FF 100%);
+        }
+    }
+}

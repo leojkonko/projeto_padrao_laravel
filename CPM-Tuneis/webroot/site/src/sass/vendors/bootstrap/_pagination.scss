@@ -7,7 +7,7 @@
   position: relative;
   display: block;
   color: $pagination-color;
-  text-decoration: if($link-decoration == none, null, none);
+  text-decoration: if($link-decoration==none, null, none);
   background-color: $pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
   @include transition($pagination-transition);
@@ -15,7 +15,7 @@
   &:hover {
     z-index: 2;
     color: $pagination-hover-color;
-    text-decoration: if($link-hover-decoration == underline, none, null);
+    text-decoration: if($link-hover-decoration==underline, none, null);
     background-color: $pagination-hover-bg;
     border-color: $pagination-hover-border-color;
   }
@@ -37,8 +37,10 @@
   &.active .page-link {
     z-index: 3;
     color: $pagination-active-color;
-    @include gradient-bg($pagination-active-bg);
-    border-color: $pagination-active-border-color;
+    background-color: #0072BE;
+    //@include gradient-bg($pagination-active-bg);
+    border-color: #0072BE;
+    //border-color: $pagination-active-border-color;
   }
 
   &.disabled .page-link {
