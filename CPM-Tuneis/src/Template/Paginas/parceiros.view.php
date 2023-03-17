@@ -5,8 +5,10 @@
                 <?php foreach(range(0,20) as $i) : ?>
                     <div class="col-xxl-2 col-lg-3 py-4 px-4 col-md-4 col-6 col-xs-12 col-custom">
                         <div class="d-flex justify-content-center">
-                            <a href="">
-                                <img width="120%" src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                            <a href="" target="_blank">
+                                <div class="ratio ratio-1x1 text-center">
+                                    <img width="140%" src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                </div>
                             </a>
                         </div>
                     </div>

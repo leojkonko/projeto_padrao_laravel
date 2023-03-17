@@ -39,7 +39,9 @@
                             <div class="swiper-wrapper">
                                 <?php foreach(range(0,9) as $i) : ?>
                                     <div class="swiper-slide">
-                                        <img src="<?= asset('images/logos/areas.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                            <img width="30px" src="<?= asset('images/logos/areas.png') ?>" alt="">
+                                        </div>
                                         <h2 class="h4 mt-1">
                                             Consultoria
                                         </h2>
@@ -58,7 +60,7 @@
     </section>
     <section class="nossa-historia">
         <div class="row p-0">
-            <div class="col-lg-12 col-12">
+            <div class="col-lg-12 col-12 p-0 position-relative">
                 <div class="d-flex align-items-center">
                     <div class="flex-column conteudo text-center text-lg-start">
                         <h2 class="h2-blue">Nossa história</h2>
@@ -67,7 +69,8 @@
                             Lorem Ipsum sobreviveu não só a cinco séculos, [...]</p>
                         <button class="btn btn-outline-light">História completa</button>
                     </div>
-                    <img class="eng d-none d-lg-flex" width="100%" src="<?= asset('images/backgrounds/historia2.png') ?>" alt="">
+                            <img class="eng d-none d-lg-flex object-fit-cover" width="100%" src="<?= asset('images/backgrounds/historia2.png') ?>" alt="">
+                    
                 </div>
             </div>
             <div class="col-12 d-flex d-lg-none coluna2">
@@ -83,7 +86,10 @@
                         <div class="swiper-wrapper my-lg-4 my-4">
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide text-center mt-2">
-                                    <img src="<?= asset('images/logos/dif.png') ?>" alt="">
+                                    <div class="ratio ratio-1x1 text-center">
+                                         <img src="<?= asset('images/logos/dif.png') ?>" alt="">
+                                    </div>
+                                    
                                     <h6 class="h6 mt-1 m-auto">
                                         Assistência técnica
                                     </h6>
@@ -103,7 +109,11 @@
                         <div class="swiper-wrapper mb-4">
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide text-center mt-2">
-                                    <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                     <div class="ratio ratio-1x1 text-center">
+                                        <a href="" target="_blank">
+                                            <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>

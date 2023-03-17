@@ -80,7 +80,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -120,7 +122,9 @@
                                 <div class="swiper-wrapper mb-lg-4 my-3">
                                     <?php foreach(range(0,9) as $i) : ?>
                                         <div class="swiper-slide text-center mt-2">
-                                            <img src="<?= asset('images/logos/dif.png') ?>" alt="">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="<?= asset('images/logos/dif.png') ?>" alt="">
+                                            </div>
                                             <h6 class="h6 mt-1 m-auto">
                                                 Assistência técnica
                                             </h6>
@@ -146,7 +150,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                                <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -215,7 +221,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                         <div class="ratio ratio-1x1">
+                                            <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -240,7 +248,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                           <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -309,7 +319,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                             <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -334,7 +346,9 @@
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
-                                        <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>
@@ -380,7 +394,9 @@
                         <div class="swiper-wrapper mb-4">
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide text-center mt-2">
-                                    <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                    <div class="ratio ratio-1x1">
+                                            <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>
@@ -420,7 +436,9 @@
                 </div>
             </div>
             <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
-                <img class="objectf-fit-cover h-100" src="<?= asset('images/banners/form.png') ?>" alt="">
+                <div class="ratio ratio-1x1">
+                    <img class="objectf-fit-cover h-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
+                </div>
             </div>
         </div>
     </section>

@@ -17,6 +17,10 @@ footer {
         }
     }
 
+    & .img-logo {
+        width: 50%;
+    }
+
     .bg-azul {
         background-image: url(../images/backgrounds/footer.png);
         background-repeat: no-repeat;
@@ -40,11 +44,18 @@ footer {
         }
 
         & .infos {
+            margin: 0px 5px;
+
             & .redes {
-                & button {
-                    border-radius: 50%;
-                    padding: 10px 11px 11px 11px;
-                    border: 1px solid white;
+                & .rede-link {
+                    width: 40px;
+
+                    & svg {
+                        padding: 10px;
+                        border-radius: 50%;
+                        //padding: 10px 11px 11px 11px;
+                        border: 1px solid white;
+                    }
                 }
             }
 

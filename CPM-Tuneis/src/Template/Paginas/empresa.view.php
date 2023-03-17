@@ -103,7 +103,9 @@
                         <div class="swiper-wrapper my-lg-4 my-4">
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide">
-                                    <img class="w-100 h-100 object-fit-cover" src="<?= asset('images/backgrounds/img_principal.png') ?>" alt="">
+                                    <div class="ratio ratio-1x1">
+                                        <img class="w-100 h-100 object-fit-cover" src="<?= asset('images/backgrounds/img_principal.png') ?>" alt="">
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>

@@ -3,7 +3,9 @@
     <div class="row p-0">
         <div class="col-lg-5 bg-dark">
             <div class="d-flex justify-content-center py-4">
-                <img src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
+                <div class="ratio ratio-1x1 text-center">
+                    <img class="img-logo" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
+                </div>
             </div>
         </div>
         <div class="col-lg-7 p-0 bg-azul mt-lg-2 d-flex align-items-center pb-lg-0 pb-2">
@@ -56,16 +58,16 @@
                             </div>
 
                             <div class="d-flex mt-2 redes justify-content-lg-start justify-content-center">
-                                <button class="btn me-1">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class=" me-1 rede-link" target="_blank">
+                                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M24 12.0729C24 18.0983 19.606 23.0935 13.87 24V15.5862H16.659L17.19 12.1051H13.87V9.84649C13.87 8.89373 14.334 7.96613 15.82 7.96613H17.329V5.00222C17.329 5.00222 15.959 4.7668 14.65 4.7668C11.916 4.7668 10.13 6.43387 10.13 9.4511V12.1041H7.091V15.5852H10.13V23.999C4.395 23.0915 0 18.0973 0 12.0729C0 5.40566 5.373 0 12 0C18.627 0 24 5.40465 24 12.0729Z" fill="white"/>
                                     </svg>
-                                </button>
-                                <button class="btn ">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </a>
+                                <a class=" rede-link" target="_blank">
+                                    <svg width="52" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.4496 20.4505H16.8933V14.8811C16.8933 13.5529 16.8697 11.8439 15.0436 11.8439C13.1915 11.8439 12.9077 13.2904 12.9077 14.7853V20.4505H9.35259V8.9971H12.767V10.5618H12.8143C13.5109 9.37202 14.8047 8.6612 16.1825 8.71206C19.7873 8.71206 20.4508 11.0834 20.4508 14.1668L20.4496 20.4505ZM5.33977 7.43118C4.19968 7.43118 3.27601 6.50747 3.27601 5.36733C3.27601 4.2272 4.19968 3.30349 5.33977 3.30349C6.47987 3.30349 7.40354 4.2272 7.40354 5.36733C7.40354 6.50747 6.47987 7.43118 5.33977 7.43118ZM7.11733 20.4505H3.55748V8.9971H7.11733V20.4505ZM22.2224 0.00134427H1.77046C0.804218 -0.00930019 0.0118267 0.76538 0 1.73166V22.2684C0.0118267 23.2358 0.804218 24.0105 1.77046 23.9999H22.2224C23.1911 24.0117 23.987 23.237 24 22.2684V1.73048C23.9858 0.761832 23.1899 -0.0128484 22.2224 0.000161495" fill="white"/>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -76,14 +78,14 @@
             <a href="" class="me-4">
                  <img src="<?= asset('images/logos/logo-ellite.png') ?>" alt="">
             </a>
-            <a href="" class="politica">
+            <a href="" class="politica small">
                 Política de privacidade
             </a>
         </div>
         <div class="col-lg-7 bg-dark text-center py-2 px-2">
-            <a href="">
+            <p href="" class="small">
               Copyright © 2023 CMP. Todos os direitos reservados. CNPJ 00.000.000/0000-00
-            </a>
+            </p>
         </div>
     </div>
 </footer>

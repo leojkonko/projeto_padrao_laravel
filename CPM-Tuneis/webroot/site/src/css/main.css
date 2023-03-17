@@ -143,6 +143,7 @@ header {
   position: absolute;
   width: 100%;
   height: 139px;
+  z-index: 1;
 }
 header .container::after {
   content: "";
@@ -465,6 +466,9 @@ footer a {
 footer a:hover {
   color: #dad6d6;
 }
+footer .img-logo {
+  width: 50%;
+}
 footer .bg-azul {
   background-image: url(../images/backgrounds/footer.png);
   background-repeat: no-repeat;
@@ -487,9 +491,15 @@ footer .bg-azul .site li {
   list-style: none;
   margin-bottom: 15px;
 }
-footer .bg-azul .infos .redes button {
+footer .bg-azul .infos {
+  margin: 0px 5px;
+}
+footer .bg-azul .infos .redes .rede-link {
+  width: 40px;
+}
+footer .bg-azul .infos .redes .rede-link svg {
+  padding: 10px;
   border-radius: 50%;
-  padding: 10px 11px 11px 11px;
   border: 1px solid white;
 }
 footer .bg-azul .infos .svg-alinhamento {
@@ -501,17 +511,17 @@ footer .politica {
 
 #home {
   overflow: hidden;
-  z-index: 999;
-}
-#home .ratio-custom {
-  --bs-aspect-ratio: 42.8571428571%;
 }
 @media (max-width: 992px) {
   #home .ratio-custom {
-    --bs-aspect-ratio: 150%;
+    height: 800px;
   }
 }
 
+.construcao {
+  position: relative;
+  z-index: 0;
+}
 .construcao .construcao-swiper .swiper-slide {
   background-image: url(../images/backgrounds/construcao.png);
   background-repeat: no-repeat;
@@ -577,6 +587,8 @@ footer .politica {
   padding-bottom: 30px;
   display: flex;
   align-items: center;
+  padding: 2rem;
+  margin: -2rem;
 }
 .areas .container .areas-swiper .swiper-slide {
   border: 3px solid white;
@@ -588,6 +600,9 @@ footer .politica {
   .areas .container .areas-swiper .swiper-slide {
     padding: 20px 20px;
   }
+}
+.areas .container .areas-swiper .swiper-slide .ratio img {
+  width: 35px !important;
 }
 .areas .container .areas-swiper .swiper-pagination {
   bottom: 0 !important;
@@ -611,19 +626,6 @@ footer .politica {
   background-size: cover;
   position: relative;
   color: white;
-}
-.nossa-historia .row .eng {
-  margin-right: -12px;
-}
-@media (max-width: 1800px) {
-  .nossa-historia .row .eng {
-    width: 35%;
-  }
-}
-@media (max-width: 1600px) {
-  .nossa-historia .row .eng {
-    width: 40%;
-  }
 }
 @media (max-width: 576px) {
   .nossa-historia .row .eng2 {
@@ -686,6 +688,7 @@ footer .politica {
   border-radius: 50%;
   background-color: white;
   box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.3);
+  width: 120px;
 }
 @media (max-width: 1300px) {
   .diferenciais .row .diferenciais-swiper .swiper-wrapper .swiper-slide img {
@@ -1308,8 +1311,9 @@ html {
 .parceiros .row .col-custom img {
   transform: scale(1);
   transition: transform 0.25s ease-in-out;
+  width: 150px;
 }
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .parceiros .row .col-custom img {
     width: 150px;
   }
