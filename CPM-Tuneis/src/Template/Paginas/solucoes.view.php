@@ -436,9 +436,9 @@
                 </div>
             </div>
             <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
-                <div class="ratio ratio-1x1">
+                <!--<div class="ratio ratio-1x1">-->
                     <img class="objectf-fit-cover h-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
-                </div>
+                <!--</div>-->
             </div>
         </div>
     </section>

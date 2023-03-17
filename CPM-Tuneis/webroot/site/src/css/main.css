@@ -1084,6 +1084,7 @@ html {
   }
 }
 .consultoria .container .swiper-consultoria-diferenciais .swiper-wrapper .swiper-slide img {
+  width: 130px;
   padding: 30px;
   border-radius: 50%;
   background-color: white;
