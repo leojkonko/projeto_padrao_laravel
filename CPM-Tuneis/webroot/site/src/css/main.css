@@ -553,6 +553,65 @@ footer .bg-azul .infos .svg-alinhamento {
 footer .politica {
   border-bottom: 1px solid white;
 }
+footer .botao-whatsapp {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  font-size: calc(1.95rem + 0.25vw);
+  font-size: clamp(2rem, 1.95rem + 0.25vw, 2.25rem);
+  width: 1em;
+  height: 1em;
+  box-sizing: content-box;
+  padding: 0.33em;
+  isolation: isolate;
+  color: #fff;
+  background-color: rgb(26, 202, 35);
+  transition: all 0.2s ease-in-out;
+}
+footer .botao-whatsapp:hover {
+  color: #fff;
+}
+footer .botao-whatsapp::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  background-image: linear-gradient(50deg, #149d1b, #32e53b);
+  border-radius: 9999px;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  footer .botao-whatsapp:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+footer .botao-whatsapp-wrapper {
+  z-index: 990;
+}
+footer .botao-whatsapp-hoverable {
+  display: none;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp-hoverable {
+    display: flex;
+  }
+}
+footer .botao-whatsapp-not-hoverable {
+  display: none;
+}
+@media (hover: none) {
+  footer .botao-whatsapp-not-hoverable {
+    display: flex;
+  }
+}
 
 #home {
   overflow: hidden;
