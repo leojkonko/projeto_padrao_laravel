@@ -157,14 +157,14 @@ header .container::after {
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   header .container::after {
-    left: 18% !important;
-    width: 65%;
+    left: 16% !important;
+    width: 70%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   header .container::after {
-    left: 18% !important;
-    width: 65%;
+    left: 14% !important;
+    width: 74%;
   }
 }
 @media (max-width: 1600px) {
