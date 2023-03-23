@@ -123,6 +123,15 @@ header {
                 }
             }
 
+            & .contato {
+
+                &:hover {
+                    &::after {
+                        content: "contato";
+                    }
+                }
+            }
+
 
         }
     }
@@ -151,6 +160,10 @@ header {
             justify-content: flex-end;
             margin-top: 0px !important;
             //margin-left: 50px;
+        }
+
+        & .button {
+            padding: 10px 14px !important;
         }
 
         & input {
@@ -249,13 +262,30 @@ header {
         position: absolute;
         top: 0;
         left: 0;
+
+        @media (max-width: 1400px) {
+            left: -50px;
+        }
+
+        @media (max-width: 1315px) {
+            display: none;
+        }
+
+        //@include linear-rfs(1rem, 5rem, 375px, 1920px, "right");
     }
 
     .riscos2 {
         position: absolute;
         top: 138px;
         right: 0;
-        //z-index: 999;
+
+        @media (max-width: 1400px) {
+            right: -50px;
+        }
+
+        @media (max-width: 1315px) {
+            display: none;
+        }
     }
 }
 

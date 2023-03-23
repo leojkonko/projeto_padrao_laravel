@@ -17,7 +17,7 @@ var swiper = new Swiper(".construcao-swiper", {
 });
 var swiper = new Swiper(".areas-swiper", {
     slidesPerView: 1,
-    spaceBetween: 50,
+    spaceBetween: 40,
     pagination: {
         el: ".areas-swiper .swiper-pagination",
         clickable: true

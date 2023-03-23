@@ -38,7 +38,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="<?= asset('css/main.css') ?>"> <?php /* ==== Arquivo do front ==== */ ?>
     <?php
     /* ==== Arquivo para o pessoal do back end ==== 
@@ -56,9 +56,8 @@
     <?php ob_start() ?>
     <header class="header text-white">
         <img class="riscos d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos-header.png') ?>" alt="">
-        <svg class="riscos2 d-none d-lg-flex" width="133" height="723" viewBox="0 0 133 723" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M133 1L1.00003 1.00004L0.999998 723" stroke="white"/>
-        </svg>
+        <img class="riscos2 d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos2.png') ?>" alt="">
+        
         <div class="container d-flex align-items-center h-100 p-0">
             <div class="row w-100 p-0 m-0">
                 <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-center bg-img">

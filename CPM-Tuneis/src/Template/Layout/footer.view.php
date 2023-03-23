@@ -1,11 +1,9 @@
 
 <footer class="<?php echo ($pagina_atual == "contato" || $pagina_atual == "solucoes") ? 'bg-cinza' : 'classe-2'; ?>">
     <div class="row p-0">
-        <div class="col-lg-5 bg-dark">
-            <div class="d-flex justify-content-center py-4">
-                <div class="ratio ratio-1x1 text-center">
-                    <img class="img-logo" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
-                </div>
+        <div class="col-lg-5 bg-dark d-flex justify-content-center align-items-center">
+            <div class="text-center py-4 py-lg-0">
+                <img class="img-logo" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
             </div>
         </div>
         <div class="col-lg-7 p-0 bg-azul mt-lg-2 d-flex align-items-center pb-lg-0 pb-2">
@@ -33,7 +31,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="d-flex justify-content-center align-items-center h-100">
-                        <div class="flex-column infos">
+                        <div class="flex-column infos ">
 
                             <div class="p d-flex text-lg-start text-center">
                                 <svg class="me-1 d-none d-lg-flex" width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,16 +72,18 @@
                 </div>
             </div><!--row2-->
         </div>
-        <div class="col-lg-5 bg-primary text-center py-2">
-            <a href="" class="me-4">
-                 <img src="<?= asset('images/logos/logo-ellite.png') ?>" alt="">
-            </a>
-            <a href="" class="politica small">
-                Política de privacidade
-            </a>
+        <div class="col-lg-5 bg-primary text-center py-2 d-flex align-items-center">
+            <div class="w-100 ">
+                <a href="" class="me-4">
+                    <img src="<?= asset('images/logos/logo-ellite.png') ?>" alt="">
+                </a>
+                <a href="" class="politica small">
+                    Política de privacidade
+                </a>
+            </div>
         </div>
-        <div class="col-lg-7 bg-dark text-center py-2 px-2">
-            <p href="" class="small">
+        <div class="col-lg-7 d-flex align-items-center bg-dark text-center py-2 px-2">
+            <p class="small text-white copyright text-center text-lg-start">
               Copyright © 2023 CMP. Todos os direitos reservados. CNPJ 00.000.000/0000-00
             </p>
         </div>

@@ -2,52 +2,64 @@
     <section class="solucoes">
         <div class="row p-0 d-none d-lg-flex">
             <div class="col-lg-4 p-0 cont1">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Consultoria</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#consultoria">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Consultoria</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 p-0 cont2">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Projeto</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#projeto">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Projeto</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 p-0 cont3">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Construção</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#construcao">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Construção</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 p-0 cont4">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Ampliação</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#ampliacao">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Ampliação</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 p-0 cont5">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Manutenção</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#manutencao">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Manutenção</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-4 p-0 cont6">
-                <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
-                    <div class="p-0 flex-column">
-                        <h2>Reposição</h2>
-                        <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                <a href="#reposicao">
+                    <div class="d-flex justify-content-center align-items-center p-0 bg-custom">
+                        <div class="p-0 flex-column">
+                            <h2>Reposição</h2>
+                            <p class="mt-1">Análise completa do sistema de congelamento da sua empresa</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="row p-0">
@@ -71,7 +83,7 @@
              </div>
         </div>
     </section>
-    <section class="consultoria bg-cinza py-lg-4 py-2">
+    <section class="consultoria bg-cinza py-lg-4 py-2" id="consultoria">
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-6 col-consult d-flex justify-content-center p-0">
@@ -141,7 +153,7 @@
             <path d="M1 126L0.999989 1L133 0.999988" stroke="#0072BE"/>
         </svg>
     </section>
-    <section class="section2 py-lg-4 py-2">
+    <section class="section2 py-lg-4 py-2" id="projeto">
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-6 col-consult d-flex justify-content-center align-items-center p-0">
@@ -190,7 +202,7 @@
              <path d="M132 0V125H0" stroke="#0072BE"/>
         </svg>
     </section>
-    <section class="section2 bg-cinza py-lg-4 py-2">
+    <section class="section2 bg-cinza py-lg-4 py-2" id="construcao">
         <div class="container">
             <div class="row p-0">
             <div class="col-lg-6 ps-xxl-4 p-0 conteudo">
@@ -239,7 +251,7 @@
             <path d="M1 126L0.999989 1L133 0.999988" stroke="#0072BE"/>
         </svg>
     </section>
-    <section class="section2 py-lg-4 py-2">
+    <section class="section2 py-lg-4 py-2" id="ampliacao">
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-6 col-consult d-flex justify-content-center align-items-center p-0">
@@ -288,7 +300,7 @@
              <path d="M132 0V125H0" stroke="#0072BE"/>
         </svg>
     </section>
-    <section class="section2 bg-cinza py-lg-4 py-2">
+    <section class="section2 bg-cinza py-lg-4 py-2" id="manutencao">
         <div class="container">
             <div class="row p-0">
             <div class="col-lg-6 ps-xxl-4 p-0 conteudo">
@@ -337,7 +349,7 @@
              <path d="M132 0V125H0" stroke="#0072BE"/>
         </svg>
     </section>
-    <section class="section2 py-lg-4 py-2">
+    <section class="section2 py-lg-4 py-2" id="reposicao">
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-6 col-consult d-flex justify-content-center align-items-center p-0">
@@ -387,7 +399,7 @@
         </svg>
     </section>
     <section class="empresas-parceiras">
-        <div class="row p-0">
+        <div class="row p-0 border-t">
             <div class="col-lg-10 p-0 col-12 m-auto">
                 <div class="swiper empresas-swiper position-relative my-lg-4 my-4">
                 <h2 class="text-center w-100 mb-3"><span>Empresas que</span> confiam</h2>

@@ -1,0 +1,83 @@
+// Estilos do footer
+footer {
+    width: 102%;
+    position: relative;
+
+    & .bg-azul-escuro {
+        border-radius: 0px 225px 0px 0px;
+        padding-bottom: 50px;
+
+        & .logo-footer {
+            margin: -80px 0px;
+        }
+    }
+
+    background: linear-gradient(90deg, #0055FF 0%, #021D49 100%);
+
+    & .bg-custom {
+        & ul {
+            padding-left: 0px;
+
+
+            & li {
+                list-style: none;
+                margin-top: 8px;
+
+                & a {
+                    color: white;
+
+                }
+            }
+        }
+
+        & .redes {
+            & a {
+                width: 48px;
+                height: 48px;
+                border: 1px solid white;
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+
+                & svg {
+                    //margin-top: 30px;
+
+
+                    & path {
+                        //margin: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .copyright {
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        border-radius: 225px 0 0 0;
+        margin-left: 95px;
+
+        @media (max-width:992px) {
+            position: relative;
+            border-radius: 50px 50px 0 0;
+            margin: 0px 0px;
+            flex-direction: column;
+            height: 140px;
+
+            @media(max-width: 767px) {
+                height: 180px;
+            }
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

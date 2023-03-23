@@ -1,5 +1,5 @@
 #solucoes {
-    overflow: hidden;
+    //overflow: hidden;
     margin-top: -1px;
     z-index: 999;
 }
@@ -475,6 +475,9 @@ html {
 }
 
 .form {
+    @media(min-width: 992px) {
+        margin-bottom: -35px;
+    }
 
     & .div-form,
     .div-form-modal {

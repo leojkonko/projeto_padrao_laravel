@@ -4,10 +4,18 @@
 
 .empresa {
     & .h2-blue {
-        font-size: 70px !important;
+        font-size: 40px !important;
+    }
+
+    & .banner-footer {
+        margin-bottom: -160px;
     }
 
     & .valores {
+        @media(min-width: 992px) {
+            margin-top: 140px;
+        }
+
         & .item {
             padding: 10px 16px;
             box-shadow: 0px 10px 22px rgb(0 0 0 / 30%);
@@ -19,12 +27,19 @@
         }
     }
 
+    & .item {
+        background-color: #eaeaea;
+    }
+
     /* & img {
         padding: 5px;
         border-radius: 50%;
         // background-color: red;
         box-shadow: 0px 10px 22px rgb(0 0 0 / 30%);
     }*/
+    & .consultoria-swiper {
+        margin-top: -2px;
+    }
 
     & .swiper {
 

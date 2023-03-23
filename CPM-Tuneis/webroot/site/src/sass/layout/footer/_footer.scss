@@ -1,5 +1,32 @@
 // Estilos do footer
 footer {
+    position: relative;
+    z-index: 1000;
+    background-color: initial !important;
+
+    & .site,
+    .copyright {
+        padding-left: 14%;
+
+        @media(min-width: 992px)and(max-width: 1200px) {
+            padding-left: 6%;
+        }
+
+        @media(max-width:992px) {
+            padding-left: 0px;
+        }
+    }
+
+    & .copyright,
+    .politica {
+        @media(max-width: 992px) {
+            padding-left: initial !important;
+            margin: auto;
+        }
+
+        margin-bottom: 0px;
+    }
+
     a {
         width: 366px;
         text-decoration: none;
@@ -18,7 +45,7 @@ footer {
     }
 
     & .img-logo {
-        width: 50%;
+        width: 75%;
     }
 
     .bg-azul {
@@ -27,15 +54,6 @@ footer {
         background-size: cover;
 
         & .site {
-            padding-left: 14%;
-
-            @media(min-width: 992px)and(max-width: 1200px) {
-                padding-left: 6%;
-            }
-
-            @media(max-width:992px) {
-                padding-left: 0px;
-            }
 
             & li {
                 list-style: none;

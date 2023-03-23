@@ -1,5 +1,5 @@
 <main id="parceiros">
-    <section class="parceiros">
+    <section class="parceiros py-lg-4 py-2">
         <div class="container">
             <div class="row">
                 <?php foreach(range(0,20) as $i) : ?>
@@ -13,7 +13,7 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
-                <div class="col-12 d-flex justify-content-center">
+                <!--<div class="col-12 d-flex justify-content-center">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -21,7 +21,7 @@
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                         </ul>
                     </nav>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>

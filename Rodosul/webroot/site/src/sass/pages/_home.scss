@@ -1,0 +1,235 @@
+.home {
+    & .banner-swiper {
+
+        & .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-theme-color: white;
+            --swiper-navigation-size: 18px;
+            border: 1px solid #51EEC3;
+            border-radius: 50%;
+            padding: 16px;
+        }
+
+        & .swiper-button-next {
+            right: 5% !important;
+
+            @media(max-width: 992px) {
+                right: 0;
+            }
+        }
+
+        & .swiper-button-prev {
+            left: 5% !important;
+
+            @media(max-width: 992px) {
+                left: 0;
+            }
+        }
+    }
+}
+
+.residuos {
+    & .col_center {
+        margin: 0px 0px;
+    }
+
+    & .col-lg-4 {
+
+        //margin: 0px -5px 0px -5px;
+        & .biologicos {
+            background-image: url(../images/backgrounds/residuos.png);
+            background-repeat: no-repeat;
+            background-size: 120% 120%;
+            width: 98%;
+            height: 380px;
+            border-radius: 5px;
+            position: relative;
+
+            & .h2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 0px 50px;
+                transition: padding 0.3s ease-in-out;
+            }
+
+            &:hover {
+                //height: 440px;
+                //transform: translate(0px, -180px);
+                //position: absolute;
+                top: 70%;
+                left: 30%;
+                transform: translate(-30%, -70%);
+
+
+                & .h2 {}
+            }
+        }
+
+        & .biologicos,
+        img {
+            //margin-top: -150px;
+            //transition: transform 0.3s ease-in-out;
+            transform: translate(0px, -150px);
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 3;
+        }
+
+        & .img1 {
+            &::after {
+                content: "Resíduos biológicos";
+                position: absolute;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+.rodosul {
+    background-color: #EAEAEA;
+
+    & .sem-rodosul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40%;
+
+        @media (max-width:1600px) {
+            //width: 40%;
+        }
+    }
+
+    & .com-rodosul {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+
+        @media (max-width:1600px) {
+            // width: 40%;
+        }
+    }
+
+    & .border {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    & ul {
+        & li {
+            list-style: none;
+            margin-top: 15px;
+        }
+    }
+}
+
+.parceiros {
+    & h2 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.75em;
+        text-transform: uppercase;
+        color: #0055FF;
+    }
+
+    & img {
+        width: 180px !important;
+        height: 50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.form {
+    & iframe {
+        margin-bottom: -10px;
+    }
+
+    & .ajuste-lateral {
+        margin: -10px -20px;
+    }
+
+    & .container {
+        @media (min-width: 1200px) {
+            max-width: 1200px;
+        }
+    }
+
+    & .row {
+        background-color: #EAEAEA;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    & .div-form,
+    .div-form-modal {
+        width: 80%;
+
+        @media(max-width: 1300px) {
+            width: 80%;
+        }
+
+        & h2 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            /* identical to box height */
+
+
+            color: #283C65;
+
+        }
+
+        & .btn {
+            border-radius: 40px;
+            padding: 10px 32px;
+        }
+
+        & form {
+            & textarea {
+                //     border: 1px solid #252525 !important;
+                height: 120px !important;
+            }
+
+            & .input-checkbox {
+                background: red !important;
+                border-radius: none !important;
+            }
+
+            & p {
+                color: #252525;
+                font-weight: 400;
+                font-size: 18px;
+                //line-height: 77px;
+
+                @media(max-width: 992px) {
+                    font-size: 16px;
+                }
+
+                & span {
+                    font-weight: 700;
+                    border-bottom: 1px solid #252525;
+                }
+            }
+        }
+    }
+
+    & .div-form-modal {
+        width: 100%;
+    }
+
+    & .bg-cinza {
+        & img {
+            @media(max-width: 992px) {
+                width: 100%;
+            }
+        }
+    }
+}

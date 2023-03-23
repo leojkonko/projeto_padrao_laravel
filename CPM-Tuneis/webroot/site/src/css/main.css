@@ -248,6 +248,9 @@ header .menu li a:hover::after {
   display: flex;
   z-index: 2;
 }
+header .menu li .contato:hover::after {
+  content: "contato";
+}
 @media (min-width: 1600px) and (max-width: 2980px) {
   header .div-button {
     padding-left: 200px;
@@ -273,6 +276,9 @@ header .menu li a:hover::after {
     justify-content: flex-end;
     margin-top: 0px !important;
   }
+}
+header .div-button .button {
+  padding: 10px 14px !important;
 }
 header .div-button input {
   background-color: transparent;
@@ -365,10 +371,30 @@ header .riscos {
   top: 0;
   left: 0;
 }
+@media (max-width: 1400px) {
+  header .riscos {
+    left: -50px;
+  }
+}
+@media (max-width: 1315px) {
+  header .riscos {
+    display: none;
+  }
+}
 header .riscos2 {
   position: absolute;
   top: 138px;
   right: 0;
+}
+@media (max-width: 1400px) {
+  header .riscos2 {
+    right: -50px;
+  }
+}
+@media (max-width: 1315px) {
+  header .riscos2 {
+    display: none;
+  }
 }
 
 .breadcrumb-wrapper {
@@ -450,6 +476,38 @@ header .riscos2 {
   color: #eaeaea;
 }
 
+footer {
+  position: relative;
+  z-index: 1000;
+  background-color: initial !important;
+}
+footer .site,
+footer .copyright {
+  padding-left: 14%;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  footer .site,
+footer .copyright {
+    padding-left: 6%;
+  }
+}
+@media (max-width: 992px) {
+  footer .site,
+footer .copyright {
+    padding-left: 0px;
+  }
+}
+footer .copyright,
+footer .politica {
+  margin-bottom: 0px;
+}
+@media (max-width: 992px) {
+  footer .copyright,
+footer .politica {
+    padding-left: initial !important;
+    margin: auto;
+  }
+}
 footer a {
   width: 366px;
   text-decoration: none;
@@ -467,25 +525,12 @@ footer a:hover {
   color: #dad6d6;
 }
 footer .img-logo {
-  width: 50%;
+  width: 75%;
 }
 footer .bg-azul {
   background-image: url(../images/backgrounds/footer.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
-footer .bg-azul .site {
-  padding-left: 14%;
-}
-@media (min-width: 992px) and (max-width: 1200px) {
-  footer .bg-azul .site {
-    padding-left: 6%;
-  }
-}
-@media (max-width: 992px) {
-  footer .bg-azul .site {
-    padding-left: 0px;
-  }
 }
 footer .bg-azul .site li {
   list-style: none;
@@ -520,7 +565,6 @@ footer .politica {
 
 .construcao {
   position: relative;
-  z-index: 0;
 }
 .construcao .construcao-swiper .swiper-slide {
   background-image: url(../images/backgrounds/construcao.png);
@@ -591,7 +635,6 @@ footer .politica {
   margin: -2rem;
 }
 .areas .container .areas-swiper .swiper-slide {
-  border: 3px solid white;
   background-color: #EAEAEA;
   padding: 20px 40px;
   box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.3);
@@ -626,6 +669,16 @@ footer .politica {
   background-size: cover;
   position: relative;
   color: white;
+}
+@media (max-width: 1400px) {
+  .nossa-historia .row .eng {
+    width: 500px;
+  }
+}
+@media (max-width: 1200px) {
+  .nossa-historia .row .eng {
+    width: 400px;
+  }
 }
 @media (max-width: 576px) {
   .nossa-historia .row .eng2 {
@@ -707,6 +760,9 @@ footer .politica {
 .empresas-parceiras {
   background-color: white;
 }
+.empresas-parceiras .border-t {
+  border-top: 2px solid #eaeaea;
+}
 .empresas-parceiras h2 {
   font-weight: 700;
   font-size: 32px;
@@ -769,7 +825,15 @@ footer .politica {
   }*/
 }
 .empresa .h2-blue {
-  font-size: 70px !important;
+  font-size: 40px !important;
+}
+.empresa .banner-footer {
+  margin-bottom: -160px;
+}
+@media (min-width: 992px) {
+  .empresa .valores {
+    margin-top: 140px;
+  }
 }
 .empresa .valores .item {
   padding: 10px 16px;
@@ -778,6 +842,12 @@ footer .politica {
 }
 .empresa .valores .h2-blue {
   font-size: 40px !important;
+}
+.empresa .item {
+  background-color: #eaeaea;
+}
+.empresa .consultoria-swiper {
+  margin-top: -2px;
 }
 .empresa .swiper .swiper-button-next,
 .empresa .swiper .swiper-button-prev {
@@ -797,7 +867,6 @@ footer .politica {
 }
 
 #solucoes {
-  overflow: hidden;
   margin-top: -1px;
   z-index: 999;
 }
@@ -1253,6 +1322,11 @@ html {
   }
 }
 
+@media (min-width: 992px) {
+  .form {
+    margin-bottom: -35px;
+  }
+}
 .form .div-form,
 .form .div-form-modal {
   width: 60%;

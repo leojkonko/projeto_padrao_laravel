@@ -1,0 +1,45 @@
+.empresa {
+    & .p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #283C65;
+    }
+
+    & h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 95%;
+        //text-align: center;
+
+        @media (max-width:1600px) {
+            font-size: 32px;
+        }
+
+        color: #283C65;
+
+    }
+
+    & .img {
+        background-color: #51EEC3;
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        border-radius: 50%;
+        display: flex;
+
+        margin: auto;
+
+        & img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    & .valores-empresa {
+        & .col-lg-4 {
+            border: 1px solid red;
+        }
+    }
+}

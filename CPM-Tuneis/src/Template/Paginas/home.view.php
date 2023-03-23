@@ -33,7 +33,7 @@
                     <div class="swiper-scrollbar"></div> 
                 </div>
             </div>
-            <div class="col-lg-8 areas d-flex">
+            <div class="col-lg-8 areas d-flex px-2">
                 <div class="container d-flex align-items-center">
                     <div class="swiper areas-swiper position-relative">
                             <div class="swiper-wrapper">
