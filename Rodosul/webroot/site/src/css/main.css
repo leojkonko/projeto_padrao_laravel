@@ -353,6 +353,62 @@ footer .copyright {
     height: 180px;
   }
 }
+footer .botao-whatsapp {
+  font-size: calc(1.95rem + 0.25vw);
+  font-size: clamp(2rem, 1.95rem + 0.25vw, 2.25rem);
+  width: 10em;
+  height: 3em;
+  box-sizing: content-box;
+  padding: 0.6rem;
+  isolation: isolate;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+footer .botao-whatsapp:hover {
+  color: #fff;
+}
+footer .botao-whatsapp::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  border-radius: 9999px;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  footer .botao-whatsapp:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+footer .botao-whatsapp-wrapper {
+  z-index: 990;
+}
+footer .botao-whatsapp-hoverable {
+  display: none;
+}
+@media (hover: hover) {
+  footer .botao-whatsapp-hoverable {
+    display: flex;
+  }
+}
+footer .botao-whatsapp-not-hoverable {
+  display: none;
+}
+@media (hover: none) {
+  footer .botao-whatsapp-not-hoverable {
+    display: flex;
+  }
+}
 
 .home .banner-swiper .swiper-button-next,
 .home .banner-swiper .swiper-button-prev {
@@ -379,6 +435,53 @@ footer .copyright {
   }
 }
 
+.residuos .hoverr-button {
+  opacity: 1 !important;
+  margin-top: 40px !important;
+  border-radius: 40px;
+  padding: 10px 32px !important;
+}
+.residuos .hoverr-h2 {
+  margin-top: -40px !important;
+  transition: margin-top 0.25s ease-in-out;
+}
+.residuos .hoverr {
+  transform: scaleY(120%) !important;
+  transition: transform 0.25s ease-in-out;
+  z-index: 1;
+}
+.residuos .hoverr .img-bg {
+  display: none !important;
+}
+.residuos .hoverr .img-hover {
+  display: block !important;
+}
+@media (max-width: 992px) {
+  .residuos .hoverr {
+    margin: 50px 0px;
+    transform: scaleY(120%) !important;
+    transition: transform 0.25s ease-in-out;
+    z-index: 1 !important;
+  }
+  .residuos .hoverr .img-bg {
+    display: none;
+  }
+  .residuos .hoverr .img-hover {
+    display: block;
+  }
+  .residuos .hoverr .img-bg {
+    display: none;
+  }
+  .residuos .hoverr .img-hover {
+    display: block;
+  }
+}
+.residuos .p-button:hover {
+  opacity: 1;
+  margin-top: 40px;
+  border-radius: 40px;
+  padding: 10px 32px !important;
+}
 .residuos .col-lg-4 .div-cont {
   position: relative;
 }
@@ -392,6 +495,12 @@ footer .copyright {
   margin-top: 0px;
   transition: margin-top 0.25s ease-in-out;
 }
+@media (max-width: 992px) {
+  .residuos .col-lg-4 .h2,
+.residuos .col-lg-4 button {
+    top: 50%;
+  }
+}
 .residuos .col-lg-4 button {
   opacity: 0;
 }
@@ -404,6 +513,17 @@ footer .copyright {
   transform: scaleY(100%);
   transition: transform 0.25s ease-in-out;
   z-index: 1;
+}
+@media (max-width: 992px) {
+  .residuos .col-lg-4 .biologicos {
+    margin: 50px 0px;
+  }
+  .residuos .col-lg-4 .biologicos .img-bg {
+    display: none;
+  }
+  .residuos .col-lg-4 .biologicos .img-hover {
+    display: block;
+  }
 }
 .residuos .col-lg-4 .biologicos:hover {
   transform: scaleY(120%);

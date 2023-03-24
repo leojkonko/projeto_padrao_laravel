@@ -99,3 +99,29 @@ const minhaImagem = document.getElementById("img-bg");
 minhaDiv.addEventListener("mouseover", function () {
     minhaImagem.src = "/images/backgrounds/residuos-hover.png";
 });*/
+
+
+const btn = document.querySelector(".b-hover");
+const biologicos = document.querySelector(".biologicos");
+const h2 = document.querySelector(".h2-h");
+
+btn.addEventListener("mouseover", function () {
+    biologicos.classList.add("hoverr");
+    h2.classList.add("hoverr-h2");
+});
+
+btn.addEventListener("mouseout", function () {
+    biologicos.classList.remove("hoverr");
+    h2.classList.remove("hoverr-h2");
+});
+h2.addEventListener("mouseover", function () {
+    biologicos.classList.add("hoverr");
+    h2.classList.add("hoverr-h2");
+    btn.classList.add("hoverr-button");
+});
+
+h2.addEventListener("mouseout", function () {
+    biologicos.classList.remove("hoverr");
+    h2.classList.remove("hoverr-h2");
+    btn.classList.remove("hoverr-button");
+});

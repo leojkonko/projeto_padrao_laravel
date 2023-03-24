@@ -22,34 +22,40 @@
         <div class="container">
             <div class="row p-0 d-flex justify-content-center">
             <div class="col-lg-4  col_center">
-                    <div class="d-flex justify-content-center div-cont">
-                        <div class="biologicos ratio ratio-1x1" id="biologicos">
-                            <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
-                            <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                    <a href="">
+                        <div class="d-flex justify-content-center div-cont">
+                            <div class="biologicos ratio ratio-1x1" id="biologicos">
+                                <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
+                                <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                            </div>
+                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
                         </div>
-                        <h2 class="position-absolute h2 text-white text-center">Resíduos biológicos</h2>
-                        <button class="btn btn-success p-button text-blue">Saiba mais</button>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4  col_center">
-                    <div class="d-flex justify-content-center div-cont">
-                        <div class="biologicos ratio ratio-1x1" id="biologicos">
-                            <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
-                            <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                <a href="">
+                        <div class="d-flex justify-content-center div-cont">
+                            <div class="biologicos ratio ratio-1x1" id="biologicos">
+                                <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
+                                <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                            </div>
+                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
                         </div>
-                        <h2 class="position-absolute h2 text-white text-center">Resíduos biológicos</h2>
-                        <button class="btn btn-success p-button text-blue">Saiba mais</button>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4  col_center">
-                    <div class="d-flex justify-content-center div-cont">
-                        <div class="biologicos ratio ratio-1x1" id="biologicos">
-                            <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
-                            <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                <a href="">
+                        <div class="d-flex justify-content-center div-cont">
+                            <div class="biologicos ratio ratio-1x1" id="biologicos">
+                                <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
+                                <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                            </div>
+                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
                         </div>
-                        <h2 class="position-absolute h2 text-white text-center">Resíduos biológicos</h2>
-                        <button class="btn btn-success p-button text-blue">Saiba mais</button>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
