@@ -28,8 +28,8 @@
                                 <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
                                 <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
                             </div>
-                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
-                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
+                            <h2 class="position-absolute h2 text-white text-center h2-h2">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover2">Saiba mais</button>
                         </div>
                     </a>
                 </div>
@@ -40,8 +40,8 @@
                                 <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
                                 <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
                             </div>
-                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
-                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
+                            <h2 class="position-absolute h2 text-white text-center h2-h3">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover3">Saiba mais</button>
                         </div>
                     </a>
                 </div>
