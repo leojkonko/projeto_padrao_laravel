@@ -29,61 +29,68 @@
 }
 
 .residuos {
-    & .col_center {
-        margin: 0px 0px;
-    }
 
     & .col-lg-4 {
-
-        //margin: 0px -5px 0px -5px;
-        & .biologicos {
-            background-image: url(../images/backgrounds/residuos.png);
-            background-repeat: no-repeat;
-            background-size: 120% 120%;
-            width: 98%;
-            height: 380px;
-            border-radius: 5px;
+        & .div-cont {
             position: relative;
+        }
 
-            & .h2 {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                padding: 0px 50px;
-                transition: padding 0.3s ease-in-out;
-            }
+        & .h2,
+        button {
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            margin-top: 0px;
+            transition: margin-top 0.25s ease-in-out;
+        }
+
+        & button {
+            opacity: 0;
+        }
+
+        & .ratio::before {
+            margin-top: 0px !important;
+        }
+
+        & .biologicos {
+            margin-bottom: 60px;
+            margin-top: -120px;
+            transform: scaleY(100%);
+            transition: transform 0.25s ease-in-out;
+            z-index: 1;
 
             &:hover {
-                //height: 440px;
-                //transform: translate(0px, -180px);
-                //position: absolute;
-                top: 70%;
-                left: 30%;
-                transform: translate(-30%, -70%);
+                transform: scaleY(120%);
+                transition: transform 0.25s ease-in-out;
+                z-index: 1;
 
+                & .img-bg {
+                    display: none;
+                }
 
-                & .h2 {}
+                & .img-hover {
+                    display: block;
+                }
+
+                &~.h2 {
+                    margin-top: -40px;
+                    transition: margin-top 0.25s ease-in-out;
+                }
+
+                &~button {
+                    opacity: 0.9;
+                    transition: opacity 0.25s ease-in-out;
+                    margin-top: 40px;
+                    border-radius: 40px;
+                    padding: 10px 32px !important;
+                }
             }
         }
 
         & .biologicos,
-        img {
-            //margin-top: -150px;
-            //transition: transform 0.3s ease-in-out;
-            transform: translate(0px, -150px);
-            margin-bottom: 60px;
-            position: relative;
-            z-index: 3;
-        }
-
-        & .img1 {
-            &::after {
-                content: "Resíduos biológicos";
-                position: absolute;
-                z-index: 4;
-            }
-        }
+        img {}
     }
 }
 
@@ -195,7 +202,7 @@
         & form {
             & textarea {
                 //     border: 1px solid #252525 !important;
-                height: 120px !important;
+                height: 80px !important;
             }
 
             & .input-checkbox {
@@ -230,6 +237,16 @@
             @media(max-width: 992px) {
                 width: 100%;
             }
+        }
+    }
+}
+
+#certificacoes {
+    & .certificacoes-img {
+        padding: 120px;
+
+        @media(max-width: 992px) {
+            margin-top: -100px;
         }
     }
 }

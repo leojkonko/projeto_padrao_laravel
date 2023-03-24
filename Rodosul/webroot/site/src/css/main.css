@@ -379,44 +379,54 @@ footer .copyright {
   }
 }
 
-.residuos .col_center {
-  margin: 0px 0px;
+.residuos .col-lg-4 .div-cont {
+  position: relative;
+}
+.residuos .col-lg-4 .h2,
+.residuos .col-lg-4 button {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  margin-top: 0px;
+  transition: margin-top 0.25s ease-in-out;
+}
+.residuos .col-lg-4 button {
+  opacity: 0;
+}
+.residuos .col-lg-4 .ratio::before {
+  margin-top: 0px !important;
 }
 .residuos .col-lg-4 .biologicos {
-  background-image: url(../images/backgrounds/residuos.png);
-  background-repeat: no-repeat;
-  background-size: 120% 120%;
-  width: 98%;
-  height: 380px;
-  border-radius: 5px;
-  position: relative;
-}
-.residuos .col-lg-4 .biologicos .h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0px 50px;
-  transition: padding 0.3s ease-in-out;
+  margin-bottom: 60px;
+  margin-top: -120px;
+  transform: scaleY(100%);
+  transition: transform 0.25s ease-in-out;
+  z-index: 1;
 }
 .residuos .col-lg-4 .biologicos:hover {
-  top: 70%;
-  left: 30%;
-  transform: translate(-30%, -70%);
+  transform: scaleY(120%);
+  transition: transform 0.25s ease-in-out;
+  z-index: 1;
 }
-.residuos .col-lg-4 .biologicos,
-.residuos .col-lg-4 img {
-  transform: translate(0px, -150px);
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 3;
+.residuos .col-lg-4 .biologicos:hover .img-bg {
+  display: none;
 }
-.residuos .col-lg-4 .img1::after {
-  content: "Resíduos biológicos";
-  position: absolute;
-  z-index: 4;
+.residuos .col-lg-4 .biologicos:hover .img-hover {
+  display: block;
 }
-
+.residuos .col-lg-4 .biologicos:hover ~ .h2 {
+  margin-top: -40px;
+  transition: margin-top 0.25s ease-in-out;
+}
+.residuos .col-lg-4 .biologicos:hover ~ button {
+  opacity: 0.9;
+  transition: opacity 0.25s ease-in-out;
+  margin-top: 40px;
+  border-radius: 40px;
+  padding: 10px 32px !important;
+}
 .rodosul {
   background-color: #EAEAEA;
 }
@@ -500,7 +510,7 @@ footer .copyright {
 }
 .form .div-form form textarea,
 .form .div-form-modal form textarea {
-  height: 120px !important;
+  height: 80px !important;
 }
 .form .div-form form .input-checkbox,
 .form .div-form-modal form .input-checkbox {
@@ -533,9 +543,24 @@ footer .copyright {
   }
 }
 
+#certificacoes .certificacoes-img {
+  padding: 120px;
+}
+@media (max-width: 992px) {
+  #certificacoes .certificacoes-img {
+    margin-top: -100px;
+  }
+}
+
+.empresa .swiper {
+  padding-bottom: 40px;
+}
+.empresa .swiper .swiper-pagination {
+  --swiper-theme-color: #7df2d2;
+}
 .empresa .p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   color: #283C65;
 }
@@ -564,7 +589,15 @@ footer .copyright {
   height: 40px;
 }
 .empresa .valores-empresa .col-lg-4 {
-  border: 1px solid red;
+  padding: 0px 20px;
+}
+@media (max-width: 992px) {
+  .empresa .valores-empresa .col-lg-4 {
+    margin: 30px 0px;
+  }
+}
+.empresa .valores-empresa .col-lg-4 .estilo {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .solucoes {

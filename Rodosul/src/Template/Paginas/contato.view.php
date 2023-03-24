@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
-                    <div class="flex-column py-4 div-form text-center text-lg-start">
+                    <div class="flex-column py-2 div-form text-center text-lg-start">
                         <h2>Fale com um especialista!</h2>
-                        <form action="" class="flex-column mt-2">
+                        <form action="" class="flex-column mt-1">
                             <input type="text" placeholder="Nome *" class="form-control">
                             <input type="email" placeholder="Email" class="form-control">
                             <input type="text" placeholder="Telefone *" class="mask-telefone form-control">
@@ -21,7 +21,7 @@
                                 <p class="mt-1 ms-1">Li e aceito os termos da <span>Política de privacidade</span> da CMP</p>
                             </div>
                         </form>
-                        <button class="p-button btn btn-success text-blue mt-2">Enviar formulário
+                        <button class="p-button btn btn-success text-blue mt-1">Enviar formulário
                         </button>
                     </div>
                 </div>

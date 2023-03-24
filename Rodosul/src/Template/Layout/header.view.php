@@ -79,7 +79,7 @@
                             <li><a class="dropdown-item" href="<?= url('solucoes') ?>">Resíduos Químicos</a></li>
                         </ul>
                         <li>
-                            <a class="certificacoes" href="<?= url('solucoes') ?>">Certificações</a>
+                            <a class="certificacoes" href="<?= url('certificacoes') ?>">Certificações</a>
                         </li>
                         <li>
                             <a class="contato" href="<?= url('contato') ?>">Contato</a>
@@ -175,20 +175,82 @@
     <?php /* Remover essa primeira condicional */ ?>
         <?php if ($pagina_atual === "home") : ?>
             <?= $header ?>
-        <?php else : ?>
+        <?php endif; ?>
+
+        <?php if ($pagina_atual === "solucoes") : ?>
+            <?= $header ?>
             <div class="header-wrapper">
-                <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper py-lg-4">
                         <div class="d-flex m-auto flex-column div">
                             <img class="img" src="<?= asset('images/banners/text-breadcrumb.png') ?>" alt="">
-                            <h2>Resíduos Industriais</h2>
+                            <h2 class="mb-1">Resíduos Industriais</h2>
                             <div class="d-flex m-auto">
                                 <a href="">Home</a>
                                     <svg class="mt-0-50 mx-0-50" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
                                     </svg>
                                 <a href="">Resíduos Industriais</a>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "certificacoes") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4">
+                        <div class="d-flex m-auto flex-column div">
+                            <!--<img class="img" src="<?= asset('images/banners/text-breadcrumb.png') ?>" alt="">-->
+                            <h2 class="mb-1">Certificações</h2>
+                            <div class="d-flex m-auto">
+                                <a href="">Home</a>
+                                    <svg class="mt-0-50 mx-0-50" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                <a href="">Certificações</a>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "empresa") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4">
+                        <div class="d-flex m-auto flex-column div">
+                            <!--<img class="img" src="<?= asset('images/banners/text-breadcrumb.png') ?>" alt="">-->
+                            <h2 class="mb-1">Sobre a empresa</h2>
+                            <div class="d-flex m-auto">
+                                <a href="">Home</a>
+                                    <svg class="mt-0-50 mx-0-50" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                <a href="">Empresa</a>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+        <?php if ($pagina_atual === "contato") : ?>
+            <?= $header ?>
+            <div class="header-wrapper">
+                <?php if (!empty($breadcrumbs)) : ?>
+                    <section class="breadcrumb-wrapper py-lg-4">
+                        <div class="d-flex m-auto flex-column div">
+                            <!--<img class="img" src="<?= asset('images/banners/text-breadcrumb.png') ?>" alt="">-->
+                            <h2 class="mb-1">Contato</h2>
+                            <div class="d-flex m-auto">
+                                <a href="">Home</a>
+                                    <svg class="mt-0-50 mx-0-50" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5L1 9" stroke="white" stroke-miterlimit="10" stroke-linejoin="round"/>
+                                    </svg>
+                                <a href="">Contato</a>
                             </div>
                         </div>
                     </section>

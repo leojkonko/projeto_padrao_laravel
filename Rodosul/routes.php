@@ -20,6 +20,22 @@ Router::get('/', function () {
         ],
     ]);
 });
+Router::get('/certificacoes', function () {
+    app()->view->render('certificacoes', [
+        'pagina_atual' => 'certificacoes',
+        'title' => 'Home',
+        'breadcrumbs' => [
+            [
+                'title' => 'certificacoes',
+                'url' => url('/')
+            ],
+            [
+                'title' => 'home',
+                'url' => url('/certificacoes')
+            ],
+        ],
+    ]);
+});
 
 Router::get('/empresa', function () {
     app()->view->render('empresa', [
