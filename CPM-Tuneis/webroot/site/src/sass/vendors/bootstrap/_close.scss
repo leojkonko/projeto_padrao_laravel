@@ -38,3 +38,11 @@
 .btn-close-white {
   filter: $btn-close-white-filter;
 }
+
+header {
+  & .offcanvas-top {
+    & .btn-close {
+      background: transparent !important;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 #home {
     overflow: hidden;
+    z-index: 0;
 
     & .ratio-custom {
         //--bs-aspect-ratio: 42.8571428571%;
@@ -81,6 +82,7 @@
         & .swiper-scrollbar-drag {
             background: white;
             border-radius: 0px;
+            width: 60px !important;
         }
     }
 }
@@ -103,6 +105,15 @@
             display: flex;
             align-items: center;
             padding: 2rem;
+
+            @media(min-width: 1600px) {
+                padding: 2rem 1.22rem;
+            }
+
+            @media(min-width: 576px)and(max-width:992px) {
+                padding: 2rem 1.3rem;
+            }
+
             margin: -2rem;
 
             & .swiper-slide {
@@ -275,6 +286,10 @@
         /* or 43px */
         color: #0072BE;
 
+        @media (max-width: 1600px) {
+            font-size: 24px;
+        }
+
         & span {
             color: #252525;
         }
@@ -299,6 +314,29 @@
                             width: 150px;
                         }
                     }
+                }
+            }
+
+            & .swiper-scrollbar {
+                border-radius: 0px;
+                width: 70%;
+                text-align: center;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 3px !important;
+
+                & .swiper-scrollbar-drag {
+                    height: 150%;
+                    width: 100%;
+                    position: relative;
+                    background: #0072BE;
+                    border-radius: 0px;
+                    left: 0;
+                    bottom: 0;
+                    margin-top: -3px;
+                    //width: 500px !important;
+                    height: 6px !important;
                 }
             }
 

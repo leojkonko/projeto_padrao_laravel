@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="html">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <?php /* ==== Favicons ==== */ ?>
     <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon.ico') ?>">
     <!--
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?= asset('images/favicons/apple-icon-57x57.png') ?>"> 
     <link rel="apple-touch-icon" sizes="60x60" href="<?= asset('images/favicons/apple-icon-60x60.png') ?>">
     <link rel="apple-touch-icon" sizes="72x72" href="<?= asset('images/favicons/apple-icon-72x72.png') ?>">
     <link rel="apple-touch-icon" sizes="76x76" href="<?= asset('images/favicons/apple-icon-76x76.png') ?>">
@@ -26,12 +26,22 @@
     <link rel="icon" type="image/png" sizes="96x96" href="<?= asset('images/favicons/favicon-96x96.png') ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= asset('images/favicons/favicon-16x16.png') ?>">
 -->
+<!--
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+-->
     <link rel="manifest" href="<?= asset('images/favicons/manifest.json') ?>">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?= asset('images/favicons/ms-icon-144x144.png') ?>">
     <meta name="theme-color" content="#ffffff">
 
-    <title><?= !empty($title) ? $title . " | Projeto Padrão" : "Projeto Padrão" ?></title>
+    <!--<title><?= !empty($title) ? $title . " | Projeto Padrão" : "Projeto Padrão" ?></title>-->
+    <title>CPM Túneis</title>
 
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
@@ -44,6 +54,7 @@
     /* ==== Arquivo para o pessoal do back end ==== 
     <link rel="stylesheet" href="webroot/site/dist/css/custom.css"> 
     */ ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <?php /* Fonte temporária */ ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,9 +149,9 @@
                         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body pb-2">
                         <div class="form">
-                            <div class="flex-column py-4 div-form-modal text-center px-2">
+                            <div class="flex-column p-1 div-form-modal text-lg-start text-center">
                                 <h2>Fale com um especialista</h2>
                                 <form action="" class="flex-column mt-2">
                                     <input type="text" placeholder="Nome *" class="form-control">
@@ -154,16 +165,16 @@
                                     </select>
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem *" class="form-control"></textarea>
                                     <div class="d-flex">
-                                        <input type="checkbox" class="">
-                                        <p class="mt-1 ms-1">Li e aceito os termos da <span>Política de privacidade</span> da CMP</p>
+                                        <input type="checkbox" class="mb-0-50">
+                                        <p class="mt-1 ms-1 text-lg-start text-center">Li e aceito os termos da <span>Política de privacidade</span> da CMP</p>
                                     </div>
                                 </form>
                             </div>
                         </div> 
                     </div>
-                    <div class="modal-footer text-center">
-                        <button class="button-azul mt-2  m-auto mb-2">Enviar formulário
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div class="modal-footer text-lg-start text-center p-2">
+                        <button class="button-azul">Enviar formulário
+                            <svg class=" ms-0-50" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 16.0005L18 12.0005M18 12.0005L14 8.00049M18 12.0005L6 12.0005" stroke="white"/>
                             </svg>
                         </button>

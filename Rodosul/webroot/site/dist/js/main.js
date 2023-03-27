@@ -102,8 +102,14 @@ minhaDiv.addEventListener("mouseover", function () {
 
 
 const btn = document.querySelector(".b-hover");
+const btn2 = document.querySelector(".b-hover2");
+const btn3 = document.querySelector(".b-hover3");
 const biologicos = document.querySelector(".biologicos");
+const biologicos2 = document.querySelector(".biologicos2");
+const biologicos3 = document.querySelector(".biologicos3");
 const h2 = document.querySelector(".h2-h");
+const h22 = document.querySelector(".h2-h2");
+const h23 = document.querySelector(".h2-h3");
 
 btn.addEventListener("mouseover", function () {
     biologicos.classList.add("hoverr");
@@ -114,6 +120,7 @@ btn.addEventListener("mouseout", function () {
     biologicos.classList.remove("hoverr");
     h2.classList.remove("hoverr-h2");
 });
+
 h2.addEventListener("mouseover", function () {
     biologicos.classList.add("hoverr");
     h2.classList.add("hoverr-h2");
@@ -124,4 +131,53 @@ h2.addEventListener("mouseout", function () {
     biologicos.classList.remove("hoverr");
     h2.classList.remove("hoverr-h2");
     btn.classList.remove("hoverr-button");
+});
+
+
+
+//b2
+btn2.addEventListener("mouseover", function () {
+    biologicos2.classList.add("hoverr");
+    h22.classList.add("hoverr-h2");
+});
+
+btn2.addEventListener("mouseout", function () {
+    biologicos2.classList.remove("hoverr");
+    h22.classList.remove("hoverr-h2");
+});
+
+h22.addEventListener("mouseover", function () {
+    biologicos2.classList.add("hoverr");
+    h22.classList.add("hoverr-h2");
+    btn2.classList.add("hoverr-button");
+});
+
+h22.addEventListener("mouseout", function () {
+    biologicos2.classList.remove("hoverr");
+    h22.classList.remove("hoverr-h2");
+    btn2.classList.remove("hoverr-button");
+});
+
+
+//b3
+btn3.addEventListener("mouseover", function () {
+    biologicos3.classList.add("hoverr");
+    h23.classList.add("hoverr-h2");
+});
+
+btn3.addEventListener("mouseout", function () {
+    biologicos3.classList.remove("hoverr");
+    h23.classList.remove("hoverr-h2");
+});
+
+h23.addEventListener("mouseover", function () {
+    biologicos3.classList.add("hoverr");
+    h23.classList.add("hoverr-h2");
+    btn3.classList.add("hoverr-button");
+});
+
+h23.addEventListener("mouseout", function () {
+    biologicos3.classList.remove("hoverr");
+    h23.classList.remove("hoverr-h2");
+    btn3.classList.remove("hoverr-button");
 });

@@ -9,7 +9,23 @@
     padding: 16px 24px;
     background: linear-gradient(86.09deg, #0072BE 0%, #2EB4FF 100%);
     color: white;
-    border: NONE;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid #0072BE;
+        color: #0072BE;
+        background: transparent;
+
+        & path {
+            d: path("M 8 9 L 12 5 M 12 5 L 8 1 M 12 5 L 4.76995e-8 5");
+            stroke: #0072BE;
+        }
+    }
+
+    & path {
+        d: path("M 8 9 L 12 5 M 12 5 L 8 1 M 12 5 L 4.76995e-8 5");
+        stroke: white;
+    }
 }
 
 .p {

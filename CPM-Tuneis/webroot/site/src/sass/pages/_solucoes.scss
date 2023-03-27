@@ -1,7 +1,7 @@
 #solucoes {
     //overflow: hidden;
     margin-top: -1px;
-    z-index: 999;
+    z-index: 0;
 }
 
 html {
@@ -330,6 +330,11 @@ html {
                 padding-bottom: 50px;
                 margin-bottom: 50px;
 
+                @media(max-width: 992px) {
+                    padding-bottom: 30px;
+                    margin-bottom: 30px;
+                }
+
                 &::after {
                     content: 'meyer';
                     color: transparent;
@@ -337,6 +342,11 @@ html {
                     bottom: 0;
                     display: flex;
                     border-bottom: 2px solid #0072BE;
+
+                    @media(max-width: 992px) {
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
                 }
             }
 

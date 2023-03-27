@@ -68,11 +68,13 @@
                     <div class="swiper-wrapper w-100">
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide h-100 w-100">
-                                <div class="slide-img w-100 h-100 p-0">
-                                    <div class="p-0 w-100 h-100 bg-custom">
-                                         <h2>Consultoria</h2>
+                                <a href="#consultoria">
+                                    <div class="slide-img w-100 h-100 p-0">
+                                        <div class="p-0 w-100 h-100 bg-custom">
+                                            <h2>Consultoria</h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         <?php endforeach; ?>
                         </div>
@@ -119,12 +121,14 @@
                                 de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de 
                                 tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica.
                             </p>
-                            <button class="button-azul mt-2">
-                                Tenho interesse
-                                <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                   <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
-                                </svg>
-                            </button>
+                            <a href="#formulario">
+                                <button class="button-azul mt-2">
+                                    Tenho interesse
+                                    <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
+                                    </svg>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <svg class="inf-dir" width="133" height="126" viewBox="0 0 133 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="inf-dir d-none d-lg-block" width="133" height="126" viewBox="0 0 133 126" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 126L0.999989 1L133 0.999988" stroke="#0072BE"/>
         </svg>
     </section>
@@ -187,12 +191,14 @@
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um 
                             impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                             </p>
-                            <button class="button-azul mt-1">
+                            <a href="#formulario">
+                                <button class="button-azul mt-1">
                                 Tenho interesse
                                 <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
                                 </svg>
                             </button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -218,12 +224,14 @@
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um 
                             impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                             </p>
-                            <button class="button-azul mt-1">
+                            <a href="#formulario">
+                                <button class="button-azul mt-1 mb-lg-0 mb-2">
                                 Tenho interesse
                                 <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
                                 </svg>
                             </button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -285,12 +293,14 @@
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um 
                             impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                             </p>
-                            <button class="button-azul mt-1">
+                            <a href="#formulario">
+                                <button class="button-azul mt-1">
                                 Tenho interesse
                                 <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
                                 </svg>
                             </button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -298,7 +308,7 @@
         </div>
         <svg class="sup-esq" width="133" height="126" viewBox="0 0 133 126" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M132 0V125H0" stroke="#0072BE"/>
-        </svg>
+        </svg> 
     </section>
     <section class="section2 bg-cinza py-lg-4 py-2" id="manutencao">
         <div class="container">
@@ -316,12 +326,14 @@
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um 
                             impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                             </p>
-                            <button class="button-azul mt-1">
+                            <a href="#formulario">
+                                <button class="button-azul mt-1 mb-lg-0 mb-2">
                                 Tenho interesse
                                 <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
                                 </svg>
                             </button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -345,7 +357,7 @@
                 </div>
             </div>
         </div>
-        <svg class="sup-esq" width="133" height="126" viewBox="0 0 133 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="sup-esq d-none d-lg-block" width="133" height="126" viewBox="0 0 133 126" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M132 0V125H0" stroke="#0072BE"/>
         </svg>
     </section>
@@ -383,12 +395,14 @@
                             Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um 
                             impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                             </p>
-                            <button class="button-azul mt-1">
+                            <a href="#formulario">
+                                <button class="button-azul mt-1">
                                 Tenho interesse
                                 <svg class="ms-1" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M8 9L12 5M12 5L8 1M12 5L4.76995e-08 5" stroke="white"/>
                                 </svg>
                             </button>
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -404,7 +418,7 @@
                 <div class="swiper empresas-swiper position-relative my-lg-4 my-4">
                 <h2 class="text-center w-100 mb-3"><span>Empresas que</span> confiam</h2>
                         <div class="swiper-wrapper mb-4">
-                            <?php foreach(range(0,9) as $i) : ?>
+                            <?php foreach(range(0,30) as $i) : ?>
                                 <div class="swiper-slide text-center mt-2">
                                     <div class="ratio ratio-1x1">
                                             <img src="<?= asset('images/logos/empresas.png') ?>" alt="">
@@ -412,13 +426,12 @@
                                 </div>
                             <?php endforeach; ?>
                         </div>
-                    <div class="swiper-pagination"></div>
-                    <!--<div class="swiper-scrollbar"></div>-->
+                        <div class="swiper-scrollbar"></div>
                 </div>               
             </div>
         </div>
     </section>
-    <section class="form">
+    <section class="form" id="formulario">
         <div class="row p-0">
             <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
                 <div class="flex-column py-4 div-form text-center text-lg-start">

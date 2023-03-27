@@ -133,6 +133,10 @@
   overflow: hidden;
 }
 
+html.offcanvas-active {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat";
   font-style: normal;
@@ -459,6 +463,11 @@ header .riscos2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 992px) {
+  .breadcrumb-wrapper {
+    padding-top: 180px;
+  }
+}
 .breadcrumb-wrapper .h2-blue {
   font-size: 64px;
 }
@@ -478,7 +487,7 @@ header .riscos2 {
 
 footer {
   position: relative;
-  z-index: 1000;
+  z-index: 0;
   background-color: initial !important;
 }
 footer .site,
@@ -615,6 +624,7 @@ footer .botao-whatsapp-not-hoverable {
 
 #home {
   overflow: hidden;
+  z-index: 0;
 }
 @media (max-width: 992px) {
   #home .ratio-custom {
@@ -674,6 +684,7 @@ footer .botao-whatsapp-not-hoverable {
 .construcao .construcao-swiper .swiper-scrollbar-drag {
   background: white;
   border-radius: 0px;
+  width: 60px !important;
 }
 
 @media (min-width: 1600px) {
@@ -692,6 +703,16 @@ footer .botao-whatsapp-not-hoverable {
   align-items: center;
   padding: 2rem;
   margin: -2rem;
+}
+@media (min-width: 1600px) {
+  .areas .container .areas-swiper {
+    padding: 2rem 1.22rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .areas .container .areas-swiper {
+    padding: 2rem 1.3rem;
+  }
 }
 .areas .container .areas-swiper .swiper-slide {
   background-color: #EAEAEA;
@@ -829,6 +850,11 @@ footer .botao-whatsapp-not-hoverable {
   /* or 43px */
   color: #0072BE;
 }
+@media (max-width: 1600px) {
+  .empresas-parceiras h2 {
+    font-size: 24px;
+  }
+}
 .empresas-parceiras h2 span {
   color: #252525;
 }
@@ -844,6 +870,26 @@ footer .botao-whatsapp-not-hoverable {
   .empresas-parceiras .row .empresas-swiper .swiper-wrapper .swiper-slide img {
     width: 150px;
   }
+}
+.empresas-parceiras .row .empresas-swiper .swiper-scrollbar {
+  border-radius: 0px;
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px !important;
+}
+.empresas-parceiras .row .empresas-swiper .swiper-scrollbar .swiper-scrollbar-drag {
+  height: 150%;
+  width: 100%;
+  position: relative;
+  background: #0072BE;
+  border-radius: 0px;
+  left: 0;
+  bottom: 0;
+  margin-top: -3px;
+  height: 6px !important;
 }
 .empresas-parceiras .row .empresas-swiper .swiper-pagination .swiper-pagination-bullet {
   width: 14%;
@@ -872,7 +918,7 @@ footer .botao-whatsapp-not-hoverable {
 }
 
 #empresa {
-  z-index: 99;
+  z-index: 0;
 }
 
 .empresa {
@@ -918,16 +964,16 @@ footer .botao-whatsapp-not-hoverable {
 
 #contato {
   margin-top: -1px;
-  z-index: 999;
+  z-index: 0;
 }
 
 #parceiros {
-  z-index: 99;
+  z-index: 0;
 }
 
 #solucoes {
   margin-top: -1px;
-  z-index: 999;
+  z-index: 0;
 }
 
 html {
@@ -1255,6 +1301,12 @@ html {
   padding-bottom: 50px;
   margin-bottom: 50px;
 }
+@media (max-width: 992px) {
+  .consultoria .container .conteudo h2 {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+}
 .consultoria .container .conteudo h2::after {
   content: "meyer";
   color: transparent;
@@ -1262,6 +1314,12 @@ html {
   bottom: 0;
   display: flex;
   border-bottom: 2px solid #0072BE;
+}
+@media (max-width: 992px) {
+  .consultoria .container .conteudo h2::after {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 .consultoria .container .conteudo .p {
   font-weight: 400;
@@ -1468,7 +1526,20 @@ html {
   padding: 16px 24px;
   background: linear-gradient(86.09deg, #0072BE 0%, #2EB4FF 100%);
   color: white;
-  border: NONE;
+  border: 1px solid transparent;
+}
+.button-azul:hover {
+  border: 1px solid #0072BE;
+  color: #0072BE;
+  background: transparent;
+}
+.button-azul:hover path {
+  d: path("M 8 9 L 12 5 M 12 5 L 8 1 M 12 5 L 4.76995e-8 5");
+  stroke: #0072BE;
+}
+.button-azul path {
+  d: path("M 8 9 L 12 5 M 12 5 L 8 1 M 12 5 L 4.76995e-8 5");
+  stroke: white;
 }
 
 .p {

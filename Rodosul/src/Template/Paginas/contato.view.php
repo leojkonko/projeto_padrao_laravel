@@ -1,13 +1,13 @@
 <main id="contato">
-<section class="form py-lg-4 py-2">
+<section class="form py-lg-4 py-2 px-1 px-lg-0">
         <div class="container">
             <div class="row p-0">
                 <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
-                    <div class="flex-column py-2 div-form text-center text-lg-start">
+                    <div class="flex-column py-2 div-form text-start">
                         <h2>Fale com um especialista!</h2>
                         <form action="" class="flex-column mt-1">
                             <input type="text" placeholder="Nome *" class="form-control">
-                            <input type="email" placeholder="Email" class="form-control">
+                            <input type="email" placeholder="Email *" class="form-control">
                             <input type="text" placeholder="Telefone *" class="mask-telefone form-control">
                             <select name="" id="" class="form-select">
                                 <option value="" selected>Solução de interesse</option>

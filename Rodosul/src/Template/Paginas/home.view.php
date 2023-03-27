@@ -5,8 +5,11 @@
                 <div class="swiper banner-swiper position-relative ">
                     <div class="swiper-wrapper">
                         <?php foreach(range(0,9) as $i) : ?>
-                            <div class="swiper-slide text-center mt-2">
-                                <div class="ratio ratio-16x9 text-center">
+                            <div class="swiper-slide text-center mt-lg-2 mt-0">
+                                <div class="ratio ratio-16x9 text-center d-none d-lg-flex">
+                                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">
+                                </div>
+                                <div class="ratio ratio-6x9 text-center d-flex d-lg-none">
                                         <img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">
                                 </div>
                             </div>
@@ -18,13 +21,25 @@
             </div>
         </div>
     </section>
-    <section class="bg-azul residuos">
+    <section class="bg-azul residuos py-2 py-lg-0">
         <div class="container">
             <div class="row p-0 d-flex justify-content-center">
             <div class="col-lg-4  col_center">
                     <a href="">
                         <div class="d-flex justify-content-center div-cont">
                             <div class="biologicos ratio ratio-1x1" id="biologicos">
+                                <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
+                                <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
+                            </div>
+                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
+                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4  col_center">
+                <a href="">
+                        <div class="d-flex justify-content-center div-cont">
+                            <div class="biologicos2  ratio ratio-1x1" id="biologicos2">
                                 <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
                                 <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
                             </div>
@@ -36,24 +51,12 @@
                 <div class="col-lg-4  col_center">
                 <a href="">
                         <div class="d-flex justify-content-center div-cont">
-                            <div class="biologicos ratio ratio-1x1" id="biologicos">
+                            <div class="biologicos3 ratio ratio-1x1" id="biologicos">
                                 <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
                                 <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
                             </div>
                             <h2 class="position-absolute h2 text-white text-center h2-h3">Resíduos biológicos</h2>
                             <button class="btn btn-success p-button text-blue b-hover3">Saiba mais</button>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4  col_center">
-                <a href="">
-                        <div class="d-flex justify-content-center div-cont">
-                            <div class="biologicos ratio ratio-1x1" id="biologicos">
-                                <img class="img-bg" src="<?= asset('images/backgrounds/residuos.png') ?>" alt="">
-                                <img class="img-hover d-none" src="<?= asset('images/backgrounds/residuos-hover.png') ?>" alt="">
-                            </div>
-                            <h2 class="position-absolute h2 text-white text-center h2-h">Resíduos biológicos</h2>
-                            <button class="btn btn-success p-button text-blue b-hover">Saiba mais</button>
                         </div>
                     </a>
                 </div>
@@ -70,7 +73,7 @@
                 </svg>
                     <div class="flex-column w-100 text-end ">
                     <h2 class="w-100 bg-primary p-1 px-2 h2 text-white">Sem a Rodosul</h2>
-                        <ul class="text-end py-2 position-relative z-index-3">
+                        <ul class="text-end py-2 position-relative z-index-1">
                             <li class="pe-2 p">Irresponsabilidade e mau atendimento 
                                 <svg class="ms-1" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="20" height="20" rx="10" fill="#DD3F3F"/>
@@ -139,7 +142,7 @@
             </div>
         </div>
     </section>
-    <section class="parceiros py-lg-4 py-2">
+    <section class="parceiros py-lg-4 py-3">
         <div class="container">
             <div class="row">
                 <h2 class="w-100 h2 pb-2 text-center">Quem confia</h2>
@@ -153,15 +156,15 @@
             </div>
         </div>
     </section>
-    <section class="form pb-4">
-        <div class="container">
+    <section class="form pb-4 px-1 px-lg-0">
+        <div class="container"> 
             <div class="row p-0">
-                <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
-                    <div class="flex-column py-4 div-form text-center text-lg-start">
+                <div class="col-lg-5 col-xl-6 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
+                    <div class="flex-column py-2 div-form text-start">
                         <h2>Fale com um especialista!</h2>
-                        <form action="" class="flex-column mt-2">
+                        <form action="" class="flex-column mt-1">
                             <input type="text" placeholder="Nome *" class="form-control">
-                            <input type="email" placeholder="Email" class="form-control">
+                            <input type="email" placeholder="Email *" class="form-control">
                             <input type="text" placeholder="Telefone *" class="mask-telefone form-control">
                             <select name="" id="" class="form-select">
                                 <option value="" selected>Solução de interesse</option>
@@ -179,7 +182,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
+                <div class="col-lg-7 col-xl-6 col-12 p-0 bg-cinza">
                     <!--<div class="ratio ratio-1x1">-->
                         <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
                     <!--</div>-->

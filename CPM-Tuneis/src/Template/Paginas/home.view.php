@@ -6,13 +6,13 @@
             <img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/img_principal.png') ?>" alt="">
         </picture>
     </section>
-    <section class="construcao">
+    <section class="construcao pb-lg-0 pb-1">
         <div class="row p-0">
             <div class="col-lg-4 img p-0">
                 <div class="swiper construcao-swiper">
                         <div class="swiper-wrapper">
                             <?php foreach(range(0,9) as $i) : ?>
-                                <div class="swiper-slide h-100">
+                                <div class="swiper-slide h-100 cont">
                                     <div class="slide-img position-relative">
                                         <!--<img class="object-fit-cover w-100 h-100 " src="<?= asset('images/backgrounds/construcao.png') ?>" alt="">-->
                                         <div class="z-index-2 position-relative flex-column d-flex conteudo">
@@ -30,7 +30,7 @@
                         </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-scrollbar"></div> 
+                    <div class="swiper-scrollbar" id="my-scrollbar"></div> 
                 </div>
             </div>
             <div class="col-lg-8 areas d-flex px-2">
@@ -107,7 +107,7 @@
                 <div class="swiper empresas-swiper position-relative my-lg-4 my-4">
                 <h2 class="text-center w-100 mb-3">Empresas parceiras</h2>
                         <div class="swiper-wrapper mb-4">
-                            <?php foreach(range(0,9) as $i) : ?>
+                            <?php foreach(range(0,30) as $i) : ?>
                                 <div class="swiper-slide text-center mt-2">
                                      <div class="ratio ratio-1x1 text-center">
                                         <a href="" target="_blank">
@@ -117,8 +117,8 @@
                                 </div>
                             <?php endforeach; ?>
                         </div>
-                    <div class="swiper-pagination"></div>
-                    <!--<div class="swiper-scrollbar"></div>-->
+                    <!--<div class="swiper-pagination"></div>-->
+                    <div class="swiper-scrollbar"></div>
                 </div>               
             </div>
         </div>

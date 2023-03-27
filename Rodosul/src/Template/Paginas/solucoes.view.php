@@ -34,7 +34,7 @@
                 <div class="swiper solucoes-swiper position-relative ">
                         <div class="swiper-wrapper">
                             <?php foreach(range(0,9) as $i) : ?>
-                                <div class="swiper-slide text-center py-2 mt-2">
+                                <div class="swiper-slide text-center py-2 mt-1">
                                     <div class="ratio ratio-1x1">
                                         <!--<img class="object-fit-cover " src="<?= asset('images/icones/solucoes.png') ?>" alt="">-->
                                         <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,8 +54,8 @@
     <section class="form py-lg-4 py-2">
         <div class="container">
             <div class="row p-0">
-                <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
-                    <div class="flex-column py-4 div-form text-center text-lg-start">
+                <div class="col-lg-5 col-xl-6 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
+                    <div class="flex-column py-4 div-form text-start">
                         <h2>Fale com um especialista!</h2>
                         <form action="" class="flex-column mt-2">
                             <input type="text" placeholder="Nome *" class="form-control">
@@ -77,7 +77,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
+                <div class="col-lg-7 col-xl-6 col-12 p-0 bg-cinza">
                     <!--<div class="ratio ratio-1x1">-->
                         <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
                     <!--</div>-->

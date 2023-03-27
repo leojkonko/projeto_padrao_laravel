@@ -57,7 +57,7 @@
             <div class="col-lg-4 col-6">
                 <div class="d-flex justify-content-start align-items-center">
                     <a href="<?= url('/') ?>">
-                        <img width="80%" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                        <img class="img-logo" width="80%" src="<?= asset('images/logos/logo.png') ?>" alt="">
                     </a>
                 </div>
             </div>
@@ -91,10 +91,10 @@
                     <button class="p-button btn btn-success text-blue d-none d-xl-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Solicite seu orçamento</button>
                     <button class="p-button btn btn-success text-blue d-none d-lg-flex d-xl-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Orçamento</button>
                     <button class="btn btn-success text-blue d-flex d-lg-none me-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <img width="30px" src="<?= asset('images/icones/orcamento-w.png') ?>" alt="">
+                        <img width="20px" src="<?= asset('images/icones/orcamento-w.png') ?>" alt="">
                     </button>
                     <button class="btn btn-success text-blue d-flex d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <svg class="" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="4" y="4" width="16" height="4" fill="white" />
                             <rect x="4" y="12" width="16" height="4" fill="white" />
                             <rect x="4" y="20" width="16" height="4" fill="white" />
@@ -111,12 +111,12 @@
                 <section class="form ">
         <div class="ajuste-lateral">
             <div class="row p-0">
-                <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
-                    <div class="flex-column py-4 div-form text-center text-lg-start">
+                <div class="col-lg-5 col-xl-6 col-xxl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
+                    <div class="flex-column py-4 div-form text-start">
                         <h2>Fale com um especialista!</h2>
                         <form action="" class="flex-column mt-2">
                             <input type="text" placeholder="Nome *" class="form-control">
-                            <input type="email" placeholder="Email" class="form-control">
+                            <input type="email" placeholder="Email *" class="form-control">
                             <input type="text" placeholder="Telefone *" class="mask-telefone form-control">
                             <select name="" id="" class="form-select">
                                 <option value="" selected>Solução de interesse</option>
@@ -134,7 +134,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
+                <div class="col-lg-7 col-xl-6 col-xxl-5 col-12 p-0 bg-cinza">
                     <!--<div class="ratio ratio-1x1">-->
                         <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
                     <!--</div>-->

@@ -48,7 +48,8 @@ var telefoneMask = function (e) {
             prevEl: ".construcao-swiper .swiper-button-prev"
         },
         scrollbar: {
-            el: ".swiper-scrollbar"
+            el: ".swiper-scrollbar",
+            draggable: !0
         }
     })),
     swiper = new Swiper(".areas-swiper", {
@@ -105,11 +106,15 @@ var telefoneMask = function (e) {
             clickable: !0
         },
         scrollbar: {
-            el: ".swiper-scrollbar"
+            el: ".swiper-scrollbar",
+            draggable: !0
         },
         breakpoints: {
-            992: {
+            1200: {
                 slidesPerView: 6
+            },
+            992: {
+                slidesPerView: 5
             },
             767: {
                 slidesPerView: 4
@@ -157,45 +162,28 @@ var telefoneMask = function (e) {
         scrollbar: {
             el: ".cont-swiper .swiper-scrollbar"
         }
+    })
+
+document.addEventListener('DOMContentLoaded', function () {
+    var offcanvas = new bootstrap.Offcanvas(document.querySelector('#offcanvasTop'));
+
+    offcanvas._element.addEventListener('show.bs.offcanvas', function () {
+        document.querySelector('html').style.overflow = 'hidden';
     });
 
-// Quando o modal for exibido
-$('#exampleModal').on('show.bs.modal', function () {
-    // Define o z-index do elemento com a classe "construcao" como 0
-    $('.construcao').css('z-index', '0');
-});
-
-// Quando o modal for fechado
-$('#exampleModal').on('hidden.bs.modal', function () {
-    // Define o z-index do elemento com a classe "construcao" como 1
-    $('.construcao').css('z-index', '1');
-});
-$('#exampleModal').on('show.bs.modal', function () {
-    // Define o z-index do elemento com a classe "construcao" como 0
-    $('#empresa').css('z-index', '0');
-});
-
-// Quando o modal for fechado
-$('#exampleModal').on('hidden.bs.modal', function () {
-    // Define o z-index do elemento com a classe "construcao" como 1
-    $('#empresa').css('z-index', '99');
-});
-
-////////
-// Quando o offcanvas for exibido
-$('#offcanvasTop').on('shown.bs.offcanvas', function () {
-    // Define a posição relativa e o z-index da tag body
-    $('#empresa').css({
-        //'position': 'relative',
-        'z-index': '0'
+    offcanvas._element.addEventListener('hide.bs.offcanvas', function () {
+        document.querySelector('html').style.overflow = '';
     });
 });
 
-// Quando o offcanvas for fechado
-$('#offcanvasTop').on('hidden.bs.offcanvas', function () {
-    // Define a posição estática e o z-index da tag body
-    $('#empresa').css({
-        //'position': 'relative',
-        'z-index': '1'
+document.addEventListener('DOMContentLoaded', function () {
+    var modal = new bootstrap.Modal(document.querySelector('#exampleModal'));
+
+    modal._element.addEventListener('show.bs.modal', function () {
+        document.querySelector('html').style.overflow = 'hidden';
+    });
+
+    modal._element.addEventListener('hide.bs.modal', function () {
+        document.querySelector('html').style.overflow = '';
     });
 });

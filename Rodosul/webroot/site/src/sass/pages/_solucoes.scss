@@ -26,6 +26,17 @@
 }
 
 .solucoes-img-swiper {
+    & .swiper-slide {
+        & img {
+            transition: transform 0.25s ease-in-out;
+            transform: scale(1.0) !important;
+
+            &:hover {
+                transition: transform 0.25s ease-in-out;
+                transform: scale(1.2) !important;
+            }
+        }
+    }
 
     & .swiper-button-next,
     .swiper-button-prev {

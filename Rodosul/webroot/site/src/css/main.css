@@ -144,6 +144,11 @@ header {
   z-index: 2;
   width: 100%;
 }
+@media (max-width: 992px) {
+  header .img-logo {
+    width: 180px;
+  }
+}
 header .row {
   margin: 10px 20px;
   border-radius: 10px;
@@ -226,6 +231,9 @@ header .row ul li .contato:hover::after {
   display: flex;
   z-index: 2;
 }
+header .row ul .dropdown-menu {
+  inset: 7px auto auto -10px !important;
+}
 
 .header-wrapper {
   background: linear-gradient(0deg, rgba(16, 29, 54, 0.81), rgba(16, 29, 54, 0.81)), url(../images/banners/solucoes.png);
@@ -295,8 +303,9 @@ header .row ul li .contato:hover::after {
 }
 
 footer {
-  width: 102%;
+  width: 106%;
   position: relative;
+  overflow: hidden;
   background: linear-gradient(90deg, #0055FF 0%, #021D49 100%);
 }
 footer .bg-azul-escuro {
@@ -306,8 +315,18 @@ footer .bg-azul-escuro {
 footer .bg-azul-escuro .logo-footer {
   margin: -80px 0px;
 }
+footer .bg-azul-escuro a {
+  color: white;
+  border-bottom: 1px solid white;
+  font-size: 16px;
+}
 footer .bg-custom ul {
   padding-left: 0px;
+}
+@media (min-width: 992px) {
+  footer .bg-custom ul {
+    margin-bottom: 55px;
+  }
 }
 footer .bg-custom ul li {
   list-style: none;
@@ -330,8 +349,6 @@ footer .bg-custom .redes a {
 footer .copyright {
   position: absolute;
   bottom: 0;
-  height: 50px;
-  width: 100%;
   border-radius: 225px 0 0 0;
   margin-left: 95px;
 }
@@ -339,19 +356,21 @@ footer .copyright {
   footer .copyright {
     position: relative;
     border-radius: 50px 50px 0 0;
-    margin: 0px 0px;
+    margin: 0px -22px;
     flex-direction: column;
-    height: 140px;
     width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
   }
 }
-@media (max-width: 992px) and (max-width: 767px) {
-  footer .copyright {
-    height: 180px;
-  }
+footer .copyright .copyright-text {
+  font-size: 14px;
+}
+footer .copyright .politica-privacidade {
+  border-bottom: 1px solid #283C65;
+  color: #283C65;
+  margin-bottom: -5px;
 }
 footer .botao-whatsapp {
   font-size: calc(1.95rem + 0.25vw);
@@ -507,7 +526,9 @@ footer .botao-whatsapp-not-hoverable {
 .residuos .col-lg-4 .ratio::before {
   margin-top: 0px !important;
 }
-.residuos .col-lg-4 .biologicos {
+.residuos .col-lg-4 .biologicos,
+.residuos .col-lg-4 .biologicos2,
+.residuos .col-lg-4 .biologicos3 {
   margin-bottom: 60px;
   margin-top: -120px;
   transform: scaleY(100%);
@@ -515,32 +536,48 @@ footer .botao-whatsapp-not-hoverable {
   z-index: 1;
 }
 @media (max-width: 992px) {
-  .residuos .col-lg-4 .biologicos {
+  .residuos .col-lg-4 .biologicos,
+.residuos .col-lg-4 .biologicos2,
+.residuos .col-lg-4 .biologicos3 {
     margin: 50px 0px;
   }
-  .residuos .col-lg-4 .biologicos .img-bg {
+  .residuos .col-lg-4 .biologicos .img-bg,
+.residuos .col-lg-4 .biologicos2 .img-bg,
+.residuos .col-lg-4 .biologicos3 .img-bg {
     display: none;
   }
-  .residuos .col-lg-4 .biologicos .img-hover {
+  .residuos .col-lg-4 .biologicos .img-hover,
+.residuos .col-lg-4 .biologicos2 .img-hover,
+.residuos .col-lg-4 .biologicos3 .img-hover {
     display: block;
   }
 }
-.residuos .col-lg-4 .biologicos:hover {
+.residuos .col-lg-4 .biologicos:hover,
+.residuos .col-lg-4 .biologicos2:hover,
+.residuos .col-lg-4 .biologicos3:hover {
   transform: scaleY(120%);
   transition: transform 0.25s ease-in-out;
   z-index: 1;
 }
-.residuos .col-lg-4 .biologicos:hover .img-bg {
+.residuos .col-lg-4 .biologicos:hover .img-bg,
+.residuos .col-lg-4 .biologicos2:hover .img-bg,
+.residuos .col-lg-4 .biologicos3:hover .img-bg {
   display: none;
 }
-.residuos .col-lg-4 .biologicos:hover .img-hover {
+.residuos .col-lg-4 .biologicos:hover .img-hover,
+.residuos .col-lg-4 .biologicos2:hover .img-hover,
+.residuos .col-lg-4 .biologicos3:hover .img-hover {
   display: block;
 }
-.residuos .col-lg-4 .biologicos:hover ~ .h2 {
+.residuos .col-lg-4 .biologicos:hover ~ .h2,
+.residuos .col-lg-4 .biologicos2:hover ~ .h2,
+.residuos .col-lg-4 .biologicos3:hover ~ .h2 {
   margin-top: -40px;
   transition: margin-top 0.25s ease-in-out;
 }
-.residuos .col-lg-4 .biologicos:hover ~ button {
+.residuos .col-lg-4 .biologicos:hover ~ button,
+.residuos .col-lg-4 .biologicos2:hover ~ button,
+.residuos .col-lg-4 .biologicos3:hover ~ button {
   opacity: 0.9;
   transition: opacity 0.25s ease-in-out;
   margin-top: 40px;
@@ -555,21 +592,24 @@ footer .botao-whatsapp-not-hoverable {
   left: 0;
   bottom: 0;
   width: 40%;
+  z-index: 1;
 }
 .rodosul .com-rodosul {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 40%;
+  z-index: 1;
 }
 .rodosul .border {
   position: absolute;
   right: 0;
   top: 0;
+  border: none;
 }
 .rodosul ul li {
   list-style: none;
-  margin-top: 15px;
+  margin-top: 22px;
 }
 
 .parceiros h2 {
@@ -589,16 +629,32 @@ footer .botao-whatsapp-not-hoverable {
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1600px) {
+  .form .container {
+    max-width: 1300px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .form .container {
+    max-width: 1200px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .form .container {
+    max-width: 1200px;
+  }
+}
+.form .form-control {
+  padding: 5px !important;
+}
+.form .form-select {
+  padding: 5px 0px !important;
+}
 .form iframe {
   margin-bottom: -10px;
 }
 .form .ajuste-lateral {
   margin: -10px -20px;
-}
-@media (min-width: 1200px) {
-  .form .container {
-    max-width: 1200px;
-  }
 }
 .form .row {
   background-color: #EAEAEA;
@@ -663,12 +719,20 @@ footer .botao-whatsapp-not-hoverable {
   }
 }
 
-#certificacoes .certificacoes-img {
+#certificacoes .certificacoes-img-esq {
   padding: 120px;
 }
 @media (max-width: 992px) {
-  #certificacoes .certificacoes-img {
-    margin-top: -100px;
+  #certificacoes .certificacoes-img-esq {
+    padding: 80px 80px 0px 80px;
+  }
+}
+#certificacoes .certificacoes-img-dir {
+  padding: 120px;
+}
+@media (max-width: 992px) {
+  #certificacoes .certificacoes-img-dir {
+    padding: 0px 80px 80px 80px;
   }
 }
 
@@ -740,6 +804,14 @@ footer .botao-whatsapp-not-hoverable {
   --swiper-theme-color: #51EEC3;
 }
 
+.solucoes-img-swiper .swiper-slide img {
+  transition: transform 0.25s ease-in-out;
+  transform: scale(1) !important;
+}
+.solucoes-img-swiper .swiper-slide img:hover {
+  transition: transform 0.25s ease-in-out;
+  transform: scale(1.2) !important;
+}
 .solucoes-img-swiper .swiper-button-next,
 .solucoes-img-swiper .swiper-button-prev {
   --swiper-theme-color: white;

@@ -4,6 +4,7 @@
  * let swiper = new Swiper(".swiper-teste", {opcoes})
  */
 
+
 var swiper = new Swiper(".construcao-swiper", {
     slidesPerView: 1,
     navigation: {
@@ -13,14 +14,24 @@ var swiper = new Swiper(".construcao-swiper", {
     scrollbar: {
         el: ".swiper-scrollbar",
         //hide: true,
+        draggable: true,
     },
 });
+/*
+const quantidadeDeElementos = document.querySelectorAll('.cont').length;
+console.log(`Existem ${quantidadeDeElementos} elementos com a classe 'sua-classe'`);
+const scrollbar = document.getElementsByClassName('swiper-scrollbar-drag')
+const scrollbar_drag = document.getElementById('my-scrollbar')
+//scrollbar.style.width = ;
+console.log(scrollbar_drag.style.width);*/
+
 var swiper = new Swiper(".areas-swiper", {
     slidesPerView: 1,
     spaceBetween: 40,
     pagination: {
         el: ".areas-swiper .swiper-pagination",
         clickable: true
+
     },
     breakpoints: {
         992: {
@@ -66,15 +77,20 @@ var swiper = new Swiper(".empresas-swiper", {
     spaceBetween: 0,
     pagination: {
         el: ".empresas-swiper .swiper-pagination",
-        clickable: true
+        clickable: true,
+        //draggable: true,
     },
     scrollbar: {
         el: ".swiper-scrollbar",
+        draggable: true,
         //hide: true,
     },
     breakpoints: {
-        992: {
+        1200: {
             slidesPerView: 6,
+        },
+        992: {
+            slidesPerView: 5,
         },
         767: {
             slidesPerView: 4,
