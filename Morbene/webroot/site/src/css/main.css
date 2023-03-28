@@ -139,6 +139,10 @@ body {
   padding-right: initial !important;
 }
 
+main {
+  overflow: hidden;
+}
+
 header ul li {
   list-style: none;
   margin: 0px 30px;
@@ -162,6 +166,16 @@ footer .copyright {
 footer .copyright .margin-auto {
   margin: 0px auto;
 }
+@media (min-width: 992px) {
+  footer .copyright .margin-auto {
+    margin-top: -12px;
+  }
+}
+@media (max-width: 992px) {
+  footer .copyright .m-a {
+    margin: auto;
+  }
+}
 
 #home .banner {
   z-index: -1;
@@ -181,7 +195,7 @@ footer .copyright .margin-auto {
 }
 @media (max-width: 992px) {
   #home .banner .ratio .conteudo {
-    padding: 0px 30px;
+    padding: 0px 0px;
     text-align: center;
   }
 }
@@ -208,11 +222,28 @@ footer .copyright .margin-auto {
     width: 90%;
   }
 }
+@media (max-width: 992px) {
+  #home .banner .ratio .conteudo .h2 {
+    font-size: 40px;
+    width: 80%;
+    margin: auto;
+  }
+}
 #home .banner .eng {
-  bottom: -100px;
-  left: 55%;
+  bottom: -140px;
+  left: 60%;
   transform: translate(-50%);
-  width: 10%;
+  width: 500px;
+}
+@media (max-width: 1600px) {
+  #home .banner .eng {
+    width: 400px;
+  }
+}
+@media (max-width: 1300px) {
+  #home .banner .eng {
+    width: 300px;
+  }
 }
 #home .marcas-banner {
   background-image: url(../images/banners/marcas-banner.png);
@@ -231,9 +262,6 @@ footer .copyright .margin-auto {
 
 .saiba-mais {
   border-radius: 0px 100px 0px 100px;
-}
-.saiba-mais .conteudo-texto {
-  text-align: center;
 }
 .saiba-mais .conteudo-texto span {
   font-weight: 700;
@@ -275,7 +303,7 @@ footer .copyright .margin-auto {
   height: 100%;
   color: white;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -285,6 +313,11 @@ footer .copyright .margin-auto {
   font-size: 64px;
   line-height: 90%;
   z-index: 9;
+}
+@media (max-width: 992px) {
+  .saiba-mais .mais-fotos .ratio::after {
+    top: 40%;
+  }
 }
 
 .numeros {
@@ -303,6 +336,7 @@ footer .copyright .margin-auto {
 }
 .numeros .conteudo-texto .h2 {
   font-size: 50px;
+  line-height: 50px;
 }
 .numeros .conteudo-texto .dados {
   width: 200%;
@@ -325,6 +359,11 @@ footer .copyright .margin-auto {
 }
 @media (max-width: 992px) {
   .numeros .conteudo-texto .dados .item {
+    padding: 20 px;
+  }
+}
+@media (max-width: 992px) {
+  .numeros .conteudo-texto .dados .item {
     flex: 0 0 50%;
   }
 }
@@ -335,9 +374,19 @@ footer .copyright .margin-auto {
   font-weight: 700;
   font-size: 35px;
 }
+@media (max-width: 992px) {
+  .numeros .conteudo-texto .dados .item .h2 {
+    font-size: 28px !important;
+  }
+}
 .numeros .conteudo-texto .dados .item .p-dados {
   font-weight: 700;
   font-size: 20px;
+}
+@media (max-width: 992px) {
+  .numeros .conteudo-texto .dados .item .p-dados {
+    font-size: 16px !important;
+  }
 }
 
 .diferenciais {
@@ -365,6 +414,11 @@ footer .copyright .margin-auto {
 .marcas .h2 {
   font-size: 50px;
 }
+@media (max-width: 992px) {
+  .marcas .h2 {
+    font-size: 40px;
+  }
+}
 .marcas .marcas-swiper {
   position: initial !important;
 }
@@ -377,6 +431,7 @@ footer .copyright .margin-auto {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .marcas .marcas-swiper .swiper-button-next,
 .marcas .marcas-swiper .swiper-button-prev {
@@ -390,8 +445,30 @@ footer .copyright .margin-auto {
 .marcas .marcas-swiper .swiper-button-prev {
   left: -5%;
 }
+@media (max-width: 1200px) {
+  .marcas .marcas-swiper .swiper-button-prev {
+    left: 0;
+  }
+}
 .marcas .marcas-swiper .swiper-button-next {
   right: -5%;
+}
+@media (max-width: 1280px) {
+  .marcas .marcas-swiper .swiper-button-next {
+    right: 0%;
+  }
+}
+.marcas .row2 {
+  border-radius: 40px;
+  box-shadow: 10px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.marcas .row2 .col-img img {
+  border-radius: 40px 0px 0px 40px;
+}
+@media (max-width: 992px) {
+  .marcas .row2 .col-img img {
+    border-radius: 40px 40px 40px 40px;
+  }
 }
 
 .contato {
@@ -401,6 +478,7 @@ footer .copyright .margin-auto {
 }
 .contato h2 {
   font-size: 50px;
+  line-height: 50px;
 }
 .contato .row {
   border: 3px solid white;
@@ -425,6 +503,11 @@ footer .copyright .margin-auto {
 .contato .col-12 textarea {
   width: 98%;
   height: 140px;
+}
+@media (max-width: 992px) {
+  .contato .col-12 textarea {
+    width: 91%;
+  }
 }
 .contato .col-12 .input-check {
   border-radius: 50%;

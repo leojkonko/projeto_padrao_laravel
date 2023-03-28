@@ -58,7 +58,7 @@ var swiper = new Swiper(".marcas-swiper", {
 
 var swiper = new Swiper(".numeros-swiper", {
     slidesPerView: 2,
-    //spaceBetween: 30,
+    spaceBetween: 25,
     navigation: {
         nextEl: ".numeros-swiper .swiper-button-next",
         prevEl: ".numeros-swiper .swiper-button-prev",

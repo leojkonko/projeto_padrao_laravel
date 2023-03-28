@@ -5,6 +5,10 @@ body {
     padding-right: initial !important;
 }
 
+main {
+    overflow: hidden;
+}
+
 header {
     & ul {
         //padding-left: 200px;
