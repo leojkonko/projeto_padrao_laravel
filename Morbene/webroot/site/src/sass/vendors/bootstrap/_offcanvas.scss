@@ -67,6 +67,13 @@
   max-height: 100%;
   border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
   transform: translateY(-100%);
+  color: black;
+
+  & ul {
+    & li {
+      margin-top: 15px;
+    }
+  }
 }
 
 .offcanvas-bottom {

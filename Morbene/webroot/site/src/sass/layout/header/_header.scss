@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins';
     font-style: normal;
+    padding-right: initial !important;
 }
 
 header {
@@ -11,6 +12,10 @@ header {
         & li {
             list-style: none;
             margin: 0px 30px;
+
+            @media(max-width: 1400px) {
+                margin: 0px 10px;
+            }
 
             & a {
                 &:hover {

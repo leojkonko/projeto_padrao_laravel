@@ -29,3 +29,53 @@ var swiper = new Swiper(".diferenciais-swiper", {
         },
     }
 });
+var swiper = new Swiper(".marcas-swiper", {
+    slidesPerView: 2,
+    //spaceBetween: 30,
+    navigation: {
+        nextEl: ".marcas-swiper .swiper-button-next",
+        prevEl: ".marcas-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".marcas-swiper .swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 6,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+        767: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    }
+});
+
+var swiper = new Swiper(".numeros-swiper", {
+    slidesPerView: 2,
+    //spaceBetween: 30,
+    navigation: {
+        nextEl: ".numeros-swiper .swiper-button-next",
+        prevEl: ".numeros-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".numeros-swiper .swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+        },
+        767: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 2,
+        },
+    }
+});

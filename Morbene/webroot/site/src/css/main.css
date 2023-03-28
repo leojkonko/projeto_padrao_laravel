@@ -136,14 +136,31 @@
 body {
   font-family: "Poppins";
   font-style: normal;
+  padding-right: initial !important;
 }
 
 header ul li {
   list-style: none;
   margin: 0px 30px;
 }
+@media (max-width: 1400px) {
+  header ul li {
+    margin: 0px 10px;
+  }
+}
 header ul li a:hover {
   color: #eaeaea;
+}
+
+footer h2 {
+  font-weight: 700;
+  font-size: 24px !important;
+}
+footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer .copyright .margin-auto {
+  margin: 0px auto;
 }
 
 #home .banner {
@@ -157,10 +174,39 @@ header ul li a:hover {
 #home .banner .ratio .conteudo {
   padding-left: 200px;
 }
+@media (max-width: 1400px) {
+  #home .banner .ratio .conteudo {
+    padding-left: 140px;
+  }
+}
+@media (max-width: 992px) {
+  #home .banner .ratio .conteudo {
+    padding: 0px 30px;
+    text-align: center;
+  }
+}
 #home .banner .ratio .conteudo .h2 {
-  font-size: 56px;
+  font-size: 54px;
   line-height: 115%;
   width: 60%;
+}
+@media (max-width: 1700px) {
+  #home .banner .ratio .conteudo .h2 {
+    font-size: 45px;
+    width: 70%;
+  }
+}
+@media (max-width: 1400px) {
+  #home .banner .ratio .conteudo .h2 {
+    font-size: 45px;
+    width: 80%;
+  }
+}
+@media (max-width: 1400px) {
+  #home .banner .ratio .conteudo .h2 {
+    font-size: 45px;
+    width: 90%;
+  }
 }
 #home .banner .eng {
   bottom: -100px;
@@ -172,18 +218,34 @@ header ul li a:hover {
   background-image: url(../images/banners/marcas-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: 95%;
+  background-position-x: 98%;
   margin-top: -80px;
+}
+@media (max-width: 992px) {
+  #home .marcas-banner {
+    height: 500px;
+    z-index: 0;
+    clip: rect(0px 50px 50px 0px);
+  }
 }
 
 .saiba-mais {
   border-radius: 0px 100px 0px 100px;
+}
+.saiba-mais .conteudo-texto {
+  text-align: center;
 }
 .saiba-mais .conteudo-texto span {
   font-weight: 700;
 }
 .saiba-mais .conteudo-texto .h2 {
   font-size: 50px;
+  line-height: 58px;
+}
+@media (max-width: 992px) {
+  .saiba-mais .conteudo-texto .h2 {
+    font-size: 40px;
+  }
 }
 .saiba-mais .mais-fotos {
   cursor: pointer;
@@ -231,6 +293,11 @@ header ul li a:hover {
   background-position-x: 85%;
   background-position-y: 50%;
 }
+@media (max-width: 992px) {
+  .numeros {
+    background-image: none;
+  }
+}
 .numeros .conteudo-texto span {
   font-weight: 700;
 }
@@ -240,10 +307,26 @@ header ul li a:hover {
 .numeros .conteudo-texto .dados {
   width: 200%;
 }
+@media (max-width: 1300px) {
+  .numeros .conteudo-texto .dados {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .numeros .conteudo-texto .dados {
+    width: 50%;
+  }
+}
 .numeros .conteudo-texto .dados .item {
-  margin: 0px 20px;
+  margin-right: 20px;
   padding: 30px 40px;
   border-radius: 30px;
+  float: left;
+}
+@media (max-width: 992px) {
+  .numeros .conteudo-texto .dados .item {
+    flex: 0 0 50%;
+  }
 }
 .numeros .conteudo-texto .dados .item h2 {
   margin-bottom: 0px;
@@ -282,23 +365,120 @@ header ul li a:hover {
 .marcas .h2 {
   font-size: 50px;
 }
-.marcas .diferenciais-swiper .swiper-slide .ratio {
+.marcas .marcas-swiper {
+  position: initial !important;
+}
+.marcas .marcas-swiper .swiper-slide .ratio {
   border-radius: 50%;
 }
-.marcas .diferenciais-swiper .swiper-slide .ratio img {
+.marcas .marcas-swiper .swiper-slide .ratio img {
   width: 56px;
   height: 56px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.marcas .diferenciais-swiper .swiper-pagination {
-  --swiper-theme-color: #FF2E17;
+.marcas .marcas-swiper .swiper-button-next,
+.marcas .marcas-swiper .swiper-button-prev {
+  --swiper-theme-color: white;
+  background-color: #FF2E17;
+  border-radius: 50%;
+  padding: 20px;
+  --swiper-navigation-size: 18px;
+  top: 45%;
+}
+.marcas .marcas-swiper .swiper-button-prev {
+  left: -5%;
+}
+.marcas .marcas-swiper .swiper-button-next {
+  right: -5%;
+}
+
+.contato {
+  background-image: url(../images/backgrounds/contato.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contato h2 {
+  font-size: 50px;
+}
+.contato .row {
+  border: 3px solid white;
+  padding: 20px;
+  border-radius: 40px;
+}
+.contato .col-12 {
+  border-radius: 30px;
+}
+.contato .col-12 .form-select {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #303030;
+  padding: 10px 30px;
+}
+@media (max-width: 992px) {
+  .contato .col-12 .form-select {
+    font-size: 16px;
+  }
+}
+.contato .col-12 textarea {
+  width: 98%;
+  height: 140px;
+}
+.contato .col-12 .input-check {
+  border-radius: 50%;
+  border: 1px solid #FF2E17;
+}
+.contato .col-12 span {
+  border-bottom: 1px solid #303030;
+  font-weight: 700;
+}
+.contato .checkbox-round {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contato .checkbox-round input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contato .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #999;
+  border-radius: 50%;
+}
+.contato .checkbox-round:hover input ~ .checkmark {
+  background-color: #f2f2f2;
+}
+.contato .checkbox-round input:checked ~ .checkmark {
+  background-color: #FF2E17;
+}
+.contato .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.contato .checkbox-round input:checked ~ .checkmark:after {
+  display: block;
+}
+.contato .checkbox-round .label-text {
+  margin-left: 35px;
 }
 
 .p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
 }
 @media (max-width: 992px) {
@@ -338,5 +518,19 @@ header ul li a:hover {
 
 .conteudo-texto {
   padding: 0px 200px;
+}
+@media (max-width: 1500px) {
+  .conteudo-texto {
+    padding: 60px 100px;
+  }
+}
+@media (max-width: 992px) {
+  .conteudo-texto {
+    padding: 60px 60px;
+  }
+}
+
+.pagination-style {
+  --swiper-theme-color: #FF2E17;
 }
 /*# sourceMappingURL=main.css.map */

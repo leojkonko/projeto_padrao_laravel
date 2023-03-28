@@ -1,6 +1,6 @@
 .p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
 
     @media(max-width: 992px) {
@@ -37,4 +37,17 @@
 
 .conteudo-texto {
     padding: 0px 200px;
+
+    @media(max-width: 1500px) {
+        padding: 60px 100px;
+    }
+
+    @media(max-width: 992px) {
+        padding: 60px 60px;
+    }
+}
+
+.pagination-style {
+    --swiper-theme-color: #FF2E17;
+
 }

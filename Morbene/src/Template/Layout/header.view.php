@@ -50,15 +50,15 @@
 <body>
 
     <?php ob_start() ?>
-    <header class="header position-absolute w-100 py-lg-2 text-white">
+    <header class="header position-absolute w-100 py-lg-2 text-white py-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 p-0">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-6">
                             <img width="216px" src="<?= asset('images/logos/logo.png') ?>" alt="">
                         </div>
-                        <div class="col-lg-9 d-flex justify-content-center align-items-center">
+                        <div class="col-lg-9 d-flex justify-content-center align-items-center d-none d-lg-flex">
                             <ul class="d-flex ">
                                 <li>
                                     <a href="" class="text-white h2">Sobre nós</a>
@@ -71,6 +71,15 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="col-lg-9 col-6 d-flex justify-content-end d-flex d-lg-none align-items-center pe-2">
+                            <button class="btn btn-danger text-blue" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <svg class="mb-0-25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="16" height="4" fill="white" />
+                                    <rect x="4" y="12" width="16" height="4" fill="white" />
+                                    <rect x="4" y="20" width="16" height="4" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-5 d-flex align-items-center justify-content-end pe-4">
@@ -78,6 +87,33 @@
                 </div>
             </div>  
         </div>
+        <!--offcanvas-->
+
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+  <div class="m-auto">
+  <img width="216px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+  </div>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+        <div class="d-flex justify-content-center">
+            <ul class="me-2">
+                <li>
+                    <a href="" class="h2">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="" class="h2">Regiões</a>
+                </li>
+                <li>
+                    <a href="" class="h2">Marcas</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--offcanvas-->
     </header>
     <?php
     $header = ob_get_contents();
