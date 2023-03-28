@@ -93,7 +93,7 @@
                     <button class="btn btn-success text-blue d-flex d-lg-none me-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <img width="20px" src="<?= asset('images/icones/orcamento-w.png') ?>" alt="">
                     </button>
-                    <button class="btn btn-success text-blue d-flex d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <button class="btn btn-success text-blue d-flex d-lg-none" type="button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                         <svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="4" y="4" width="16" height="4" fill="white" />
                             <rect x="4" y="12" width="16" height="4" fill="white" />
@@ -145,27 +145,48 @@
                 </div>
             </div>
             </div><!--modal-->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-    </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
-    </div>
-  </div>
-</div><!--offcanvas-->
+            <!--offcanvas-->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                
+            </div>
+            <div class="offcanvas-body">
+                <div class="row position-relative p-0">
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"><span>X</span></button>
+                    <div class="text-center w-100">
+                        <img width="30%" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
+                   </div>
+                    <ul class="menu-offcanvas mt-4">
+                        <li>
+                            <a href="<?= url('/empresa') ?>">Sobre a empresa</a>
+                        </li>
+                        <!--<li>
+                            <a href="<?= url('/solucoes') ?>">Soluções</a>
+                        </li>-->
+                        <div class="dropdown d-flex justify-content-center">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                Soluções
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item" type="button">Resíduos Biológicos</button></li>
+                                <li><button class="dropdown-item" type="button">Resíduos Químicos</button></li>
+                                <li><button class="dropdown-item" type="button">Resíduos Industriais</button></li>
+                            </ul>
+                        </div>
+                        <li>
+                            <a href="<?= url('/parceiros') ?>">Certificações</a>
+                        </li>
+                        <li>
+                            <a href="<?= url('/contato') ?>">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="col-12 d-flex justify-content-center mt-4">
+                        <img src="<?= asset('images/logos/logo.svg') ?>" class="mt-4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!--offcanvas-->
     </header>
     <?php
     $header = ob_get_contents();

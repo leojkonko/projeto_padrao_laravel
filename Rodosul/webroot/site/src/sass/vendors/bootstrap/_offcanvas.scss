@@ -59,14 +59,54 @@
   transform: translateX(100%);
 }
 
+
 .offcanvas-top {
   top: 0;
   right: 0;
   left: 0;
   height: $offcanvas-vertical-height;
-  max-height: 100%;
+  //max-height: 100%;
   border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
   transform: translateY(-100%);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+
+  & .offcanvas-body {
+
+    & .menu-offcanvas {
+      & li {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        list-style: none;
+
+        & a {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 77px;
+          color: white;
+        }
+      }
+
+      & .btn-secondary {
+        background: transparent;
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 77px;
+        color: white !important;
+        padding: 0px !important;
+
+        & a {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 77px;
+          color: white !important;
+        }
+      }
+    }
+  }
 }
 
 .offcanvas-bottom {

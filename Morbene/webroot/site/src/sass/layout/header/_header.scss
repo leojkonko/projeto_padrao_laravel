@@ -1,0 +1,22 @@
+// Estilos do header
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+header {
+    & ul {
+        //padding-left: 200px;
+
+        & li {
+            list-style: none;
+            margin: 0px 30px;
+
+            & a {
+                &:hover {
+                    color: #eaeaea;
+                }
+            }
+        }
+    }
+}

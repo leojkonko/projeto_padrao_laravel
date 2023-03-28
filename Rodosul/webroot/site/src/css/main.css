@@ -149,6 +149,11 @@ header {
     width: 180px;
   }
 }
+@media (max-width: 576px) {
+  header .img-logo {
+    width: 150px;
+  }
+}
 header .row {
   margin: 10px 20px;
   border-radius: 10px;
@@ -166,6 +171,7 @@ header .row ul {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 0px;
+  padding-right: 0px;
   position: initial;
   z-index: 2;
 }
@@ -230,9 +236,6 @@ header .row ul li .contato:hover::after {
   bottom: 0;
   display: flex;
   z-index: 2;
-}
-header .row ul .dropdown-menu {
-  inset: 7px auto auto -10px !important;
 }
 
 .header-wrapper {
