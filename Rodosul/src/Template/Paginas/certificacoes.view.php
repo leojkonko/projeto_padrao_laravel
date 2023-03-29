@@ -52,7 +52,7 @@
                             Cum, nihil harum itaque praesentium velit nam cumque tempora adipisci quis.</p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-5 col-12 bg-cinza certificacoes-img">
+                <div class="col-lg-7 col-xl-5 col-12 bg-cinza certificacoes-img-dir">
                     <!--<div class="ratio ratio-1x1">-->
                         <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/icones/solucoes.png') ?>" alt="">                        
                     <!--</div>-->

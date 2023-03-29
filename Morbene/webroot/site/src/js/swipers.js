@@ -29,6 +29,22 @@ var swiper = new Swiper(".diferenciais-swiper", {
         },
     }
 });
+
+var swiper = new Swiper(".banner-vertical-swiper", {
+    direction: "vertical",
+    slidesPerView: 3,
+    pagination: {
+        el: ".banner-vertical-swiper .swiper-pagination",
+        clickable: true,
+    },
+    spaceBetween: 30,
+    autoplay: {
+        delay: 600,
+    },
+});
+
+
+
 var swiper = new Swiper(".marcas-swiper", {
     slidesPerView: 2,
     //spaceBetween: 30,

@@ -1,7 +1,7 @@
 <main id="home">
     <section class="banner position-relative">
         <div class="row">
-            <div class="col-lg-7 col-12 p-0">
+            <div class="col-lg-7 col-12 p-0 bg-index">
                 <div class="ratio ratio-16x9 text-center d-none d-lg-flex z-index-background">
                         <!--<img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">-->
                         <div class="d-flex align-items-center conteudo">
@@ -15,15 +15,28 @@
                         </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-12 p-0 text-center pt-2">
+            <div class="col-lg-5 col-12 p-0 text-center pt-2 sombra">
                 <button class="btn btn-outline-danger text-primary">Entre em contato</button>
-                <div class="marcas-banner z-index-background w-100 h-100">
+                <!--<div class="marcas-banner z-index-background w-100 h-100">
+                </div>-->
+                <!-- Swiper -->
+                <div class="swiper banner-vertical-swiper">
+                        <div class="swiper-wrapper">
+                            <?php foreach(range(0,9) as $i) : ?>
+                            <div class="swiper-slide">
+                                <div class="ratio ratio-1x1">
+                                    <img class="" src="<?= asset('images/icones/nivea.png') ?>" alt="">
+                                </div>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                    <!--<div class="swiper-pagination"></div>-->
                 </div>
             </div>
         </div>
         <img class="eng position-absolute d-none d-lg-flex" src="<?= asset('images/banners/eng.png') ?>" alt="">
     </section>
-    <section class="saiba-mais bg-cinza my-2">
+    <section id="empresa" class="saiba-mais bg-cinza my-2">
         <div class="row">
             <div class="col-lg-9 p-0 d-flex justify-content-center align-items-center flex-column conteudo-texto text-lg-start text-center">
                 <h2 class="h2 text-primary w-100">Saiba mais sobre a <span class="h2 text-danger">Morbene</span></h2>
@@ -59,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="numeros bg-cinza py-lg-4">
+    <section id="regioes" class="numeros bg-cinza py-lg-4">
         <div class="row">
             <div class="col-lg-9 flex-column conteudo-texto p-0 mt-lg-3 text-center text-lg-start">
                 <h2 class="h2 text-primary">Nossos <span class="h2 text-danger">Números</span></h2>
@@ -118,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section class="marcas py-4">
+    <section id="marcas" class="marcas py-4">
     <h2 class="h2 text-primary w-100 text-center"><span class="h2 text-danger">Marcas</span> que confiam</h2>
         <div class="container position-relative">
             <div class="swiper marcas-swiper">
@@ -126,7 +139,7 @@
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide d-flex justify-content-center">
                                 <div class="ratio ratio-1x1">
-                                    <img class="img_<?=$i?>" onclick="mudarTexto('img_<?=$i?>')" src="<?= asset('images/icones/nivea.png') ?>" alt="">
+                                    <img id="texto" class="img_<?=$i?>" onclick="mudarTexto('img_<?=$i?>')" src="<?= asset('images/icones/nivea.png') ?>" alt="">
                                 </div>
                             </div>
                         <?php endforeach; ?>
@@ -147,7 +160,7 @@
                                 titulo 1
                              </h2>
                              <p class="p" id="conteudo">
-                             Texto para a primeira imagem!
+                             Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!
                              </p>
                         </div>
                     </div>
@@ -155,25 +168,9 @@
             </div>
         </div>
     </section>
-    <!--
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>-->
-<section class="contato py-4 px-1 px-lg-0">
-    <div class="container">
+
+<section class="contato py-4">
+    <div class="container px-2 px-lg-0">
         <div class="row">
             <h2 class="w-100 text-center h2 text-light mb-4">Entre em contato</h2>
             <div class="col-12 bg-white p-1">
@@ -190,8 +187,7 @@
                         <span class="checkmark mt-0-25"></span>
                         <p class="p ms-1">Li e aceito a <span>Política de privacidade</span> da Morbene distribuidora</p>
                     </label>
-                        
-                        <button class="btn-outline-danger bg-light text-primary ms-lg-auto d-flex m-auto">Entre em contato</button>
+                        <button class="btn-outline-danger bg-light text-primary ms-lg-auto d-flex ml-auto">Entre em contato</button>
                     </div>
                 </form>
             </div>

@@ -3,7 +3,7 @@
             <div class="col-lg-4 p-0 bg-azul-escuro">
                 <div class="d-flex justify-content-center align-items-center flex-column w-100 h-100 text-center mt-1 mt-lg-0">
                     <img class="logo-footer" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
-                    <div class="text-center w-100 d-none d-lg-flex">
+                    <div class="text-center w-100 d-none d-lg-flex justify-content-center">
                         <a href="" class="p">
                             Política de privacidade
                         </a>
@@ -95,14 +95,14 @@
                         <a href="" class="p d-flex d-lg-none pt-1 politica-privacidade">
                             Política de privacidade
                         </a>
-                        <p class="p mb-0 py-1 ms-xxl-4  ms-0 px-2 px-lg-0 copyright-text">
+                        <p class="p mb-0 py-1 ms-xxl-4  ms-2 px-2 px-lg-0 copyright-text">
                         Copyright © 2023 Rodosul. Todos os direitos reservados. CNPJ 00.000.000/0000-00
                         </p>
                     </div>
                 </div>
             </div><!--col-lg-8-->
         </div>
-        <div class="position-fixed bottom-0 end-0 m-1 m-xxl-2 botao-whatsapp-wrapper">
+        <div class="position-fixed bottom-0 end-0 m-0 botao-whatsapp-wrapper">
     <a href="https://web.whatsapp.com/send?phone=55" class="botao-whatsapp botao-whatsapp-hoverable position-relative rounded-pill overflow-hidden" aria-hidden="true" tabindex="-1" title="Fale conosco atrav&eacute;s do WhatsApp">
     <img src="<?= asset('images/icones/botao-wpp.png') ?>" alt="">
     </a>

@@ -43,9 +43,9 @@
 
 <?php /* ==== Scripts ==== */ ?>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="<?= asset('js/vendors/jquery.mask.min.js') ?>"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
-
+<script src="<?= asset('js/vendors/jquery.mask.min.js') ?>"></script><!--
+<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <?php /* Scripts opcionais
 
 // GSAP
@@ -61,6 +61,48 @@
 <script src="<?= asset('js/custom.js') ?>"></script>  
 */ ?>
 
+
+<script>
+    		function mudarTexto(classeImg) {
+			// Seleciona o elemento de texto
+			var elementoTexto = document.getElementById("conteudo");
+            var titulo = document.getElementById("titulo");
+            console.log(titulo)
+			// Altera o texto dependendo da classe da imagem
+			if (classeImg === "img_0") {
+				titulo.innerHTML = "titulo 1"
+                elementoTexto.innerHTML = "Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!";
+			} else if (classeImg === "img_1") {
+                titulo.innerHTML = "titulo 2"
+				elementoTexto.innerHTML = "Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!";
+			} else if (classeImg === "img_2") {
+                titulo.innerHTML = "titulo 3"
+				elementoTexto.innerHTML = "Texto para a terceira imagem!Texto para a terceira imagem!Texto para a terceira imagem!Texto para a terceira imagem!Texto para a terceira imagem!";
+			} else if (classeImg === "img_3") {
+                titulo.innerHTML = "titulo 4"
+				elementoTexto.innerHTML = "Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!";
+			} else if (classeImg === "img_4") {
+                titulo.innerHTML = "titulo 5"
+				elementoTexto.innerHTML = "Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!";
+			} else if (classeImg === "img_5") {
+                titulo.innerHTML = "titulo 6"
+				elementoTexto.innerHTML = "Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!";
+			} else if (classeImg === "img_6") {
+                titulo.innerHTML = "titulo 7"
+				elementoTexto.innerHTML = "Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!";
+			} else if (classeImg === "img_7") {
+                titulo.innerHTML = "titulo 8"
+				elementoTexto.innerHTML = "Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!";
+			} else if (classeImg === "img_8") {
+                titulo.innerHTML = "titulo 9"
+				elementoTexto.innerHTML = "Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!";
+			}
+            else if (classeImg === "img_9") {
+                titulo.innerHTML = "titulo 10"
+				elementoTexto.innerHTML = "Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!";
+			}
+		}
+</script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <section class="form py-lg-4 py-2 px-1 px-lg-0">
         <div class="container">
             <div class="row p-0">
-                <div class="col-lg-5 col-xl-7 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
+                <div class="col-lg-5 col-xl-6 col-12 p-0 bg-cinza d-flex justify-content-center align-items-center">
                     <div class="flex-column py-2 div-form text-start">
                         <h2>Fale com um especialista!</h2>
                         <form action="" class="flex-column mt-1">
@@ -25,9 +25,9 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-7 col-xl-5 col-12 p-0 bg-cinza">
+                <div class="col-lg-7 col-xl-6 col-12 p-0 bg-cinza">
                     <!--<div class="ratio ratio-1x1">-->
-                        <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
+                        <img class="objectf-fit-cover" src="<?= asset('images/banners/form.png') ?>" alt="">                        
                     <!--</div>-->
                 </div>
             </div>

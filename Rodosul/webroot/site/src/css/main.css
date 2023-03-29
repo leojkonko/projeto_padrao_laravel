@@ -432,6 +432,9 @@ footer .botao-whatsapp-not-hoverable {
   }
 }
 
+.home .ratio-16x9 {
+  margin-top: -80px;
+}
 .home .banner-swiper .swiper-button-next,
 .home .banner-swiper .swiper-button-prev {
   --swiper-theme-color: white;

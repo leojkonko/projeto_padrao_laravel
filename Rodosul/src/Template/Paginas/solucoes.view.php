@@ -28,7 +28,7 @@
             
         </div>
     </section>
-    <section class="solucoes bg-cinza">
+    <section class="solucoes bg-cinza pb-2">
         <div class="row p-0">
             <div class="col-8 p-0 m-auto">
                 <div class="swiper solucoes-swiper position-relative ">
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-lg-7 col-xl-6 col-12 p-0 bg-cinza">
                     <!--<div class="ratio ratio-1x1">-->
-                        <img class="objectf-fit-cover h-100 w-100" src="<?= asset('images/banners/form.png') ?>" alt="">                        
+                        <img class="objectf-fit-cover" src="<?= asset('images/banners/form.png') ?>" alt="">                        
                     <!--</div>-->
                 </div>
             </div>

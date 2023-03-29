@@ -32,9 +32,9 @@
 
     <?php /* ==== Stylesheets ==== */ ?>
     <link rel="stylesheet" href="<?= asset('css/bootstrap.css') ?>"> <?php /* ==== Arquivo do bootstrap ==== */ ?>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />
-
+<!--
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css" />-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?= asset('css/main.css') ?>"> <?php /* ==== Arquivo do front ==== */ ?>
     <?php
     /* ==== Arquivo para o pessoal do back end ==== 
@@ -61,13 +61,13 @@
                         <div class="col-lg-9 d-flex justify-content-center align-items-center d-none d-lg-flex">
                             <ul class="d-flex ">
                                 <li>
-                                    <a href="" class="text-white h2">Sobre nós</a>
+                                    <a href="#empresa" class="text-white h2">Sobre nós</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-white h2">Regiões</a>
+                                    <a href="#regioes" class="text-white h2">Regiões</a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-white h2">Marcas</a>
+                                    <a href="#marcas" class="text-white h2">Marcas</a>
                                 </li>
                             </ul>
                         </div>
@@ -101,13 +101,13 @@
         <div class="d-flex justify-content-center">
             <ul class="me-2">
                 <li>
-                    <a href="" class="h2">Sobre nós</a>
+                    <a href="#empresa" class="h2">Sobre nós</a>
                 </li>
                 <li>
-                    <a href="" class="h2">Regiões</a>
+                    <a href="#regioes" class="h2">Regiões</a>
                 </li>
                 <li>
-                    <a href="" class="h2">Marcas</a>
+                    <a href="#marcas" class="h2">Marcas</a>
                 </li>
             </ul>
         </div>
