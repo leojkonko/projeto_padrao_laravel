@@ -634,6 +634,7 @@ footer .botao-whatsapp-not-hoverable {
 
 .construcao {
   position: relative;
+  z-index: 10;
 }
 .construcao .construcao-swiper .swiper-slide {
   background-image: url(../images/backgrounds/construcao.png);
