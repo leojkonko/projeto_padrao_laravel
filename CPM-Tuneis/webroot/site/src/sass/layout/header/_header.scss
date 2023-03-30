@@ -278,20 +278,22 @@ header {
         //@include linear-rfs(1rem, 5rem, 375px, 1920px, "right");
     }
 
-    .riscos2 {
-        position: absolute;
-        top: 138px;
-        right: 0;
+}
 
-        @media (max-width: 1400px) {
-            right: -50px;
-        }
+.riscos2 {
+    position: absolute;
+    top: 138px;
+    width: 125px;
+    left: 94%;
 
-        @media (max-width: 1315px) {
-            display: none;
-        }
-
+    @media (max-width: 1400px) {
+        right: -50px;
     }
+
+    @media (max-width: 1315px) {
+        display: none;
+    }
+
 }
 
 .breadcrumb-wrapper {

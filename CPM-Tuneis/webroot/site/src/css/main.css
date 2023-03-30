@@ -385,18 +385,20 @@ header .riscos {
     display: none;
   }
 }
-header .riscos2 {
+
+.riscos2 {
   position: absolute;
   top: 138px;
-  right: 0;
+  width: 125px;
+  left: 94%;
 }
 @media (max-width: 1400px) {
-  header .riscos2 {
+  .riscos2 {
     right: -50px;
   }
 }
 @media (max-width: 1315px) {
-  header .riscos2 {
+  .riscos2 {
     display: none;
   }
 }

@@ -67,7 +67,6 @@
     <?php ob_start() ?>
     <header class="header text-white">
         <img class="riscos d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos-header.png') ?>" alt="">
-        <img class="riscos2 d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos2.png') ?>" alt="">
         
         <div class="container d-flex align-items-center h-100 p-0">
             <div class="row w-100 p-0 m-0">

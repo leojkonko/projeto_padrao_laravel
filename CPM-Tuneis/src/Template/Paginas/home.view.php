@@ -1,10 +1,11 @@
 
 <main id="home">
-    <section class="banner ratio ratio-custom z-index-background">
+    <section class="banner ratio ratio-custom z-index-background position-relative">
         <picture>
             <source srcset="<?= asset('images/backgrounds/img_principal.png') ?>" media="(min-width: 992px)">
             <img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/img_principal.png') ?>" alt="">
         </picture>
+        <img class="riscos2 d-none d-lg-flex" src="<?= asset('images/backgrounds/riscos2.png') ?>" alt="">
     </section>
     <section class="construcao pb-lg-0 pb-1">
         <div class="row p-0">
