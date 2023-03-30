@@ -49,13 +49,13 @@
             </div>
             <div class="col-lg-3 col-6 p-0">
                 <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
-                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos.png') ?>" alt="">
+                    <img class="object-fit-cover w-100 h-100 br-sup-dir" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-6 p-0 bg-cinza">
                 <div class="ratio ratio-1x1">
                     <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
-                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos1.png') ?>" alt="">
+                        <img class="object-fit-cover w-100 h-100 br-inf-esq" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
             </div>
@@ -79,10 +79,10 @@
                         <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                             <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                         </a>
-                        <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
+                        <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
                             <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                         </a>
-                        <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
+                        <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
                             <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                         </a>
                     </div>

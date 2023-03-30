@@ -239,6 +239,18 @@
     }
 }
 
+.br-sup-dir {
+    @media(min-width: 992px) {
+        border-radius: 0px 60px 0px 0px;
+    }
+}
+
+.br-inf-esq {
+    @media(min-width: 992px) {
+        border-radius: 0px 0px 0px 60px;
+    }
+}
+
 .numeros {
     background-image: url(../images/backgrounds/numeros.png);
     background-repeat: no-repeat;
