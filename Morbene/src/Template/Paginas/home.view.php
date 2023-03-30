@@ -2,7 +2,7 @@
     <section class="banner position-relative">
         <div class="row">
             <div class="col-lg-7 col-12 p-0 bg-index">
-                <div class="ratio ratio-16x9 text-center d-none d-lg-flex z-index-background">
+                <div class="ratio ratio-16x9 text-center d-none d-lg-flex z-index-background bg-custom-h">
                         <!--<img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">-->
                         <div class="d-flex align-items-center conteudo">
                             <h2 class="h2 text-white text-start pt-4 mt-1">Serviço de distribuição para grandes marcas</h2>
@@ -16,7 +16,9 @@
                 </div>
             </div>
             <div class="col-lg-5 col-12 p-0 text-center pt-2 sombra">
-                <button class="btn btn-outline-danger text-primary">Entre em contato</button>
+                <a href="#contato">
+                    <button class="btn btn-outline-danger text-primary mb-1">Entre em contato</button>
+                </a>
                 <!--<div class="marcas-banner z-index-background w-100 h-100">
                 </div>-->
                 <!-- Swiper -->
@@ -36,7 +38,7 @@
         </div>
         <img class="eng position-absolute d-none d-lg-flex" src="<?= asset('images/banners/eng.png') ?>" alt="">
     </section>
-    <section id="empresa" class="saiba-mais bg-cinza my-2">
+    <section id="empresa" class="saiba-mais bg-cinza ">
         <div class="row">
             <div class="col-lg-9 p-0 d-flex justify-content-center align-items-center flex-column conteudo-texto text-lg-start text-center">
                 <h2 class="h2 text-primary w-100">Saiba mais sobre a <span class="h2 text-danger">Morbene</span></h2>
@@ -46,35 +48,51 @@
                 </p>
             </div>
             <div class="col-lg-3 col-6 p-0">
-                <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos.png') ?>" alt="">
+                <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
+                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos.png') ?>" alt="">
+                </a>
             </div>
             <div class="col-lg-3 col-6 p-0 bg-cinza">
                 <div class="ratio ratio-1x1">
-                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos1.png') ?>" alt="">
+                    <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
+                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos1.png') ?>" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-6 p-0">
                 <div class="ratio ratio-1x1">
-                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                    <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-6 p-0">
                 <div class="ratio ratio-1x1">
-                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                    <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-lg-3 col-12 p-0">
                 <div class="mais-fotos">
                     <div class="ratio ratio-1x1">
-                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                        <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                        </a>
+                        <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
+                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                        </a>
+                        <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
+                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="regioes" class="numeros bg-cinza py-lg-4">
+    <section id="regioes" class="numeros bg-cinza py-lg-4 py-2">
         <div class="row">
-            <div class="col-lg-9 flex-column conteudo-texto p-0 mt-lg-3 text-center text-lg-start">
+            <div class="col-lg-9 flex-column conteudo-texto p-0 text-center text-lg-start">
                 <h2 class="h2 text-primary">Nossos <span class="h2 text-danger">Números</span></h2>
                 <p class="p pt-3 pb-2">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, 
                     quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
@@ -110,7 +128,9 @@
                             <div class="swiper-pagination pagination-style"></div> 
                         </div>
 
-                    <button class="btn btn-outline-danger text-primary mt-3">Entre em contato</button>
+                    <a href="#contato">
+                        <button class="btn btn-outline-danger text-primary mt-3">Entre em contato</button>
+                    </a>
             </div>
         </div>
     </section>
@@ -120,10 +140,13 @@
             <div class="swiper diferenciais-swiper">
                     <div class="swiper-wrapper my-4">
                         <?php foreach(range(0,9) as $i) : ?>
-                            <div class="swiper-slide d-flex justify-content-center">
-                                <div class="ratio ratio-1x1">
+                            <div class="swiper-slide d-flex justify-content-center flex-column">
+                                <div class="ratio ratio-1x1 m-auto">
                                     <img class="" src="<?= asset('images/icones/diferenciais.png') ?>" alt="">
                                 </div>
+                                <p class="p text-white text-center">
+                                    Estoque vertical
+                                </p>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -169,7 +192,7 @@
         </div>
     </section>
 
-<section class="contato py-4">
+<section class="contato py-4" id="contato">
     <div class="container px-2 px-lg-0">
         <div class="row">
             <h2 class="w-100 text-center h2 text-light mb-4">Entre em contato</h2>

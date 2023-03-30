@@ -152,6 +152,11 @@ header ul li {
 }
 @media (max-width: 1400px) {
   header ul li {
+    margin: 0px 25px;
+  }
+}
+@media (max-width: 1200px) {
+  header ul li {
     margin: 0px 10px;
   }
 }
@@ -180,9 +185,6 @@ footer .copyright .margin-auto {
   }
 }
 
-#home .banner {
-  z-index: 0;
-}
 #home .banner .bg-index .ratio {
   background-image: url(../images/backgrounds/bannerr.png);
   background-repeat: no-repeat;
@@ -237,7 +239,7 @@ footer .copyright .margin-auto {
   left: 60%;
   transform: translate(-50%);
   width: 500px;
-  z-index: 3;
+  z-index: 100;
 }
 @media (max-width: 1600px) {
   #home .banner .eng {
@@ -249,12 +251,28 @@ footer .copyright .margin-auto {
     width: 300px;
   }
 }
+@media (min-width: 992px) and (max-width: 1600px) {
+  #home .banner .row {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1600px) {
+  #home .banner .row .bg-custom-h {
+    height: 530px;
+  }
+}
 #home .sombra {
   position: relative;
+  z-index: 20;
 }
 #home .banner-vertical-swiper {
   width: 100%;
   height: 550px;
+}
+@media (min-width: 992px) and (max-width: 1600px) {
+  #home .banner-vertical-swiper {
+    height: 440px;
+  }
 }
 #home .banner-vertical-swiper .swiper-wrapper {
   box-shadow: inset 0 8px 8px -8px black, inset 0 -8px 8px -8px black;
@@ -279,6 +297,16 @@ footer .copyright .margin-auto {
   align-items: center;
   width: 8%;
 }
+@media (max-width: 450px) {
+  #home .banner-vertical-swiper .swiper-slide .ratio {
+    width: 22%;
+  }
+}
+@media (max-width: 576px) {
+  #home .banner-vertical-swiper .swiper-slide .ratio {
+    width: 15%;
+  }
+}
 #home .banner-vertical-swiper .swiper-slide .ratio img {
   width: 80px;
   height: 80px;
@@ -302,13 +330,13 @@ footer .copyright .margin-auto {
 .saiba-mais {
   border-radius: 0px 100px 0px 100px;
   position: relative;
-  z-index: 2;
+  z-index: 200;
 }
 .saiba-mais .conteudo-texto span {
   font-weight: 700;
 }
 .saiba-mais .conteudo-texto .h2 {
-  font-size: 50px;
+  font-size: 48px;
   line-height: 58px;
 }
 @media (max-width: 992px) {
@@ -321,22 +349,30 @@ footer .copyright .margin-auto {
   position: relative;
   z-index: 99;
 }
-.saiba-mais .mais-fotos::after {
+.saiba-mais .mais-fotos::before {
   background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
   width: 100%;
   height: 100%;
-  content: "Saiba mais";
+  content: "";
+  position: absolute;
+  z-index: 10;
+}
+.saiba-mais .mais-fotos::after {
+  width: 100%;
+  height: 100%;
+  content: "Veja mais";
   color: white;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 54px;
+  z-index: 11;
 }
 .saiba-mais .mais-fotos .ratio::after {
   content: "+2";
@@ -344,14 +380,15 @@ footer .copyright .margin-auto {
   height: 100%;
   color: white;
   position: absolute;
-  top: 35%;
+  top: 45%;
+  z-index: 12 !important;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 300;
-  font-size: 64px;
+  font-size: 48px;
   line-height: 90%;
   z-index: 9;
 }
@@ -380,11 +417,14 @@ footer .copyright .margin-auto {
     display: flex !important;
   }
 }
+.numeros .numeros-swiper .swiper-slide {
+  display: flex !important;
+}
 .numeros .conteudo-texto span {
   font-weight: 700;
 }
 .numeros .conteudo-texto .h2 {
-  font-size: 50px;
+  font-size: 48px;
   line-height: 50px;
 }
 .numeros .conteudo-texto .dados {
@@ -406,9 +446,23 @@ footer .copyright .margin-auto {
   border-radius: 30px;
   float: left;
 }
+@media (max-width: 1300px) {
+  .numeros .conteudo-texto .dados .item {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .numeros .conteudo-texto .dados .item h2 {
+    white-space: nowrap;
+  }
+  .numeros .conteudo-texto .dados .item .p-dados {
+    white-space: inherit !important;
+  }
+}
 @media (max-width: 992px) {
   .numeros .conteudo-texto .dados .item {
-    padding: 20 px;
+    padding: 20px;
   }
 }
 @media (max-width: 992px) {
@@ -442,7 +496,10 @@ footer .copyright .margin-auto {
   background-image: url(../images/backgrounds/diferenciais.png);
 }
 .diferenciais .h2 {
-  font-size: 50px;
+  font-size: 48px;
+}
+.diferenciais .diferenciais-swiper .swiper-slide {
+  display: flex !important;
 }
 .diferenciais .diferenciais-swiper .swiper-slide .ratio {
   border: 3px solid #FF2E17;
@@ -461,7 +518,7 @@ footer .copyright .margin-auto {
 }
 
 .marcas .h2 {
-  font-size: 50px;
+  font-size: 48px;
 }
 @media (max-width: 992px) {
   .marcas .h2 {
@@ -531,7 +588,7 @@ footer .copyright .margin-auto {
   }
 }
 .contato h2 {
-  font-size: 50px;
+  font-size: 48px;
   line-height: 50px;
   position: absolute;
   left: 50%;
@@ -633,7 +690,7 @@ footer .copyright .margin-auto {
   font-size: 18px;
   line-height: 30px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1600px) {
   .p {
     font-size: 16px;
   }
@@ -662,6 +719,9 @@ footer .copyright .margin-auto {
   .btn-outline-danger {
     font-size: 16px;
   }
+}
+.btn-outline-danger:hover {
+  color: white;
 }
 
 .bg-cinza {

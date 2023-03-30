@@ -20,6 +20,10 @@ header {
             margin: 0px 30px;
 
             @media(max-width: 1400px) {
+                margin: 0px 25px;
+            }
+
+            @media(max-width: 1200px) {
                 margin: 0px 10px;
             }
 

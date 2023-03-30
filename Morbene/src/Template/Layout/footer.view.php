@@ -3,13 +3,13 @@
     <div class="container">
         <div class="row d-flex justify-content-center align-items-start">
             <div class="col-lg-3 flex-column">
-                <img class="m-auto d-flex d-lg-inline-block" width="270px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                <img class="m-auto d-flex d-lg-inline-block" width="250px" src="<?= asset('images/logos/logo.png') ?>" alt="">
             </div>
-            <div class="col-lg-3 flex-column text-lg-start text-center pt-3 pt-lg-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-3 pt-lg-0 ps-lg-2 ps-0">
                 <h2 class="h2 w-100">Saiba como chegar</h2>
                 <p class="p">BR 116, nº 2930, B. Primavera Novo Hamburgo-RS</p>
             </div>
-            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0 ps-lg-2 ps-0">
                  <h2 class="h2 w-100">Atendimento</h2>
                 <p class="p">Segunda à sexta, 8h às 18h</p>
             </div>
@@ -60,7 +60,7 @@
 /* ==== Arquivo para o pessoal do back end ==== 
 <script src="<?= asset('js/custom.js') ?>"></script>  
 */ ?>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
     		function mudarTexto(classeImg) {
