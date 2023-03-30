@@ -2,7 +2,7 @@
     <section class="text">
         <div class="container">
             <div class="col-12 d-flex justify-content-center py-lg-4 py-2">
-                <p class="p text-lg-start text-center">
+                <p class="p text-lg-start text-center text-font-custom">
                     
     Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker. Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
                 </p>
@@ -16,7 +16,9 @@
                         <?php foreach(range(0,9) as $i) : ?>
                             <div class="swiper-slide text-center mt-2">
                                 <div class="ratio ratio-1x1 text-center">
-                                    <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/solucoes.png') ?>" alt="">
+                                    <a href="<?= asset('images/banners/solucoes.png') ?>" data-fancybox="gallery">
+                                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/solucoes.png') ?>" alt="">
+                                    </a>
                                 </div>
                                 
                             </div>

@@ -136,12 +136,15 @@
 body {
   font-family: "Poppins";
   font-style: normal;
+}
+
+html {
   overflow-x: hidden;
 }
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 20;
   width: 100%;
 }
 @media (max-width: 992px) {
@@ -792,6 +795,10 @@ footer .botao-whatsapp-not-hoverable {
 
 .solucoes {
   background-color: #eaeaea;
+}
+.solucoes .text-font-custom {
+  font-family: "Poppins";
+  font-style: normal;
 }
 .solucoes .ratio {
   width: 100px;

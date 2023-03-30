@@ -42,6 +42,7 @@
     /* ==== Arquivo para o pessoal do back end ==== 
     <link rel="stylesheet" href="webroot/site/dist/css/custom.css"> 
     */ ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <?php /* Fonte temporária */ ?>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,7 +155,7 @@
                 <div class="row position-relative p-0">
                 <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"><span>X</span></button>
                     <div class="text-center w-100">
-                        <img width="30%" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
+                        <img width="180px" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
                    </div>
                     <ul class="menu-offcanvas mt-4">
                         <li>

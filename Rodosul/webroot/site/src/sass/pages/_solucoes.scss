@@ -1,6 +1,11 @@
 .solucoes {
     background-color: #eaeaea;
 
+    & .text-font-custom {
+        font-family: "Poppins";
+        font-style: normal;
+    }
+
     & .ratio {
         width: 100px;
         border-radius: 50%;
