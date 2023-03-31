@@ -366,6 +366,15 @@
                 }
 
                 @media(max-width: 576px) {
+                    width: 160px !important;
+                    margin-bottom: 30px;
+
+                    & h2 {
+                        white-space: inherit !important;
+                    }
+                }
+
+                @media(max-width: 450px) {
                     width: 130px !important;
 
                     & h2 {

@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-lg-7 p-0">
                     <div class="row">
-                        <div class="col-lg-3 col-6 d-flex justify-content-center">
+                        <div class="col-lg-3 col-6 d-flex justify-content-start ps-2">
                             <a href="<?= url('/') ?>">
                                 <img width="216px" class="link link-logo" src="<?= asset('images/logos/logo.png') ?>" alt="">
                             </a>
@@ -99,19 +99,24 @@
             <img width="216px" class="link" src="<?= asset('images/logos/logo.png') ?>" alt="">
         </a>
   </div>
-    <button type="button" class="btn-close text-reset link" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close text-reset text-light link" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
   </div>
   <div class="offcanvas-body">
         <div class="d-flex justify-content-center">
-            <ul class="me-2">
+            <ul class="me-2 text-center">
                 <li>
-                    <a class="link" href="#empresa" class="h2">Sobre nós</a>
+                    <a class="link" href="#empresa" class="h2 text-primary">Sobre nós</a>
                 </li>
                 <li>
-                    <a class="link" href="#regioes" class="h2">Regiões</a>
+                    <a class="link" href="#regioes" class="h2 text-primary">Regiões</a>
                 </li>
                 <li>
-                    <a class="link" href="#marcas" class="h2">Marcas</a>
+                    <a class="link" href="#marcas" class="h2 text-primary">Marcas</a>
+                </li>
+                <li>
+                    <a href="#contato" class="link">
+                       Entre em contato
+                    </a>
                 </li>
             </ul>
         </div>
@@ -123,6 +128,7 @@
     $header = ob_get_contents();
     ob_end_clean();
     ?>
+    
 
     <?php /* Remover essa primeira condicional */ ?>
         <?php if ($pagina_atual === "home") : ?>
@@ -130,7 +136,76 @@
             <?php endif; ?>
             <?php if ($pagina_atual === "politica") : ?>
             <div class="header-wrapper">
-                <?= $header ?>
+            <header class="header position-absolute w-100 py-lg-2 text-white py-2">
+        <div class="container">
+            <div class="row">
+                        <div class="col-lg-3 col-6 d-flex justify-content-start ps-2">
+                            <a href="<?= url('/') ?>">
+                                <img width="216px" class="link link-logo" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center d-none d-lg-flex">
+                            <ul class="d-flex ">
+                                <li>
+                                    <a href="#empresa" class="text-white h2">Sobre nós</a>
+                                </li>
+                                <li>
+                                    <a href="#regioes" class="text-white h2">Regiões</a>
+                                </li>
+                                <li>
+                                    <a href="#marcas" class="text-white h2">Marcas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9 col-6 d-flex justify-content-end d-flex d-lg-none align-items-center pe-2">
+                            <button class="btn btn-danger text-blue" id="offcanvasTop-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <svg class="mb-0-25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="16" height="4" fill="white" />
+                                    <rect x="4" y="12" width="16" height="4" fill="white" />
+                                    <rect x="4" y="20" width="16" height="4" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                <div class="col-lg-3 d-flex align-items-center justify-content-center d-none d-lg-flex ">
+                    <button class="btn btn-outline-danger text-white">Entre em contato</button>
+                </div>
+            </div>  
+        </div>
+        <!--offcanvas-->
+
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+  <div class="m-auto">
+        <a href="<?= url('/') ?>">
+            <img width="216px" class="link" src="<?= asset('images/logos/logo.png') ?>" alt="">
+        </a>
+  </div>
+    <button type="button" class="btn-close text-reset text-light link" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+  </div>
+  <div class="offcanvas-body">
+        <div class="d-flex justify-content-center">
+            <ul class="me-2 text-center">
+                <li>
+                    <a class="link" href="#empresa" class="h2 text-primary">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="link" href="#regioes" class="h2 text-primary">Regiões</a>
+                </li>
+                <li>
+                    <a class="link" href="#marcas" class="h2 text-primary">Marcas</a>
+                </li>
+                <li>
+                    <a href="#contato" class="link">
+                       Entre em contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--offcanvas-->
+    </header>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper py-lg-4 bg-primary">
                         <?php if (!empty($title)) : ?>

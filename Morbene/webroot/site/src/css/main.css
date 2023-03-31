@@ -179,7 +179,7 @@ header ul li a:hover {
 }
 
 .breadcrumb-wrapper {
-  padding-top: 200px;
+  padding-top: 140px;
 }
 .breadcrumb-wrapper .h2 {
   font-size: 48px;
@@ -551,6 +551,15 @@ footer .copyright a {
   }
 }
 @media (max-width: 576px) {
+  .numeros .conteudo-texto .dados .item {
+    width: 160px !important;
+    margin-bottom: 30px;
+  }
+  .numeros .conteudo-texto .dados .item h2 {
+    white-space: inherit !important;
+  }
+}
+@media (max-width: 450px) {
   .numeros .conteudo-texto .dados .item {
     width: 130px !important;
   }
