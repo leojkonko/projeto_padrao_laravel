@@ -3,7 +3,9 @@
     <div class="container">
         <div class="row d-flex justify-content-center align-items-start">
             <div class="col-lg-3 flex-column">
-                <img class="m-auto d-flex d-lg-inline-block" width="250px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                <a href="<?= url('/') ?>">
+                    <img class="m-auto d-flex d-lg-inline-block" width="250px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                </a>
             </div>
             <div class="col-lg-3 flex-column text-lg-start text-center pt-3 pt-lg-0 ps-lg-2 ps-0">
                 <h2 class="h2 w-100">Saiba como chegar</h2>
@@ -16,15 +18,15 @@
             <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0">
                  <h2 class="h2 w-100">Contato</h2>
                 <p class="p">(51) 3587-2236
- contato@morbene.com.br</p>
+                contato@morbene.com.br</p>
             </div>
         </div>
         <div class="row mt-2">
         <div class=" copyright col-lg-12 d-flex align-items-center py-2 flex-column flex-lg-row">
             <p class="p ml-auto m-a">© 2023 Morbene Distribuidora</p>
-            <p class="p margin-auto py-2 py-lg-0"><a href="">Política de privacidade</a></p>
+            <p class="p margin-auto py-2 py-lg-0"><a href="<?= url('/politica') ?>">Política de privacidade</a></p>
             <p class="p mr-auto m-a">
-                <a href="">
+                <a href="https://www.ellitedigital.com.br/" target="_blank">
                     <svg width="78" height="17" viewBox="0 0 78 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13.168 14.0833H5.42779C4.35236 14.0833 3.47947 13.2078 3.47947 12.1291V9.57514C3.47947 8.49646 4.35236 7.62095 5.42779 7.62095H13.2162C14.7136 7.62095 15.9265 6.40442 15.9265 4.9025C15.9265 4.79366 15.8397 4.70417 15.7312 4.70417H4.30654C1.92902 4.70176 0 6.6366 0 9.02129V12.6733C0 15.058 1.92902 16.9928 4.30654 16.9928H6.55385C6.63825 16.9953 6.72264 17.0001 6.80945 17.0001H10.653C12.1504 17.0001 13.3633 15.7836 13.3633 14.2816C13.3633 14.1728 13.2765 14.0833 13.168 14.0833Z" fill="white"/>
                         <path d="M16.5269 0.0170213H14.2796C14.1952 0.0146027 14.1108 0.00976562 14.024 0.00976562H10.1804C8.68301 0.00976562 7.47014 1.2263 7.47014 2.72822C7.47014 2.83705 7.55694 2.92654 7.66545 2.92654H15.4057C16.4811 2.92654 17.354 3.80205 17.354 4.88073V7.43472C17.354 8.51339 16.4811 9.38891 15.4057 9.38891H7.61723C6.11982 9.38891 4.90695 10.6054 4.90695 12.1074C4.90695 12.2162 4.99376 12.3057 5.10226 12.3057H16.5245C18.902 12.3057 20.831 10.3708 20.831 7.98615V4.33414C20.8334 1.95186 18.9068 0.0170213 16.5269 0.0170213Z" fill="white"/>
@@ -76,6 +78,15 @@ $(document).ready(function() {
     //$('body').removeClass('modal-open');
     $('body').css('overflow', 'auto');
     $('.offcanvas-backdrop').remove();
+  });
+});
+$(document).ready(function() {
+  $('#offcanvasTop').on('hidden.bs.offcanvas', function () {
+    $('.content').css('z-index', '0');
+  });
+  
+  $('#offcanvasTop').on('shown.bs.offcanvas', function () {
+    $('.content').css('z-index', '1');
   });
 });
 

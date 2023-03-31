@@ -36,6 +36,21 @@ Router::get('/empresa', function () {
         ],
     ]);
 });
+Router::get('/politica', function () {
+    app()->view->render('politica', [
+        'pagina_atual' => 'politica',
+        'title' => 'Política de Privacidade',
+        'breadcrumbs' => [
+            [
+                'title' => 'Home',
+                'url' => url('/')
+            ],
+            [
+                'title' => 'Política de Privacidade',
+            ],
+        ],
+    ]);
+});
 
 Router::get('/blog-detalhe', function () {
     app()->view->render('blog_detalhe', [

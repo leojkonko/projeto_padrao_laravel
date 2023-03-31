@@ -3998,7 +3998,6 @@ textarea.form-control-lg {
 .offcanvas-body {
   flex-grow: 1;
   padding: 1rem 1rem;
-  overflow-y: auto;
 }
 
 .offcanvas-start {
@@ -4021,7 +4020,7 @@ textarea.form-control-lg {
   top: 0;
   right: 0;
   left: 0;
-  height: 50vh;
+  height: 40vh;
   max-height: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateY(-100%);

@@ -55,8 +55,10 @@
             <div class="row">
                 <div class="col-lg-7 p-0">
                     <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <img width="216px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                        <div class="col-lg-3 col-6 d-flex justify-content-center">
+                            <a href="<?= url('/') ?>">
+                                <img width="216px" class="link link-logo" src="<?= asset('images/logos/logo.png') ?>" alt="">
+                            </a>
                         </div>
                         <div class="col-lg-9 d-flex justify-content-center align-items-center d-none d-lg-flex">
                             <ul class="d-flex ">
@@ -72,7 +74,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-9 col-6 d-flex justify-content-end d-flex d-lg-none align-items-center pe-2">
-                            <button class="btn btn-danger text-blue" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <button class="btn btn-danger text-blue" id="offcanvasTop-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                                 <svg class="mb-0-25" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="4" y="4" width="16" height="4" fill="white" />
                                     <rect x="4" y="12" width="16" height="4" fill="white" />
@@ -93,7 +95,9 @@
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
   <div class="m-auto">
-  <img width="216px" class="link" src="<?= asset('images/logos/logo.png') ?>" alt="">
+        <a href="<?= url('/') ?>">
+            <img width="216px" class="link" src="<?= asset('images/logos/logo.png') ?>" alt="">
+        </a>
   </div>
     <button type="button" class="btn-close text-reset link" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
@@ -124,13 +128,13 @@
         <?php if ($pagina_atual === "home") : ?>
             <?= $header ?>
             <?php endif; ?>
-            <?php if ($pagina_atual === "contato") : ?>
+            <?php if ($pagina_atual === "politica") : ?>
             <div class="header-wrapper">
                 <?= $header ?>
                 <?php if (!empty($breadcrumbs)) : ?>
                     <section class="breadcrumb-wrapper py-lg-4 bg-primary">
                         <?php if (!empty($title)) : ?>
-                            <h1 class="h2 text-center text-white lh-1 mb-1">
+                            <h1 class="h2 text-center text-white lh-1 mb-2">
                                 <?= $title ?>
                             </h1>
                         <?php endif; ?>
@@ -142,13 +146,13 @@
                                 $i++;
                             ?>
                                 <?php if ($i !== $breadcrumbsLength) : ?>
-                                    <a class="breadcrumb-item" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
+                                    <a class="breadcrumb-item mb-4 mb-lg-0" href="<?= !empty($breadcrumb['url']) ? $breadcrumb['url'] : "#"  ?>">
                                         <span>
                                             <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
                                         </span>
                                     </a>
                                 <?php else : ?>
-                                    <span class="breadcrumb-item active" aria-current="page">
+                                    <span class="breadcrumb-item mb-4 mb-lg-0 active" aria-current="page">
                                         <span>
                                             <?= !empty($breadcrumb['title']) ? $breadcrumb['title'] : "Página"  ?>
                                         </span>

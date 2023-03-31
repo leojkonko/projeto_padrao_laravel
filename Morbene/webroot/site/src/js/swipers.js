@@ -90,7 +90,7 @@ var swiper = new Swiper(".marcas-swiper", {
 
 var swiper = new Swiper(".numeros-swiper", {
     slidesPerView: 2,
-    spaceBetween: 25,
+    //spaceBetween: 50,
     navigation: {
         nextEl: ".numeros-swiper .swiper-button-next",
         prevEl: ".numeros-swiper .swiper-button-prev",
@@ -100,14 +100,20 @@ var swiper = new Swiper(".numeros-swiper", {
         clickable: true
     },
     breakpoints: {
-        992: {
+        1200: {
             slidesPerView: 4,
         },
-        767: {
+        992: {
+            slidesPerView: 3,
+        },
+        800: {
             slidesPerView: 3,
         },
         576: {
             slidesPerView: 2,
         },
+        /*450: {
+            slidesPerView: 2,
+        },*/
     }
 });

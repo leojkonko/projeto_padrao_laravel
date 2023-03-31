@@ -5,12 +5,27 @@ body {
     padding-right: initial !important;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 main {
     overflow: hidden;
+
+    @media(max-width: 992px) {
+        z-index: 1;
+    }
 }
 
 header {
     z-index: 4;
+
+    & .link-logo {
+        @media(max-width: 576px) {
+            width: 150px;
+        }
+
+    }
 
     & ul {
         //padding-left: 200px;
@@ -33,5 +48,14 @@ header {
                 }
             }
         }
+    }
+}
+
+.breadcrumb-wrapper {
+    padding-top: 200px;
+
+    & .h2 {
+        font-size: 48px;
+        line-height: 48px;
     }
 }

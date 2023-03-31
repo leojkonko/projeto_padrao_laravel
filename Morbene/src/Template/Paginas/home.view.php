@@ -48,13 +48,13 @@
                 </p>
             </div>
             <div class="col-lg-3 col-6 p-0">
-                <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
+                <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                     <img class="object-fit-cover w-100 h-100 br-sup-dir" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-6 p-0 bg-cinza">
                 <div class="ratio ratio-1x1">
-                    <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
+                    <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                         <img class="object-fit-cover w-100 h-100 br-inf-esq" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
@@ -66,14 +66,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-6 p-0">
+            <div class="col-lg-3 col-6 p-0 d-none d-lg-flex">
                 <div class="ratio ratio-1x1">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                         <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-12 p-0">
+            <div class="col-lg-3 col-6 p-0">
                 <div class="mais-fotos">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" class="a-ratio" data-fancybox="gallery">
                         <div class="ratio ratio-1x1">
@@ -94,10 +94,13 @@
     </section>
     <section id="regioes" class="numeros bg-cinza py-lg-4 py-2">
         <div class="row">
-            <div class="col-lg-9 flex-column conteudo-texto p-0 text-center text-lg-start">
+            <div class="col-xl-8 col-12 flex-column conteudo-texto p-0 text-center text-xl-start">
                 <h2 class="h2 text-primary">Nossos <span class="h2 text-danger">Números</span></h2>
                 <p class="p pt-3 pb-2">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, 
                     quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+                    <div class="w-100 d-flex justify-content-center">
+                        <img class="d-flex d-xl-none w-100 h-100 object-fit-cover" src="<?= asset('images/backgrounds/numeros.png') ?>" alt="">
+                    </div>
                     <div class="dados d-none d-lg-flex">
                         <div class="d-flex item align-items-center bg-light flex-column">
                             <h2 class="h2 text-primary w-100 pt-0-50">6895</h2>
@@ -116,16 +119,34 @@
                             <h2 class="p-dados pt-0-50">Cidades</h2>
                         </div>
                     </div>
-                    <div class="swiper numeros-swiper d-flex d-lg-none">
-                        <div class="swiper-wrapper mb-4 pt-1">
-                            <?php foreach(range(0,9) as $i) : ?>
+                    <div class="swiper numeros-swiper d-flex d-xl-none p-2 p-lg-0">
+                        <div class="swiper-wrapper mb-lg-4 mb-1 mb-sm-4 pt-1">
+                            <?php //foreach(range(0) as $i) : ?>
+                                <div class="swiper-slide d-flex justify-content-center dados">
+                                    <div class="d-flex item align-items-center bg-light flex-column">
+                                        <h2 class="h2 text-primary w-100 pt-0-50">6895</h2>
+                                        <h2 class="p-dados pt-0-50">Clientes ativos</h2>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex justify-content-center dados">
+                                    <div class="d-flex item align-items-center bg-light flex-column">
+                                        <h2 class="h2 text-primary w-100 pt-0-50">7045</h2>
+                                        <h2 class="p-dados pt-0-50">Pedidos entregues ao mês</h2>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide d-flex justify-content-center dados">
+                                    <div class="d-flex item align-items-center bg-light flex-column">
+                                        <h2 class="h2 text-primary w-100 pt-0-50">R$ 2 bilhões</h2>
+                                        <h2 class="p-dados pt-0-50">Movimentados ao ano</h2>
+                                    </div>
+                                </div>
                                 <div class="swiper-slide d-flex justify-content-center dados">
                                     <div class="d-flex item align-items-center bg-light flex-column">
                                         <h2 class="h2 text-primary w-100 pt-0-50">21</h2>
                                         <h2 class="p-dados pt-0-50">Cidades</h2>
                                     </div>
                                 </div>
-                            <?php endforeach; ?>
+                            <?php //endforeach; ?>
                                 </div>
                             <div class="swiper-pagination pagination-style"></div> 
                         </div>
@@ -171,6 +192,7 @@
                     </div>
                 <div class="swiper-button-prev"></div> 
                 <div class="swiper-button-next"></div> 
+                <div class="swiper-pagination d-block d-lg-none"></div> 
             </div>                  
         </div>
         <div class="container">
@@ -186,7 +208,7 @@
                                     <span></span>
                                 </div>
                         </div>
-                        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column p-4 text-lg-start text-center">
+                        <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column p-lg-4 p-2 text-lg-start text-center">
                              <h2 class="h2 text-dark pb-2 w-100 ps-0-25" id="titulo">
                                 titulo 1
                              </h2>
