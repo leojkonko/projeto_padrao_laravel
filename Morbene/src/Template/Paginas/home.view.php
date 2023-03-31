@@ -75,17 +75,19 @@
             </div>
             <div class="col-lg-3 col-12 p-0">
                 <div class="mais-fotos">
-                    <div class="ratio ratio-1x1">
-                        <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
-                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
-                        </a>
-                        <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
-                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
-                        </a>
-                        <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
-                            <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
-                        </a>
-                    </div>
+                    <a href="<?= asset('images/banners/fotos2.png') ?>" class="a-ratio" data-fancybox="gallery">
+                        <div class="ratio ratio-1x1">
+                            <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                                <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                            </a>
+                            <a href="<?= asset('images/banners/fotos.png') ?>" data-fancybox="gallery">
+                                <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                            </a>
+                            <a href="<?= asset('images/banners/fotos1.png') ?>" data-fancybox="gallery">
+                                <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                            </a>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -115,7 +117,7 @@
                         </div>
                     </div>
                     <div class="swiper numeros-swiper d-flex d-lg-none">
-                        <div class="swiper-wrapper mb-4">
+                        <div class="swiper-wrapper mb-4 pt-1">
                             <?php foreach(range(0,9) as $i) : ?>
                                 <div class="swiper-slide d-flex justify-content-center dados">
                                     <div class="d-flex item align-items-center bg-light flex-column">
@@ -144,7 +146,7 @@
                                 <div class="ratio ratio-1x1 m-auto">
                                     <img class="" src="<?= asset('images/icones/diferenciais.png') ?>" alt="">
                                 </div>
-                                <p class="p text-white text-center">
+                                <p class="p text-white text-center pt-1">
                                     Estoque vertical
                                 </p>
                             </div>
@@ -160,7 +162,7 @@
             <div class="swiper marcas-swiper">
                     <div class="swiper-wrapper">
                         <?php foreach(range(0,9) as $i) : ?>
-                            <div class="swiper-slide d-flex justify-content-center">
+                            <div class="swiper-slide d-flex justify-content-center img_<?=$i?>">
                                 <div class="ratio ratio-1x1">
                                     <img id="texto" class="img_<?=$i?>" onclick="mudarTexto('img_<?=$i?>')" src="<?= asset('images/icones/nivea.png') ?>" alt="">
                                 </div>
@@ -175,8 +177,14 @@
             <div class="row p-0">
                 <div class="col-lg-9 col-12 p-0 m-auto">
                     <div class="row row2 p-0 m-lg-0 m-2">
-                        <div class="col-lg-6 col-12 p-0 col-img">
+                        <div class="col-lg-6 col-12 p-0 col-img position-relative">
                             <img class="w-100 h-100 object-fit-cover" src="<?= asset('images/banners/marca-nivea.png') ?>" alt="">
+                                <div class="autoplay-progress" slot="container-start">
+                                    <svg viewBox="0 0 48 48">
+                                        <circle cx="24" cy="24" r="20"></circle>
+                                    </svg>
+                                    <span></span>
+                                </div>
                         </div>
                         <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column p-4 text-lg-start text-center">
                              <h2 class="h2 text-dark pb-2 w-100 ps-0-25" id="titulo">

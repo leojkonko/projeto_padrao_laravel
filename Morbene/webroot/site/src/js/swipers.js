@@ -44,7 +44,8 @@ var swiper = new Swiper(".banner-vertical-swiper", {
 });
 
 
-
+const progressCircle = document.querySelector(".autoplay-progress svg");
+const progressContent = document.querySelector(".autoplay-progress span");
 var swiper = new Swiper(".marcas-swiper", {
     slidesPerView: 2,
     //spaceBetween: 30,
@@ -69,7 +70,22 @@ var swiper = new Swiper(".marcas-swiper", {
         576: {
             slidesPerView: 2,
         },
-    }
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    on: {
+        autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        },
+        slideChange: function () {
+            var activeSlide = this.slides[this.activeIndex];
+            console.log(activeSlide.classList[3]);
+            mudarTexto(activeSlide.classList[3])
+        }
+    },
 });
 
 var swiper = new Swiper(".numeros-swiper", {

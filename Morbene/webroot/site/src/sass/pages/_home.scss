@@ -68,13 +68,17 @@
         }
 
         & .row {
+            @media(min-width: 1600px) {
+                height: 680px;
+            }
+
             @media(min-width:992px)and(max-width: 1600px) {
-                height: 550px;
+                height: 600px;
             }
 
             & .bg-custom-h {
                 @media(min-width:992px)and(max-width: 1600px) {
-                    height: 530px;
+                    height: 560px;
                 }
             }
         }
@@ -89,7 +93,8 @@
 
     & .banner-vertical-swiper {
         width: 100%;
-        height: 550px;
+        height: 580px;
+        margin-bottom: 20px;
 
         @media(min-width:992px)and(max-width: 1600px) {
             height: 440px;
@@ -210,7 +215,7 @@
             z-index: 11;
         }
 
-        & .ratio {
+        & .a-ratio {
             &::after {
                 //background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
                 content: "+2";
@@ -254,8 +259,12 @@
 .numeros {
     background-image: url(../images/backgrounds/numeros.png);
     background-repeat: no-repeat;
-    background-position-x: 85%;
-    background-position-y: 50%;
+    background-position-x: 100%;
+    background-position-y: 25%;
+
+    @media(max-width: 1200px) {
+        background-position-y: 10%;
+    }
 
     @media(max-width: 992px) {
         background-image: none;
@@ -284,10 +293,10 @@
         }
 
         & .dados {
-            width: 200%;
+            max-width: 200%;
 
             @media(max-width: 1300px) {
-                width: 100%;
+                max-width: 100%;
 
             }
 
@@ -298,7 +307,19 @@
 
             & .item {
                 margin-right: 20px;
-                padding: 30px 40px;
+                padding: 30px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+                & h2 {
+                    @media(max-width: 1600px) {
+                        //text-align: center;
+                        height: 100%;
+                    }
+                }
+
+                @media(max-width: 1600px) {
+                    //max-width: 200px;
+                }
 
                 @media(max-width: 1300px) {
                     padding: 20px;
@@ -356,7 +377,7 @@
 .diferenciais {
     background-image: url(../images/backgrounds/diferenciais.png);
 
-    & .h2 {
+    & h2 {
         font-size: 48px;
     }
 
@@ -387,6 +408,41 @@
 }
 
 .marcas {
+
+    & .autoplay-progress {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: var(--swiper-theme-color);
+
+        & span {
+            opacity: 0;
+        }
+    }
+
+    & .autoplay-progress svg {
+        --progress: 0;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        stroke-width: 4px;
+        //stroke: var(--swiper-theme-color);
+        stroke: #eaeaea;
+        fill: none;
+        stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+        stroke-dasharray: 125.6;
+        transform: rotate(-90deg);
+    }
 
     & .h2 {
         font-size: 48px;

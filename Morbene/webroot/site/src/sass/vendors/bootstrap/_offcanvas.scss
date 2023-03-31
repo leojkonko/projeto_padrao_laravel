@@ -63,7 +63,9 @@
   top: 0;
   right: 0;
   left: 0;
-  height: $offcanvas-vertical-height;
+
+  height: 50vh;
+  //height: $offcanvas-vertical-height;
   max-height: 100%;
   border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
   transform: translateY(-100%);

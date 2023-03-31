@@ -184,6 +184,9 @@ footer .copyright .margin-auto {
     margin: auto;
   }
 }
+footer .copyright a {
+  color: white !important;
+}
 
 #home .banner .bg-index .ratio {
   background-image: url(../images/backgrounds/bannerr.png);
@@ -251,14 +254,19 @@ footer .copyright .margin-auto {
     width: 300px;
   }
 }
+@media (min-width: 1600px) {
+  #home .banner .row {
+    height: 680px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1600px) {
   #home .banner .row {
-    height: 550px;
+    height: 600px;
   }
 }
 @media (min-width: 992px) and (max-width: 1600px) {
   #home .banner .row .bg-custom-h {
-    height: 530px;
+    height: 560px;
   }
 }
 #home .sombra {
@@ -267,7 +275,8 @@ footer .copyright .margin-auto {
 }
 #home .banner-vertical-swiper {
   width: 100%;
-  height: 550px;
+  height: 580px;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) and (max-width: 1600px) {
   #home .banner-vertical-swiper {
@@ -374,7 +383,7 @@ footer .copyright .margin-auto {
   line-height: 54px;
   z-index: 11;
 }
-.saiba-mais .mais-fotos .ratio::after {
+.saiba-mais .mais-fotos .a-ratio::after {
   content: "+2";
   width: 100%;
   height: 100%;
@@ -393,7 +402,7 @@ footer .copyright .margin-auto {
   z-index: 9;
 }
 @media (max-width: 992px) {
-  .saiba-mais .mais-fotos .ratio::after {
+  .saiba-mais .mais-fotos .a-ratio::after {
     top: 40%;
   }
 }
@@ -413,8 +422,13 @@ footer .copyright .margin-auto {
 .numeros {
   background-image: url(../images/backgrounds/numeros.png);
   background-repeat: no-repeat;
-  background-position-x: 85%;
-  background-position-y: 50%;
+  background-position-x: 100%;
+  background-position-y: 25%;
+}
+@media (max-width: 1200px) {
+  .numeros {
+    background-position-y: 10%;
+  }
 }
 @media (max-width: 992px) {
   .numeros {
@@ -440,11 +454,11 @@ footer .copyright .margin-auto {
   line-height: 50px;
 }
 .numeros .conteudo-texto .dados {
-  width: 200%;
+  max-width: 200%;
 }
 @media (max-width: 1300px) {
   .numeros .conteudo-texto .dados {
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -454,9 +468,15 @@ footer .copyright .margin-auto {
 }
 .numeros .conteudo-texto .dados .item {
   margin-right: 20px;
-  padding: 30px 40px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   float: left;
+}
+@media (max-width: 1600px) {
+  .numeros .conteudo-texto .dados .item h2 {
+    height: 100%;
+  }
 }
 @media (max-width: 1300px) {
   .numeros .conteudo-texto .dados .item {
@@ -507,7 +527,7 @@ footer .copyright .margin-auto {
 .diferenciais {
   background-image: url(../images/backgrounds/diferenciais.png);
 }
-.diferenciais .h2 {
+.diferenciais h2 {
   font-size: 48px;
 }
 .diferenciais .diferenciais-swiper .swiper-slide {
@@ -529,6 +549,37 @@ footer .copyright .margin-auto {
   --swiper-theme-color: #FF2E17;
 }
 
+.marcas .autoplay-progress {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+.marcas .autoplay-progress span {
+  opacity: 0;
+}
+.marcas .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #eaeaea;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
 .marcas .h2 {
   font-size: 48px;
 }
