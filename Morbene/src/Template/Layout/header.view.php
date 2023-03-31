@@ -93,21 +93,21 @@
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
   <div class="m-auto">
-  <img width="216px" src="<?= asset('images/logos/logo.png') ?>" alt="">
+  <img width="216px" class="link" src="<?= asset('images/logos/logo.png') ?>" alt="">
   </div>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close text-reset link" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
         <div class="d-flex justify-content-center">
             <ul class="me-2">
                 <li>
-                    <a href="#empresa" class="h2">Sobre nós</a>
+                    <a class="link" href="#empresa" class="h2">Sobre nós</a>
                 </li>
                 <li>
-                    <a href="#regioes" class="h2">Regiões</a>
+                    <a class="link" href="#regioes" class="h2">Regiões</a>
                 </li>
                 <li>
-                    <a href="#marcas" class="h2">Marcas</a>
+                    <a class="link" href="#marcas" class="h2">Marcas</a>
                 </li>
             </ul>
         </div>
