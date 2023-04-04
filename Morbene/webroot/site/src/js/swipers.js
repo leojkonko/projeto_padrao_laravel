@@ -39,8 +39,9 @@ var swiper = new Swiper(".banner-vertical-swiper", {
     },
     spaceBetween: 30,
     autoplay: {
-        delay: 600,
+        delay: 400,
     },
+    speed: 1000,
 });
 
 

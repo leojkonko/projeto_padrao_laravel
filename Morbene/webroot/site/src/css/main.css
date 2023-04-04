@@ -297,16 +297,13 @@ footer .copyright a {
 }
 #home .banner-vertical-swiper {
   width: 100%;
-  height: 580px;
+  height: 520px;
   margin-bottom: 20px;
 }
 @media (min-width: 992px) and (max-width: 1600px) {
   #home .banner-vertical-swiper {
     height: 440px;
   }
-}
-#home .banner-vertical-swiper .swiper-wrapper {
-  box-shadow: inset 0 8px 8px -8px black, inset 0 -8px 8px -8px black;
 }
 #home .banner-vertical-swiper .swiper-slide {
   width: 100%;
@@ -342,6 +339,24 @@ footer .copyright a {
   width: 80px;
   height: 80px;
   object-fit: cover;
+}
+#home .sombra-swiper {
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  padding: 30px;
+  width: 100%;
+}
+#home .sombra-swiper::before {
+  position: absolute;
+  content: "1";
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  box-shadow: inset 0 200px 100px -5px rgb(255, 255, 255), inset 0 -190px 100px -5px rgb(255, 255, 255);
+  z-index: 2;
 }
 #home .marcas-banner {
   background-image: url(../images/banners/marcas-banner.png);

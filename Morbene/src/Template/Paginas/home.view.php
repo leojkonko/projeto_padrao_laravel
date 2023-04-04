@@ -21,19 +21,21 @@
                 </a>
                 <!--<div class="marcas-banner z-index-background w-100 h-100">
                 </div>-->
-                <!-- Swiper -->
-                <div class="swiper banner-vertical-swiper">
-                        <div class="swiper-wrapper">
-                            <?php foreach(range(0,9) as $i) : ?>
-                            <div class="swiper-slide">
-                                <div class="ratio ratio-1x1">
-                                    <img class="" src="<?= asset('images/icones/nivea.png') ?>" alt="">
+               <div class="sombra-swiper">
+                    <!-- Swiper -->
+                    <div class="swiper banner-vertical-swiper">
+                            <div class="swiper-wrapper">
+                                <?php foreach(range(0,9) as $i) : ?>
+                                <div class="swiper-slide">
+                                    <div class="ratio ratio-1x1">
+                                        <img class="" src="<?= asset('images/icones/nivea.png') ?>" alt="">
+                                    </div>
                                 </div>
+                                <?php endforeach; ?>
                             </div>
-                            <?php endforeach; ?>
-                        </div>
-                    <!--<div class="swiper-pagination"></div>-->
-                </div>
+                        <!--<div class="swiper-pagination"></div>-->
+                    </div>
+               </div>
             </div>
         </div>
         <img class="eng position-absolute d-none d-lg-flex" src="<?= asset('images/banners/eng.png') ?>" alt="">
