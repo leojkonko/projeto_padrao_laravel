@@ -382,6 +382,11 @@ footer .copyright a {
     border-radius: 0px 100px 0px 100px;
   }
 }
+@media (max-width: 992px) {
+  .saiba-mais {
+    margin-top: 640px;
+  }
+}
 .saiba-mais .conteudo-texto span {
   font-weight: 700;
 }
