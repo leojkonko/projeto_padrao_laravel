@@ -1,0 +1,52 @@
+// Estilos do footer
+footer {
+    & h2 {
+        font-weight: 700;
+        font-size: 24px !important;
+    }
+
+    & .logo {
+        width: 330px;
+
+        @media(max-width: 992px) {
+            width: 200px !important;
+            margin-bottom: 50px;
+        }
+    }
+
+    & .copyright {
+        background-color: #d9d9d9;
+
+        & .politica {
+            border-bottom: 1px solid #303030;
+
+            @media(max-width: 992px) {
+                margin: 20px auto !important;
+            }
+        }
+
+        & .margin-auto {
+            margin: 0px auto;
+
+            @media(min-width: 992px) {
+                margin-top: -12px;
+            }
+        }
+
+        & .m-a {
+
+            @media(max-width: 992px) {
+                margin: auto;
+            }
+        }
+
+        & a {
+            color: black !important;
+        }
+
+        & p {
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+        }
+    }
+}

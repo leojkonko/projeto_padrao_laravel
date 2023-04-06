@@ -1,0 +1,73 @@
+// Estilos do header
+body {
+    font-family: 'Manrope';
+    font-style: normal;
+    padding-right: initial !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+main {
+    overflow: hidden;
+
+    @media(max-width: 992px) {
+        z-index: 1;
+    }
+}
+
+header {
+    z-index: 4;
+
+    & .bg-white {
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    & .link-logo {
+        @media(max-width: 576px) {
+            width: 150px;
+        }
+
+    }
+
+    & ul {
+        //padding-left: 200px;
+
+        & li {
+            list-style: none;
+            margin: 0px 30px;
+
+            @media(max-width: 1200px) {
+                margin: 0px 20px;
+            }
+
+            & a {
+                &:hover {
+                    color: #eaeaea;
+                }
+            }
+        }
+    }
+
+    & .btn-outline-light:hover {
+
+        & path,
+        rect {
+            stroke: black;
+        }
+    }
+}
+
+.breadcrumb-wrapper {
+    background-image: url(../images/backgrounds/contato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    //padding: 40px;
+
+    & .h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}

@@ -1,0 +1,295 @@
+#home {
+    & .banner {
+        //z-index: 0;
+
+        & .bg-index {
+            background-image: url(../images/backgrounds/banner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            & .conteudo-banner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @media(max-width: 1400px) {
+                    top: 60% !important;
+                }
+            }
+        }
+    }
+}
+
+.saiba-mais {
+
+    & .conteudo-texto {
+
+        & span {
+            font-weight: 700;
+        }
+
+        & .h2 {
+            font-size: 48px;
+            line-height: 58px;
+
+            @media(max-width: 992px) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    & .mais-fotos {
+        cursor: pointer;
+        position: relative;
+        z-index: 99;
+
+        &::before {
+            background: linear-gradient(0deg, rgba(202, 202, 202, 0.9), rgba(202, 202, 202, 0.9));
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            z-index: 10;
+        }
+
+        &::after {
+            //background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
+            width: 100%;
+            height: 100%;
+            content: "Veja mais";
+            color: black;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 54px;
+            z-index: 11;
+
+            @media(min-width:992px)and(max-width: 1400px) {
+                top: 60%;
+            }
+
+            @media(max-width: 992px) {
+                font-size: 22px;
+            }
+        }
+
+        & .a-ratio {
+            &::after {
+                //background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
+                content: "+2";
+                width: 100%;
+                height: 100%;
+                color: black;
+                position: absolute;
+                top: 45%;
+                z-index: 12 !important;
+
+                @media(max-width: 992px) {
+                    top: 40%;
+                    font-size: 26px;
+                }
+
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                font-size: 48px;
+                line-height: 90%;
+                z-index: 9;
+            }
+        }
+    }
+}
+
+
+.diferenciais {
+    background-image: url(../images/backgrounds/diferenciais.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & h2 {
+        font-size: 48px;
+    }
+
+    & .diferenciais-swiper {
+
+        & .swiper-slide {
+            display: flex !important;
+
+            & .ratio {
+                border: 3px solid #FF2E17;
+                border-radius: 50%;
+                width: 120px;
+
+                & img {
+                    width: 56px;
+                    height: 56px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        & .swiper-pagination-bullet-active {
+            background: #FF2E17 !important;
+        }
+
+        & .swiper-pagination-bullet {
+            background: white;
+        }
+    }
+}
+
+.cidades {
+    & .row {
+        & .row {
+            width: 70%;
+            margin-left: 14%;
+            border-radius: 6px;
+
+            @media(max-width: 1600px) {
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            & .imagem {}
+
+            & .infos {
+                border-radius: 0px 6px 6px 0px;
+                margin-left: -5px;
+            }
+
+        }
+    }
+}
+
+.contato {
+    background-image: url(../images/backgrounds/contato.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    & .row {
+
+        padding: 20px;
+        border-radius: 40px;
+        position: relative;
+        //        padding-top: 5rem;
+
+        @media(max-width: 767px) {
+            //padding-top: 7rem;
+        }
+    }
+
+    & button {
+        @media(max-width: 576px) {
+            margin: auto;
+        }
+    }
+
+    & .col-12 {
+        border-radius: 30px;
+
+        & .form-select {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #303030;
+
+            @media(max-width: 992px) {
+                font-size: 16px;
+            }
+
+            padding: 10px 30px;
+        }
+
+        & textarea {
+            width: 98%;
+            height: 140px;
+
+            @media(max-width: 992px) {
+                width: 94%;
+            }
+
+            @media(max-width: 767px) {
+                width: 91%;
+            }
+
+            @media(max-width: 576px) {
+                width: 90%;
+            }
+        }
+
+        & .input-check {
+            border-radius: 50%;
+            border: 1px solid #FF2E17;
+        }
+
+        & span {
+            border-bottom: 1px solid #303030;
+            font-weight: 700;
+        }
+    }
+
+    .checkbox-round {
+        display: inline-block;
+        position: relative;
+        padding-left: 25px;
+        //margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .checkbox-round input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 2px solid #999;
+        border-radius: 50%;
+    }
+
+    .checkbox-round:hover input~.checkmark {
+        background-color: #f2f2f2;
+    }
+
+    .checkbox-round input:checked~.checkmark {
+        background-color: #303030;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .checkbox-round input:checked~.checkmark:after {
+        display: block;
+    }
+
+    .checkbox-round .label-text {
+        margin-left: 35px;
+    }
+
+}
