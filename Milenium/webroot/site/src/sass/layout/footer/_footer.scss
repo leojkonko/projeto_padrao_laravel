@@ -5,6 +5,13 @@ footer {
         font-size: 24px !important;
     }
 
+
+    & a:hover {
+        color: #303030;
+        font-weight: 700;
+    }
+
+
     & .logo {
         width: 330px;
 
@@ -12,6 +19,7 @@ footer {
             width: 200px !important;
             margin-bottom: 50px;
         }
+
     }
 
     & .copyright {
