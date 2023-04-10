@@ -552,7 +552,7 @@ footer .copyright a {
 }
 @media (max-width: 992px) {
   .saiba-mais .conteudo-texto-morbene .h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 .saiba-mais .mais-fotos {
@@ -997,7 +997,12 @@ footer .copyright a {
 }
 @media (max-width: 992px) {
   .contato .col-12 textarea {
-    width: 91%;
+    width: 93%;
+  }
+}
+@media (max-width: 576px) {
+  .contato .col-12 textarea {
+    width: 100%;
   }
 }
 .contato .col-12 .input-check {

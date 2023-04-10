@@ -261,7 +261,7 @@
             line-height: 58px;
 
             @media(max-width: 992px) {
-                font-size: 40px;
+                font-size: 38px;
             }
         }
     }
@@ -750,7 +750,10 @@
             height: 140px;
 
             @media(max-width: 992px) {
-                width: 91%;
+                width: 93%;
+            }
+            @media(max-width: 576px) {
+                width: 100%;
             }
         }
 

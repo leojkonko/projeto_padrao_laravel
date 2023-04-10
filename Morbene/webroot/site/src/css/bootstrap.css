@@ -1684,6 +1684,11 @@ textarea.form-control-lg {
     width: 93%;
   }
 }
+@media (max-width: 576px) {
+  .form-select {
+    width: 100%;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .form-select {
     transition: none;

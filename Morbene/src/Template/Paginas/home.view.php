@@ -46,7 +46,7 @@
             <div class="col-12">
                 <div class="container container-fluid-right">
                     <div class="row g-0 ">
-                            <div class="col-lg d-flex justify-content-center align-items-center flex-column conteudo-texto-morbene py-4 py-xxl-0 text-lg-start text-center">
+                            <div class="col-lg d-flex justify-content-center align-items-center flex-column conteudo-texto-morbene py-4 py-xxl-0 px-1 px-lg-0 text-lg-start text-center">
                             <h2 class="h2 text-primary w-100">Saiba mais sobre a <span class="h2 text-danger">Morbene</span></h2>
                             <p class="p pt-2 pe-lg-4 me-lg-4">
                             A Morbene iniciou seus serviços de distribuição em maio de 1983, na cidade de Novo Hamburgo/RS, trabalhando com exclusividade com a Rayovac. Após algum tempo, 
@@ -245,11 +245,11 @@
             <div class="col-12 bg-white p-1">
                 <form action="">
                     <div class="d-lg-flex d-block">
-                        <input type="text" class="form-select m-1" placeholder="Nome">
-                        <input type="number" class="form-select m-1 mask-telefone" placeholder="Telefone">
-                        <input type="email" class="form-select m-1" placeholder="E-mail">
+                        <input type="text" class="form-select mb-1 mb-sm-0 m-sm-1" placeholder="Nome">
+                        <input type="number" class="form-select mb-1 mb-sm-0 m-sm-1 mask-telefone" placeholder="Telefone">
+                        <input type="email" class="form-select mb-1 mb-sm-0 m-sm-1" placeholder="E-mail">
                     </div>
-                    <textarea class="form-select m-1" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <textarea class="form-select mb-1 mb-sm-0 m-sm-1" name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
                     <div class="d-lg-flex d-block my-2 m-1 align-items-center">
                     <label class="checkbox-round mt-1">
                         <input type="checkbox">
