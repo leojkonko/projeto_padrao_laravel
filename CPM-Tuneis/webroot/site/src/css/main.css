@@ -148,6 +148,14 @@ header {
   width: 100%;
   height: 139px;
   z-index: 1;
+  /*& .linguagens{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      & img{
+          cursor: pointer;
+      }
+  }*/
 }
 header .container::after {
   content: "";
@@ -620,6 +628,72 @@ footer .botao-whatsapp-not-hoverable {
 }
 @media (hover: none) {
   footer .botao-whatsapp-not-hoverable {
+    display: flex;
+  }
+}
+footer .btn-bandeira {
+  background-color: transparent;
+  border: none;
+}
+footer .botao-whatsapp-wrapper .show path {
+  d: path("M5 14L10 9L15 14");
+  transition: d 0.25s ease-in-out;
+}
+footer .botao-whatsapp-wrapper path {
+  d: path("M5 9.00525L10 14.0052L15 9.00525");
+  transition: d 0.25s ease-in-out;
+}
+footer .botao-linguagens {
+  box-sizing: content-box;
+  padding: 0.33em;
+  isolation: isolate;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+footer .botao-linguagens:hover {
+  color: #fff;
+}
+footer .botao-linguagens::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  background-image: linear-gradient(50deg, #149d1b, #32e53b);
+}
+@media (hover: hover) {
+  footer .botao-linguagens:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.2);
+    /*&::after {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }*/
+  }
+}
+footer .botao-linguagens-wrapper {
+  z-index: 990;
+}
+footer .botao-linguagens-hoverable {
+  display: none;
+}
+@media (hover: hover) {
+  footer .botao-linguagens-hoverable {
+    display: flex;
+  }
+}
+footer .botao-linguagens-not-hoverable {
+  display: none;
+}
+@media (hover: none) {
+  footer .botao-linguagens-not-hoverable {
     display: flex;
   }
 }

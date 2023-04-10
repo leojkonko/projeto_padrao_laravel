@@ -2789,7 +2789,6 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
   border-bottom: 0;
@@ -2807,12 +2806,12 @@ textarea.form-control-lg {
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
-  color: #212529;
+  color: white;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto !important;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
 .dropdown-menu[data-bs-popper] {
@@ -2927,7 +2926,6 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
   border-top: 0;
   border-right: 0.3em solid transparent;
   border-bottom: 0.3em solid;
@@ -2948,7 +2946,6 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
   border-top: 0.3em solid transparent;
   border-right: 0;
   border-bottom: 0.3em solid transparent;
@@ -2972,7 +2969,6 @@ textarea.form-control-lg {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
-  content: "";
 }
 .dropstart .dropdown-toggle::after {
   display: none;
@@ -3014,7 +3010,6 @@ textarea.form-control-lg {
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: #1e2125;
-  background-color: #e9ecef;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
@@ -3727,7 +3722,7 @@ header .offcanvas-top .btn-close {
   padding: 8px 24px !important;
 }
 .modal-footer .button-azul svg {
-  margin-top: 6px;
+  margin-top: 12px;
 }
 @media (max-width: 992px) {
   .modal-footer .button-azul {

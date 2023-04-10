@@ -87,7 +87,7 @@ footer {
         border-bottom: 1px solid white;
     }
 
-    & .botao-whatsapp {
+     & .botao-whatsapp {
         $botao-whatsapp-color: rgb(26, 202, 35);
         $zindex-botao-whatsapp: 990;
         box-shadow: $box-shadow;
@@ -128,6 +128,85 @@ footer {
                 height: 100%;
                 opacity: 1;
             }
+        }
+
+        &-wrapper {
+            z-index: $zindex-botao-whatsapp;
+        }
+
+        &-hoverable {
+            display: none;
+
+            @media (hover: hover) {
+                display: flex;
+            }
+        }
+
+        &-not-hoverable {
+            display: none;
+
+            @media (hover: none) {
+                display: flex;
+            }
+        }
+    }
+     .btn-bandeira{
+        background-color: transparent;
+        border: none;
+    }
+    & .botao-whatsapp-wrapper{
+        & .show{
+
+            & path {
+                d: path("M5 14L10 9L15 14");
+                transition: d 0.25s ease-in-out;
+            }
+        }
+        & path {
+            d: path("M5 9.00525L10 14.0052L15 9.00525");
+            transition: d 0.25s ease-in-out;
+        }
+    }
+     & .botao-linguagens {
+        $botao-whatsapp-color: rgb(26, 202, 35);
+        $zindex-botao-whatsapp: 990;
+        //box-shadow: $box-shadow;
+        //@include linear-rfs(2rem, 2.25rem, 320px, 1920px);
+        box-sizing: content-box;
+        padding: .33em;
+        isolation: isolate;
+        color: $white;
+       // background-color: $botao-whatsapp-color;
+        transition: $transition-base; 
+        width: 100%;
+
+        &:hover {
+            color: $white;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 0%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: $transition-base;
+            z-index: -1;
+            @include gradient-directional(darken($botao-whatsapp-color, 10), lighten($botao-whatsapp-color, 10), 50deg);
+            //border-radius: 9999px;
+        }
+
+        @include media-hover {
+            box-shadow: $box-shadow-lg;
+            transform: scale(1.2);
+            /*&::after {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }*/
         }
 
         &-wrapper {
