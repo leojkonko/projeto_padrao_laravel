@@ -4,14 +4,15 @@
             <div class="col-lg-7 col-12 p-0 bg-index">
                 <div class="ratio ratio-16x9 text-center d-none d-lg-flex z-index-background bg-custom-h">
                         <!--<img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">-->
-                        <div class="d-flex align-items-center conteudo">
+                        <!--<div class="d-flex align-items-center conteudo">
                             <h2 class="h2 text-white text-start pt-4 mt-1">Serviço de distribuição para grandes marcas</h2>
-                        </div>
+                        </div>-->
                 </div>
                 <div class="ratio ratio-6x9 text-center d-flex d-lg-none">
                         <!--<img class="object-fit-cover w-100 h-100" src="<?= asset('images/backgrounds/bannerr.png') ?>" alt="">-->
-                        <div class="d-flex align-items-center conteudo">
+                        <div class="d-flex align-items-center conteudo px-4">
                             <h2 class="h2 text-white text-center pt-4 mt-1">Serviço de distribuição para grandes marcas</h2>
+                            <img class="eng-mobile position-absolute d-flex d-lg-none" src="<?= asset('images/banners/eng.png') ?>" alt="">
                         </div>
                 </div>
             </div>
