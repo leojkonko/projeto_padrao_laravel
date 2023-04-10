@@ -157,12 +157,12 @@ footer {
     & .botao-whatsapp-wrapper{
         & .show{
 
-            & path {
+            & .path {
                 d: path("M5 14L10 9L15 14");
                 transition: d 0.25s ease-in-out;
             }
         }
-        & path {
+        & .path {
             d: path("M5 9.00525L10 14.0052L15 9.00525");
             transition: d 0.25s ease-in-out;
         }

@@ -101,7 +101,7 @@ $(document).ready(function () {
                 <button class="btn-bandeira dropdown-toggle" type="button" id="dropdownMenu2"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="<?= asset('images/icones/brasil.png') ?>" class="ms-1 logo object-fit-cover" width="50px" alt="">
                         <svg class="arrow w-1-25 h-1-25" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 9.00525L10 14.0052L15 9.00525" stroke="gray" stroke-width="1.5" />
+                            <path class="path" d="M5 9.00525L10 14.0052L15 9.00525" stroke="gray" stroke-width="1.5" />
                         </svg>                                                  
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
