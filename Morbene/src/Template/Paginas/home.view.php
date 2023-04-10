@@ -42,41 +42,54 @@
         <img class="eng position-absolute d-none d-lg-flex" src="<?= asset('images/banners/eng.png') ?>" alt="">
     </section>
     <section id="empresa" class="saiba-mais bg-cinza ">
-        <div class="row">
-            <div class="col-lg-9 p-0 d-flex justify-content-center align-items-center flex-column conteudo-texto text-lg-start text-center">
-                <h2 class="h2 text-primary w-100">Saiba mais sobre a <span class="h2 text-danger">Morbene</span></h2>
-                <p class="p pt-2">
-                A Morbene iniciou seus serviços de distribuição em maio de 1983, na cidade de Novo Hamburgo/RS, trabalhando com exclusividade com a Rayovac. Após algum tempo, 
-                outras grandes marcas como Bic, Ferrero, Nivea, Perfetti e Fini somaram-se ao quadro, <span>que hoje conta com 6.900 clientes ativos, nos mais diversos ramos de atividade.</span>
-                </p>
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="container container-fluid-right">
+                    <div class="row g-0 ">
+                            <div class="col-lg d-flex justify-content-center align-items-center flex-column conteudo-texto-morbene py-4 py-xxl-0 text-lg-start text-center">
+                            <h2 class="h2 text-primary w-100">Saiba mais sobre a <span class="h2 text-danger">Morbene</span></h2>
+                            <p class="p pt-2 pe-lg-4 me-lg-4">
+                            A Morbene iniciou seus serviços de distribuição em maio de 1983, na cidade de Novo Hamburgo/RS, trabalhando com exclusividade com a Rayovac. Após algum tempo, 
+                            outras grandes marcas como Bic, Ferrero, Nivea, Perfetti e Fini somaram-se ao quadro, <span>que hoje conta com 6.900 clientes ativos, nos mais diversos ramos de atividade.</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-auto">
+                            <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                                <img id="setWidth" class="object-fit-cover w-100 h-100 br-sup-dir d-none d-lg-flex" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-3 col-6 p-0">
-                <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
-                    <img class="object-fit-cover w-100 h-100 br-sup-dir" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-6 p-0 bg-cinza">
+            <div class="col-lg-3 col-6 bg-cinza" id="getWidth">
                 <div class="ratio ratio-1x1">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                         <img class="object-fit-cover w-100 h-100 br-inf-esq" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-6 p-0">
+            <div class="col-lg-3 col-6">
                 <div class="ratio ratio-1x1">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                         <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-6 p-0 d-none d-lg-flex">
+            <div class="col-lg-3 col-6 d-none d-lg-flex">
                 <div class="ratio ratio-1x1">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
                         <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-6 p-0">
+            <div class="col-lg-3 col-6 d-flex d-lg-none">
+                <div class="ratio ratio-1x1">
+                    <a href="<?= asset('images/banners/fotos2.png') ?>" data-fancybox="gallery">
+                        <img class="object-fit-cover w-100 h-100" src="<?= asset('images/banners/fotos2.png') ?>" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
                 <div class="mais-fotos">
                     <a href="<?= asset('images/banners/fotos2.png') ?>" class="a-ratio" data-fancybox="gallery">
                         <div class="ratio ratio-1x1">
