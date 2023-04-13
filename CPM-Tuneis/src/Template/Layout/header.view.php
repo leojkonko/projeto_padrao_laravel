@@ -90,20 +90,20 @@
                     </ul>
                 </div> 
                 <div class="col-lg-5 col-md-7 col-5 div-button d-flex justify-content-end align-items-center">
-                        <button class="button p d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <svg class="ms-1" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.44444 8.63636C6.44444 8.63636 6.44444 15.9091 12 15.9091C17.5556 15.9091 17.5556 8.63636 17.5556 8.63636M4.59259 8.63636L19.4074 8.63637M6.07407 6.81818C6.07407 6.81818 6.07407 1 12 1C17.9259 1 17.9259 6.81818 17.9259 6.81818M2 25C2 25 2 18.4545 12 18.4545C22 18.4545 22 25 22 25" stroke="white" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <img src="<?= asset('images/icones/especialista.png') ?>" width="50" class="mb-1 button-offcanvas d-none" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0 ms-1 button-menu mb-0-25" type="button"
-                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="4" y="4" width="16" height="4" fill="white" />
-                                    <rect x="4" y="12" width="16" height="4" fill="white" />
-                                    <rect x="4" y="20" width="16" height="4" fill="white" />
-                                </svg>
-                            </button>
+                    <button class="button p d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg class="ms-1" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.44444 8.63636C6.44444 8.63636 6.44444 15.9091 12 15.9091C17.5556 15.9091 17.5556 8.63636 17.5556 8.63636M4.59259 8.63636L19.4074 8.63637M6.07407 6.81818C6.07407 6.81818 6.07407 1 12 1C17.9259 1 17.9259 6.81818 17.9259 6.81818M2 25C2 25 2 18.4545 12 18.4545C22 18.4545 22 25 22 25" stroke="white" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                            <img src="<?= asset('images/icones/especialista.png') ?>" width="50" class="mb-1 button-offcanvas d-none" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button class="btn me-1 d-lg-none d-md-flex d-sm-flex d-xs-flex p-0 ms-1 button-menu mb-0-25" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="4" width="16" height="4" fill="white" />
+                            <rect x="4" y="12" width="16" height="4" fill="white" />
+                            <rect x="4" y="20" width="16" height="4" fill="white" />
+                        </svg>
+                    </button>
                 </div> 
                 <div class="d-none div-teste">
                         <img src="<?= asset('images/icones/lupa.svg') ?>" width="40" alt="">
@@ -120,7 +120,7 @@
                     <div class="text-center w-100">
                         <img width="30%" src="<?= asset('images/logos/logo-footer.png') ?>" alt="">
                    </div>
-                    <ul class="menu-offcanvas mt-4">
+                    <ul class="menu-offcanvas mt-2 ">
                         <li>
                             <a href="<?= url('/empresa') ?>">Sobre nós</a>
                         </li>
@@ -132,6 +132,10 @@
                         </li>
                         <li>
                             <a href="<?= url('/contato') ?>">Contato</a>
+                        </li>
+                        <li class="gap-1">
+                            <a href=""><img src="<?= asset('images/icones/brasil.png') ?>" class="me-1 logo object-fit-cover" width="35px" alt=""></a>
+                            <a href=""><img src="<?= asset('images/icones/eua.png') ?>" class="ms-1 logo object-fit-cover" width="35px" alt=""></a>
                         </li>
                     </ul>
                     <div class="col-12 d-flex justify-content-center mt-4">
@@ -182,6 +186,7 @@
                 </div>
             </div>
         <!--modal-->
+        <!--WhastsApp-->
     </header>
     <?php
     $header = ob_get_contents();

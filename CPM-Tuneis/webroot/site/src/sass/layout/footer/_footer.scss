@@ -39,6 +39,10 @@ footer {
             font-size: 16px;
         }
 
+        @media(max-width:1200px) {
+            width: 300px;
+        }
+
         &:hover {
             color: #dad6d6;
         }
@@ -66,13 +70,20 @@ footer {
 
             & .redes {
                 & .rede-link {
-                    width: 40px;
+                    width: 54px;
+                    transform: scale(1.0);
+                    transition: transform 0.2s ease-in-out;
 
                     & svg {
                         padding: 10px;
                         border-radius: 50%;
                         //padding: 10px 11px 11px 11px;
                         border: 1px solid white;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: transform 0.2s ease-in-out;
                     }
                 }
             }
@@ -147,6 +158,55 @@ footer {
 
             @media (hover: none) {
                 display: flex;
+            }
+        }
+    }
+
+    .btn-bandeira {
+        background-color: transparent;
+        border: none;
+    }
+
+    & .botao-whatsapp-wrapper {
+        & .show {
+
+            & .path {
+                d: path("M5 14L10 9L15 14");
+                transition: d 0.25s ease-in-out;
+            }
+        }
+
+        & .path {
+            d: path("M5 9.00525L10 14.0052L15 9.00525");
+            transition: d 0.25s ease-in-out;
+        }
+    }
+
+    & .idiomas {
+        position: fixed;
+        left: 0;
+        bottom: 10%;
+        //display: flex;
+        flex-direction: column;
+
+
+        & .link {
+            width: initial;
+            margin: 0.5px 0px;
+            padding: 10px 20px;
+            border-radius: 0px 10px 10px 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transform: scale(1.0);
+            transition: transform 0.2s ease-in-out;
+
+            & img {
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: transform 0.2s ease-in-out;
             }
         }
     }

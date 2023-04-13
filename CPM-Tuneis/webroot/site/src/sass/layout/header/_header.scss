@@ -274,9 +274,16 @@ header {
         @media (max-width: 1315px) {
             display: none;
         }
-
-        //@include linear-rfs(1rem, 5rem, 375px, 1920px, "right");
     }
+
+    /*& .linguagens{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        & img{
+            cursor: pointer;
+        }
+    }*/
 
 }
 
