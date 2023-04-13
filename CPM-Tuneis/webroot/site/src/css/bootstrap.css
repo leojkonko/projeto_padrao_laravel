@@ -3626,7 +3626,10 @@ header .offcanvas-top .btn-close {
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.5);
+=======
+>>>>>>> ecd1b05ea25b3fee936cd1a9bbc149cc0766f691
 }
 
 .modal-dialog {
