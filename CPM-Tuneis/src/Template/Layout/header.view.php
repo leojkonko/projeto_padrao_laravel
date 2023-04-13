@@ -134,8 +134,8 @@
                             <a href="<?= url('/contato') ?>">Contato</a>
                         </li>
                         <li class="gap-1">
-                            <img src="<?= asset('images/icones/eua.png') ?>" class="me-1 logo object-fit-cover" width="35px" alt="">
-                            <img src="<?= asset('images/icones/brasil.png') ?>" class="ms-1 logo object-fit-cover" width="50px" alt="">
+                            <a href=""><img src="<?= asset('images/icones/brasil.png') ?>" class="me-1 logo object-fit-cover" width="35px" alt=""></a>
+                            <a href=""><img src="<?= asset('images/icones/eua.png') ?>" class="ms-1 logo object-fit-cover" width="35px" alt=""></a>
                         </li>
                     </ul>
                     <div class="col-12 d-flex justify-content-center mt-4">
