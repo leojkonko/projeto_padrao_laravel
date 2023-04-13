@@ -55,13 +55,16 @@
             <div class="row">
                 <div class="col-lg-7 p-0">
                     <div class="row">
-                        <div class="col-lg-3 col-6 d-flex justify-content-start ps-2">
+                        <div class="col-lg-3 col-6 d-flex justify-content-start ps-2 ps-sm-0 ps-lg-0">
                             <a href="<?= url('/') ?>">
                                 <img width="216px" class="link link-logo" src="<?= asset('images/logos/logo.png') ?>" alt="">
                             </a>
+                            <div class="d-flex align-items-center conteudo-banner d-none d-lg-flex">
+                                <h2 class="h2 text-white text-start pt-4 mt-1">Serviço de distribuição para grandes marcas</h2>
+                            </div>
                         </div>
                         <div class="col-lg-9 d-flex justify-content-center align-items-center d-none d-lg-flex">
-                            <ul class="d-flex ">
+                            <ul class="d-flex z-index-1">
                                 <li>
                                     <a href="#empresa" class="text-white h2">Sobre nós</a>
                                 </li>

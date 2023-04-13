@@ -73,3 +73,7 @@ exampleObserver.observe(document.querySelector(".teste"));
 		});
 	}
 })();
+
+$(window).on("load resize", function() {
+	$("#setWidth").outerWidth($("#getWidth").width());
+})

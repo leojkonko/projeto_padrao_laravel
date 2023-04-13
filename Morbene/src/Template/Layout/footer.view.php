@@ -7,11 +7,11 @@
                     <img class="m-auto d-flex d-lg-inline-block" width="250px" src="<?= asset('images/logos/logo.png') ?>" alt="">
                 </a>
             </div>
-            <div class="col-lg-3 flex-column text-lg-start text-center pt-3 pt-lg-0 ps-lg-2 ps-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-3 pt-lg-0 ps-lg-4 ps-xl-2">
                 <h2 class="h2 w-100">Saiba como chegar</h2>
                 <p class="p">BR 116, nº 2930, B. Primavera Novo Hamburgo-RS</p>
             </div>
-            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0 ps-lg-2 ps-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0 ps-lg-2">
                  <h2 class="h2 w-100">Atendimento</h2>
                 <p class="p">Segunda à sexta, 8h às 18h</p>
             </div>

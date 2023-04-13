@@ -1,3 +1,45 @@
+.conteudo-banner {
+    position: absolute;
+    padding-top: 140px;
+    @media(max-width: 1600px) {
+        padding-top: 70px;
+    }
+    /*padding-left: 200px;
+
+    @media(max-width: 1400px) {
+        padding-left: 140px;
+    }
+
+    @media(max-width: 992px) {
+        //padding: 0px 30px;
+        padding: 0px 0px;
+        text-align: center;
+    }*/
+
+    & .h2 {
+        font-size: 54px;
+        line-height: 115%;
+        width: 63%;
+        padding-right: 80px;
+
+        @media(max-width: 1700px) {
+            font-size: 45px;
+            width: 70%;
+        }
+
+        @media(max-width: 1400px) {
+            font-size: 40px;
+            width: 50%;
+        }
+
+        @media(max-width: 992px) {
+            font-size: 40px;
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
 #home {
     & .banner {
         //z-index: 0;
@@ -7,50 +49,26 @@
                 background-image: url(../images/backgrounds/bannerr.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-
-                & .conteudo {
-                    padding-left: 200px;
-
-                    @media(max-width: 1400px) {
-                        padding-left: 140px;
-                    }
-
-                    @media(max-width: 992px) {
-                        //padding: 0px 30px;
-                        padding: 0px 0px;
-                        text-align: center;
-                    }
-
-                    & .h2 {
-                        font-size: 54px;
-                        line-height: 115%;
-                        width: 60%;
-
-                        @media(max-width: 1700px) {
-                            font-size: 45px;
-                            width: 70%;
-                        }
-
-                        @media(max-width: 1400px) {
-                            font-size: 45px;
-                            width: 80%;
-                        }
-
-                        @media(max-width: 1400px) {
-                            font-size: 45px;
-                            width: 90%;
-                        }
-
-                        @media(max-width: 992px) {
-                            font-size: 40px;
-                            width: 80%;
-                            margin: auto;
-                        }
-                    }
-                }
             }
         }
-
+& .eng-mobile{
+    @media(max-width: 992px) {
+        width: 500px;
+        height: 500px;
+    }
+    @media(max-width: 767px) {
+        width: 400px;
+        height: 400px;
+    }
+    @media(max-width: 576px) {
+        width: 300px;
+        height: 300px;
+    }
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+}
         & .eng {
             bottom: -140px;
             left: 60%;
@@ -64,6 +82,11 @@
 
             @media(max-width: 1300px) {
                 width: 350px;
+            }
+            @media(max-width: 992px) {
+                width: 350px; 
+                bottom: 0px;  
+                z-index: 0;
             }
         }
 
@@ -87,6 +110,20 @@
                     height: 420px;
                 }
             }
+        }
+    }
+    & .conteudo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .h2{
+            margin-top: -300px;
+            font-size: 40px;
+        line-height: 115%;
+        @media(max-width: 576px) {
+            margin-top: -250px;
+            font-size: 30px;
+        }
         }
     }
 
@@ -213,7 +250,7 @@
     position: relative;
     z-index: 200;
 
-    & .conteudo-texto {
+    & .conteudo-texto-morbene {
 
         & span {
             font-weight: 700;
@@ -224,7 +261,7 @@
             line-height: 58px;
 
             @media(max-width: 992px) {
-                font-size: 40px;
+                font-size: 38px;
             }
         }
     }
@@ -465,13 +502,15 @@
                 & .h2 {
                     font-weight: 700;
                     font-size: 35px;
-
+                    line-height: 35px;
                     @media(max-width: 1200px) {
                         font-size: 28px !important;
+                        line-height: 28px;
                     }
 
                     @media(max-width: 576px) {
                         font-size: 22px !important;
+                        line-height: 22px;
                     }
                 }
 
@@ -711,7 +750,10 @@
             height: 140px;
 
             @media(max-width: 992px) {
-                width: 91%;
+                width: 93%;
+            }
+            @media(max-width: 576px) {
+                width: 100%;
             }
         }
 

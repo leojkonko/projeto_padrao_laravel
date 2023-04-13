@@ -10,6 +10,9 @@
   @media(max-width: 992px) {
     width: 93%;
   }
+  @media(max-width: 576px) {
+    width: 100%;
+  }
 
   padding: $form-select-padding-y $form-select-indicator-padding $form-select-padding-y $form-select-padding-x;
   // stylelint-disable-next-line property-no-vendor-prefix
