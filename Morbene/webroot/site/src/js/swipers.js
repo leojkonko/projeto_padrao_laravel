@@ -86,6 +86,7 @@ var swiper = new Swiper(".marcas-swiper", {
             var activeSlide = this.slides[this.activeIndex];
             console.log(activeSlide.classList[3]);
             mudarTexto(activeSlide.classList[3])
+            progressCircle.style.setProperty("--progress", 0);
         }
     },
 });

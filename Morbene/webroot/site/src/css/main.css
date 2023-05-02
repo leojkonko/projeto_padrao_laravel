@@ -328,7 +328,7 @@ footer .copyright a {
   font-size: 54px;
   line-height: 115%;
   width: 63%;
-  padding-right: 80px;
+  padding-right: 40px;
 }
 @media (max-width: 1700px) {
   .conteudo-banner .h2 {
@@ -381,7 +381,7 @@ footer .copyright a {
 }
 #home .banner .eng {
   bottom: -140px;
-  left: 60%;
+  left: 56%;
   transform: translate(-50%);
   width: 500px;
   z-index: 100;
@@ -595,26 +595,19 @@ footer .copyright a {
     font-size: 22px;
   }
 }
-.saiba-mais .mais-fotos .a-ratio::after {
-  content: "+2";
-  width: 100%;
-  height: 100%;
-  color: white;
+.saiba-mais .mais-fotos .mais-numeros {
   position: absolute;
+  z-index: 99;
   top: 45%;
-  z-index: 12 !important;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 300;
   font-size: 48px;
   line-height: 90%;
-  z-index: 9;
+  color: white;
 }
 @media (max-width: 992px) {
-  .saiba-mais .mais-fotos .a-ratio::after {
+  .saiba-mais .mais-fotos .mais-numeros {
     top: 40%;
     font-size: 26px;
   }
@@ -633,20 +626,17 @@ footer .copyright a {
 }
 
 .numeros {
-  background-image: url(../images/backgrounds/numeros.png);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 25%;
+  position: relative;
+}
+.numeros .img-mapa {
+  position: absolute;
+  right: 0%;
+  top: 4%;
+  z-index: 0;
 }
 @media (max-width: 1200px) {
-  .numeros {
-    background-position-y: 10%;
-    background-image: none !important;
-  }
-}
-@media (max-width: 992px) {
-  .numeros {
-    background-image: none;
+  .numeros .img-mapa {
+    display: none;
   }
 }
 .numeros .numeros-swiper {

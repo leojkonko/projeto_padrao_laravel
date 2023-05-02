@@ -242,7 +242,7 @@
                                 <div class="swiper-slide h-100">
                                     <div class="slide-img position-relative">
                                          <div class="ratio ratio-1x1">
-                                            <img class="w-100 h-100" src="<?= asset('images/backgrounds/consultoria.png') ?>" alt="">
+                                            <img class="w-100 h-100" src="<?= asset('images/backgrounds/solucoes-teste.png') ?>" alt="">
                                         </div>
                                     </div>
                                 </div>

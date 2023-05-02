@@ -35,6 +35,20 @@
     }
 }
 
+.h2-25 {
+    font-size: 26px !important;
+    line-height: 30px !important;
+    font-weight: 700;
+
+    @media(max-width: 1400px) {
+        font-size: 24px !important;
+    }
+
+    @media(min-width: 992px)and(max-width: 1200px) {
+        font-size: 30px !important;
+    }
+}
+
 .h2-20 {
     font-size: 20px !important;
     line-height: 20px !important;

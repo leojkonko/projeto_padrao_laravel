@@ -1,9 +1,11 @@
 .conteudo-banner {
     position: absolute;
     padding-top: 140px;
+
     @media(max-width: 1600px) {
         padding-top: 70px;
     }
+
     /*padding-left: 200px;
 
     @media(max-width: 1400px) {
@@ -20,7 +22,7 @@
         font-size: 54px;
         line-height: 115%;
         width: 63%;
-        padding-right: 80px;
+        padding-right: 40px;
 
         @media(max-width: 1700px) {
             font-size: 45px;
@@ -51,27 +53,32 @@
                 background-size: cover;
             }
         }
-& .eng-mobile{
-    @media(max-width: 992px) {
-        width: 500px;
-        height: 500px;
-    }
-    @media(max-width: 767px) {
-        width: 400px;
-        height: 400px;
-    }
-    @media(max-width: 576px) {
-        width: 300px;
-        height: 300px;
-    }
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-}
+
+        & .eng-mobile {
+            @media(max-width: 992px) {
+                width: 500px;
+                height: 500px;
+            }
+
+            @media(max-width: 767px) {
+                width: 400px;
+                height: 400px;
+            }
+
+            @media(max-width: 576px) {
+                width: 300px;
+                height: 300px;
+            }
+
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%);
+        }
+
         & .eng {
             bottom: -140px;
-            left: 60%;
+            left: 56%;
             transform: translate(-50%);
             width: 500px;
             z-index: 100;
@@ -83,9 +90,10 @@
             @media(max-width: 1300px) {
                 width: 350px;
             }
+
             @media(max-width: 992px) {
-                width: 350px; 
-                bottom: 0px;  
+                width: 350px;
+                bottom: 0px;
                 z-index: 0;
             }
         }
@@ -112,18 +120,21 @@
             }
         }
     }
-    & .conteudo{
+
+    & .conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        & .h2{
+
+        & .h2 {
             margin-top: -300px;
             font-size: 40px;
-        line-height: 115%;
-        @media(max-width: 576px) {
-            margin-top: -250px;
-            font-size: 30px;
-        }
+            line-height: 115%;
+
+            @media(max-width: 576px) {
+                margin-top: -250px;
+                font-size: 30px;
+            }
         }
     }
 
@@ -307,33 +318,24 @@
             }
         }
 
-        & .a-ratio {
-            &::after {
-                //background: linear-gradient(0deg, rgba(48, 48, 48, 0.9), rgba(48, 48, 48, 0.9));
-                content: "+2";
-                width: 100%;
-                height: 100%;
-                color: white;
-                position: absolute;
-                top: 45%;
-                z-index: 12 !important;
+        & .mais-numeros {
+            position: absolute;
+            z-index: 99;
+            //border: 1px solid red;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 300;
+            font-size: 48px;
+            line-height: 90%;
+            color: white;
 
-                @media(max-width: 992px) {
-                    top: 40%;
-                    font-size: 26px;
-                }
-
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: 300;
-                font-size: 48px;
-                line-height: 90%;
-                z-index: 9;
+            @media(max-width: 992px) {
+                top: 40%;
+                font-size: 26px;
             }
         }
+
     }
 }
 
@@ -350,18 +352,18 @@
 }
 
 .numeros {
-    background-image: url(../images/backgrounds/numeros.png);
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 25%;
+    position: relative;
 
-    @media(max-width: 1200px) {
-        background-position-y: 10%;
-        background-image: none !important;
-    }
 
-    @media(max-width: 992px) {
-        background-image: none;
+    & .img-mapa {
+        position: absolute;
+        right: 0%;
+        top: 4%;
+        z-index: 0;
+
+        @media(max-width: 1200px) {
+            display: none;
+        }
     }
 
     .numeros-swiper {
@@ -503,6 +505,7 @@
                     font-weight: 700;
                     font-size: 35px;
                     line-height: 35px;
+
                     @media(max-width: 1200px) {
                         font-size: 28px !important;
                         line-height: 28px;
@@ -752,6 +755,7 @@
             @media(max-width: 992px) {
                 width: 93%;
             }
+
             @media(max-width: 576px) {
                 width: 100%;
             }

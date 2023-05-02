@@ -23,6 +23,33 @@ var swiper = new Swiper(".diferenciais-swiper", {
         },
         767: {
             slidesPerView: 3,
+        }, 
+        576: {
+            slidesPerView: 2,
+        },
+    }
+});
+
+var swiper = new Swiper(".atuacao-swiper", {
+    slidesPerView: 2,
+    //spaceBetween: 30,
+    navigation: {
+        nextEl: ".atuacao-swiper .swiper-button-next",
+        prevEl: ".atuacao-swiper .swiper-button-prev",
+    },
+    pagination: {
+        el: ".atuacao-swiper .swiper-pagination",
+        clickable: true
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        767: {
+            slidesPerView: 3,
         },
         576: {
             slidesPerView: 2,

@@ -73,3 +73,44 @@ exampleObserver.observe(document.querySelector(".teste"));
 		});
 	}
 })();
+
+
+
+// texto do select
+/*
+window.addEventListener('resize', function() {
+	var select = document.getElementById("mySelect");
+	if (window.innerWidth < 992) {
+	  var newOption = document.createElement("option");
+	  newOption.text = "Opção 4";
+	  newOption.value = "4";
+	  newOption.selected = true;
+	  select.add(newOption);
+	} else {
+	  select.remove(3);
+	}
+  });*/
+  
+  var optionCreated = false;
+
+function addOptionOnResize() {
+  var select = document.getElementById("mySelect");
+  if (window.innerWidth < 992 && !optionCreated) {
+    var newOption = document.createElement("option");
+    newOption.text = "Selecione uma cidade";
+    newOption.value = "4";
+    select.add(newOption);
+    newOption.selected = true;
+    optionCreated = true;
+  } else if (window.innerWidth >= 992 && optionCreated) {
+    select.remove(3);
+    optionCreated = false;
+  }
+}
+
+setInterval(function() {
+  addOptionOnResize();
+}, 100);
+
+  
+  

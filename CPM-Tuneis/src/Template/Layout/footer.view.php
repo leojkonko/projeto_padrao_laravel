@@ -136,12 +136,12 @@
 */ ?>
 <script>
                                 
-                                $(document).ready(function () {
-                                    $('[data-toggle="offcanvas"]').click(function () {
-                                        $('#html').css('overflow', 'hidden');
-                                    });
-                                });
-                                                            </script>
+    $(document).ready(function () {
+        $('[data-toggle="offcanvas"]').click(function () {
+            $('#html').css('overflow', 'hidden');
+        });
+    });
+    </script>
 </body>
 
 </html>

@@ -92,13 +92,26 @@ $(document).ready(function() {
 
 </script>
 <script>
-    		
 
+function resetProgress() {
+  const progress = document.querySelector('.autoplay-progress span');
+  progress.style.width = '0%';
+  progress.style.setProperty("--progress", 0);
+  progress.dataset.progress = 0;
+  progress.style.setProperty('--progress', 0);
+  console.log('asdfaasfsafas')
+}
+    		
+            
             function mudarTexto(classeImg) {
-			// Seleciona o elemento de texto
-			var elementoTexto = document.getElementById("conteudo");
+            // Seleciona o elemento de texto
+            var elementoTexto = document.getElementById("conteudo");
             var titulo = document.getElementById("titulo");
-            console.log(titulo)
+            const progress = document.querySelector('.autoplay-progress span');
+  progress.style.width = '0%';
+            // Altera o valor do progresso
+            progressCircle.style.setProperty("--progress", 0);
+            console.log(progressCircle)
 			// Altera o texto dependendo da classe da imagem
 			if (classeImg === "img_0") {
 				titulo.innerHTML = "titulo 1"

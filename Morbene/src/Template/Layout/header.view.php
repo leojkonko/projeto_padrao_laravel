@@ -56,7 +56,7 @@
                 <div class="col-lg-7 p-0">
                     <div class="row">
                         <div class="col-lg-3 col-6 d-flex justify-content-start ps-2 ps-sm-0 ps-lg-0">
-                            <a href="<?= url('/') ?>">
+                            <a href="<?= url('/') ?>" class="z-index-1 position-relative">
                                 <img width="216px" class="link link-logo" src="<?= asset('images/logos/logo.png') ?>" alt="">
                             </a>
                             <div class="d-flex align-items-center conteudo-banner d-none d-lg-flex">

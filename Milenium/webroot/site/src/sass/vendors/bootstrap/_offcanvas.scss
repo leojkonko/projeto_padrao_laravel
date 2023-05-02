@@ -66,7 +66,7 @@
   right: 0;
   left: 0;
 
-  height: 500px;
+  height: 540px;
   //height: $offcanvas-vertical-height;
   max-height: 100%;
   border-bottom: $offcanvas-border-width solid $offcanvas-border-color;
@@ -85,6 +85,19 @@
 
         @media(max-width: 992px) {
           font-size: 16px;
+        }
+      }
+
+      & .svg {
+        font-size: 33px;
+        color: white !important;
+      }
+
+      & button:focus {
+
+        & rect,
+        path {
+          stroke: white !important;
         }
       }
     }

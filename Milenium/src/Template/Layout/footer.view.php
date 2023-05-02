@@ -1,10 +1,12 @@
 
-<footer class="bg-cinza pt-4">
+<footer class="bg-cinza pt-1">
     <div class="container">
         <div class="row">
+            <!--
+=======
+        <div class="row me-lg-2 me-0">
             <div class="col-lg-4 d-flex justify-content-lg-end justify-content-center">
                 <a href="<?= url('/') ?>">
-                    <!--<img class="m-auto d-flex d-lg-inline-block logo" src="<?= asset('images/logos/logo.png') ?>" alt="">-->
                     <svg class="m-auto d-flex d-lg-inline-block logo" width="336" height="121" viewBox="0 0 336 121" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_207_150)">
                         <path d="M282.737 54.8506H293.509C293.885 54.8506 294.188 54.5438 294.188 54.1635V24.9901L308.429 50.8634C308.683 51.3296 309.35 51.3296 309.617 50.8634L323.87 24.9901V54.1635C323.87 54.5438 324.173 54.8506 324.549 54.8506H335.321C335.697 54.8506 336 54.5438 336 54.1635V0.687012C336 0.306702 335.697 0 335.321 0H324.149C323.906 0 323.676 0.134949 323.555 0.355774L309.023 26.7321L294.503 0.355774C294.382 0.134949 294.152 0 293.909 0H282.737C282.361 0 282.058 0.306702 282.058 0.687012V54.1635C282.058 54.5438 282.361 54.8506 282.737 54.8506Z" fill="#0000FF"/>
@@ -37,10 +39,10 @@
                     </svg>
                 </a>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center text-lg-start text-center px-4">
+            <div class="col-lg-5 d-flex justify-content-center text-lg-start text-center px-4">
                 <div class="flex-column ps-lg-0 ps-xl-1 ps-xxl-3">
                     <h2 class="h2 w-100 mb-lg-2">Onde estamos</h2>
-                    <p class="p">
+                    <p class="p text-nowrap">
                         <a href="https://www.google.com.br/maps/place/Milenium+Transporte/@-29.1817255,-51.2581843,14z/data=!4m10!1m2!2m1!1smilenium+transportes+caxias+do+sul!3m6!1s0x951ea2c5718cde11:0x514b998c6991db8c!8m2!3d-29.153035!4d-51.1925743!15sCiJtaWxlbml1bSB0cmFuc3BvcnRlcyBjYXhpYXMgZG8gc3VskgEQc2hpcHBpbmdfY29tcGFueeABAA!16s%2Fg%2F1ptz9lbqj"
                         class="text-dark">
                         R. Fiorino D'Agostini, 2197 <br>
@@ -49,19 +51,57 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-4 flex-column text-lg-start text-center pt-2 pt-lg-0">
+            <div class="col-lg-3 flex-column text-lg-start text-center pt-2 pt-lg-0">
                  <h2 class="h2 w-100 mb-lg-2">Contato</h2>
-                <p class="p">
+                <p class="p text-nowrap">
                     <a href="" class="text-dark">(54) 3224-2304</a>  |  <a href="" class="text-dark">(54) 3224-4645</a> <br>
                     <a class="text-dark" href="mailto:cx@mileniumtransp.com.br">cx@mileniumtransp.com.br</a>
                 </p>
             </div>
+-->
+            <?php foreach(range(0,5) as $m) : ?>     
+                <div class="col-lg-4 col-sm-6 col-12 text-sm-start text-center infos py-1 d-flex justify-content-center align-items-center flex-column">
+                    <div class="m-auto">
+                        <h2 class="h2 h2-20 text-lg-start ps-lg-0-50 ps-0 mb-1 mt-1 w-100">Caxias do Sul/RS</h2>
+                        <p class="m-0 pt-0-50 p p-16 text-lg-start w-100">
+                            <svg class="ms-0-50 me-0-50" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.77252 3.82L8.2916 6.976C8.7313 7.288 9.28092 7.288 9.72061 6.976L14.2397 3.82M1 2.452V11.548C1 12.352 1.57405 13 2.29466 13H15.7053C16.4137 13 17 12.352 17 11.548V2.452C17 1.648 16.426 1 15.7053 1H2.29466C1.57405 1 1 1.648 1 2.452Z" stroke="#FF0000" stroke-width="1.5" stroke-miterlimit="10"/>
+                            </svg>
+                            <a href="">cx@mileniumtransp.com.br</a>
+                        </p>
+                        <p class="m-0 pt-0-50 p p-16 text-lg-start w-100">
+                            <svg class="ms-0-50 me-0-50" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1736 9.97102C14.7929 9.7916 12.8622 8.89446 12.5087 8.7663C12.128 8.63814 11.8832 8.56124 11.6113 8.94573C11.3394 9.30458 10.6052 10.1505 10.3604 10.4068C10.1429 10.6375 9.89816 10.6887 9.51746 10.4837C9.10957 10.3042 7.8587 9.91976 6.33591 8.63814C5.16662 7.6641 4.37803 6.43374 4.1333 6.07489C3.91576 5.6904 4.1061 5.51098 4.29645 5.30592C4.4868 5.15212 4.67715 4.87017 4.89469 4.66511C5.08504 4.46005 5.16662 4.30625 5.30259 4.04993C5.43855 3.81924 5.38416 3.58854 5.27539 3.40912C5.19381 3.22969 4.40522 1.38415 4.07891 0.640811C3.7526 -0.0768974 3.42629 0.0256325 3.18155 0C2.96401 0 2.69208 0 2.42015 0C2.17542 0 1.74034 0.10253 1.38683 0.461384C1.00613 0.845871 0 1.74301 0 3.56291C0 5.38281 1.41402 7.15145 1.60437 7.40778C1.79472 7.6641 4.37803 11.4064 8.32098 13.0213C9.27273 13.4058 10.0069 13.6365 10.578 13.7903C11.5297 14.0722 12.3727 14.021 13.0525 13.9184C13.8139 13.8159 15.3911 13.0213 15.7174 12.1498C16.0437 11.3039 16.0437 10.5606 15.9349 10.4068C15.8534 10.253 15.5814 10.1505 15.1736 9.97102Z" fill="#FF0000"/>
+                            </svg>
+                            <a href="">(54) 3224-2304</a> -                        
+                            <a href="">(54) 3224-4645</a>
+                        </p>
+                        <p class="m-0 pt-0-50 p p-16 text-lg-start w-100">
+                            <svg class="ms-0-50 me-0-50" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6695 2.32533C12.165 0.826667 10.1647 0.000666667 8.03383 0C3.64279 0 0.0689973 3.556 0.0669877 7.928C0.0663178 9.32533 0.43341 10.6893 1.13075 11.892L0 16L4.2229 14.8973C5.38648 15.5293 6.69675 15.862 8.02981 15.8627H8.03316C12.4235 15.8627 15.998 12.306 16 7.934C16.0013 5.816 15.1734 3.82333 13.6695 2.32533ZM8.03383 14.5233H8.03115C6.84279 14.5233 5.67787 14.2053 4.661 13.6047L4.41917 13.462L1.91317 14.116L2.58237 11.684L2.42495 11.4347C1.76178 10.3853 1.4121 9.17267 1.41277 7.928C1.41411 4.29467 4.38501 1.33867 8.03718 1.33867C9.80565 1.33867 11.4683 2.02533 12.7183 3.27067C13.9683 4.51667 14.6562 6.172 14.6556 7.93267C14.6535 11.5673 11.6833 14.5233 8.03383 14.5233ZM11.6659 9.588C11.4669 9.48867 10.4883 9.00933 10.3054 8.94333C10.1232 8.87733 9.99054 8.844 9.85723 9.042C9.72393 9.24 9.34344 9.68667 9.22688 9.81933C9.11099 9.95133 8.99443 9.968 8.79548 9.86867C8.59653 9.76933 7.95478 9.56067 7.19447 8.88533C6.60297 8.36 6.20306 7.71133 6.08717 7.51267C5.97128 7.314 6.07511 7.20733 6.17425 7.10867C6.26401 7.02 6.3732 6.87733 6.47302 6.76133C6.5735 6.64667 6.60632 6.564 6.67331 6.43133C6.73963 6.29933 6.7068 6.18333 6.65656 6.084C6.60632 5.98533 6.20841 5.01 6.04295 4.61333C5.88152 4.22667 5.7174 4.27933 5.59481 4.27333C5.47892 4.26733 5.34628 4.26667 5.21298 4.26667C5.08034 4.26667 4.86464 4.316 4.68244 4.51467C4.50023 4.71333 3.98576 5.19267 3.98576 6.16733C3.98576 7.14267 4.69918 8.08467 4.79833 8.21667C4.89747 8.34867 6.20172 10.35 8.19862 11.208C8.67356 11.412 9.04467 11.534 9.33339 11.6253C9.81034 11.776 10.2444 11.7547 10.5874 11.704C10.9699 11.6473 11.765 11.2247 11.9312 10.762C12.0973 10.2993 12.0973 9.902 12.0471 9.82C11.9975 9.73667 11.8649 9.68733 11.6659 9.588Z" fill="#FF0000"/>
+                            </svg>
+                            <a href="">55*47863*3</a>
+                        </p>
+                        <p class="m-0 pt-0-50 p p-16 text-lg-start w-100">
+                            <svg  class="ms-0-50 me-0-50" width="16" height="16" viewBox="0 0 4.32 6">
+								<path fill="#FF0000"  fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M2.16,3.36c-0.62,0-1.12-0.52-1.12-1.15s0.5-1.15,1.12-1.15
+								c0.62,0,1.12,0.52,1.12,1.15S2.78,3.36,2.16,3.36z M2.16,0C0.97,0,0,0.99,0,2.21c0,0.32,0.06,0.62,0.19,0.9
+								c0.54,1.21,1.57,2.48,1.88,2.85C2.09,5.98,2.12,6,2.16,6s0.07-0.02,0.09-0.04c0.31-0.37,1.34-1.64,1.88-2.85
+								c0.13-0.28,0.19-0.58,0.19-0.9C4.32,0.99,3.35,0,2.16,0z"></path>
+							</svg>
+                            <a href="" class="p p-16">
+                            BR 116 – Km 157 - Nº 25857 - B. Santa Corona | CEP: 95088.000
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <?php endforeach; ?>
         </div>
     </div>
         <div class="copyright">
             <div class="container mt-2">
                 <div class="w-100 col-lg-12 d-flex align-items-center py-2 flex-column flex-lg-row">
-                    <p class="p ml-auto m-a">© 2023 Milenium Transportes</p>
+                    <p class="p ml-auto m-a">© Copyright 2023. Milenium Transportes</p>
                     <p class="p politica margin-auto"><a href="<?= url('/politica') ?>">Política de privacidade</a></p>
                     <p class="p mr-auto m-a">
                         <a href="https://www.ellitedigital.com.br/" target="_blank">
@@ -81,6 +121,19 @@
                 </div>
             </div>
         </div>
+        <!--WhastsApp-->
+    <div class="position-fixed d-block bottom-0 end-0 m-1 m-xxl-2 botao-whatsapp-wrapper">
+        <a href="https://web.whatsapp.com/send?phone=55" class="botao-whatsapp botao-whatsapp-hoverable position-relative rounded-pill overflow-hidden" aria-hidden="true" tabindex="-1" title="Fale conosco atrav&eacute;s do WhatsApp">
+            <svg id="whatsapp" width="1em" height="1em" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M207.15 47.8406C186.013 26.6531 157.864 15 127.95 15C66.2031 15 15.9585 65.2446 15.9585 126.991C15.9585 146.716 21.104 165.986 30.8906 182.987L15 241L74.3754 225.412C90.7201 234.341 109.133 239.033 127.899 239.033H127.95C189.646 239.033 241 188.788 241 127.042C241 97.1268 228.287 69.0281 207.15 47.8406V47.8406ZM127.95 220.166C111.201 220.166 94.8062 215.676 80.5299 207.201L77.15 205.183L41.9384 214.415L51.3214 180.061L49.1018 176.529C39.7692 161.698 34.8759 144.597 34.8759 126.991C34.8759 75.6871 76.6455 33.9174 128 33.9174C152.87 33.9174 176.227 43.6031 193.782 61.2089C211.337 78.8147 222.133 102.171 222.083 127.042C222.083 178.396 179.254 220.166 127.95 220.166V220.166ZM179.001 150.449C176.227 149.036 162.455 142.276 159.882 141.368C157.309 140.41 155.443 139.956 153.576 142.781C151.71 145.606 146.362 151.861 144.698 153.778C143.083 155.645 141.419 155.897 138.644 154.484C122.199 146.262 111.403 139.804 100.557 121.19C97.6817 116.246 103.433 116.599 108.78 105.904C109.688 104.038 109.234 102.424 108.528 101.011C107.821 99.5987 102.222 85.8268 99.9013 80.2272C97.6312 74.779 95.3107 75.5357 93.5955 75.4348C91.9812 75.3339 90.1147 75.3339 88.2482 75.3339C86.3817 75.3339 83.3549 76.0402 80.7821 78.8147C78.2094 81.6397 70.9955 88.3996 70.9955 102.171C70.9955 115.943 81.0344 129.261 82.3964 131.128C83.8089 132.994 102.121 161.244 130.22 173.402C147.977 181.07 154.938 181.725 163.817 180.414C169.215 179.607 180.363 173.654 182.684 167.096C185.004 160.538 185.004 154.938 184.298 153.778C183.642 152.517 181.776 151.811 179.001 150.449Z"/>
+            </svg>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=11" class="botao-whatsapp botao-whatsapp-not-hoverable position-relative rounded-pill overflow-hidden" aria-label="Fale conosco atrav&eacute;s do WhatsApp" title="Fale conosco atrav&eacute;s do WhatsApp">
+            <svg id="whatsapp" width="1em" height="1em" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M207.15 47.8406C186.013 26.6531 157.864 15 127.95 15C66.2031 15 15.9585 65.2446 15.9585 126.991C15.9585 146.716 21.104 165.986 30.8906 182.987L15 241L74.3754 225.412C90.7201 234.341 109.133 239.033 127.899 239.033H127.95C189.646 239.033 241 188.788 241 127.042C241 97.1268 228.287 69.0281 207.15 47.8406V47.8406ZM127.95 220.166C111.201 220.166 94.8062 215.676 80.5299 207.201L77.15 205.183L41.9384 214.415L51.3214 180.061L49.1018 176.529C39.7692 161.698 34.8759 144.597 34.8759 126.991C34.8759 75.6871 76.6455 33.9174 128 33.9174C152.87 33.9174 176.227 43.6031 193.782 61.2089C211.337 78.8147 222.133 102.171 222.083 127.042C222.083 178.396 179.254 220.166 127.95 220.166V220.166ZM179.001 150.449C176.227 149.036 162.455 142.276 159.882 141.368C157.309 140.41 155.443 139.956 153.576 142.781C151.71 145.606 146.362 151.861 144.698 153.778C143.083 155.645 141.419 155.897 138.644 154.484C122.199 146.262 111.403 139.804 100.557 121.19C97.6817 116.246 103.433 116.599 108.78 105.904C109.688 104.038 109.234 102.424 108.528 101.011C107.821 99.5987 102.222 85.8268 99.9013 80.2272C97.6312 74.779 95.3107 75.5357 93.5955 75.4348C91.9812 75.3339 90.1147 75.3339 88.2482 75.3339C86.3817 75.3339 83.3549 76.0402 80.7821 78.8147C78.2094 81.6397 70.9955 88.3996 70.9955 102.171C70.9955 115.943 81.0344 129.261 82.3964 131.128C83.8089 132.994 102.121 161.244 130.22 173.402C147.977 181.07 154.938 181.725 163.817 180.414C169.215 179.607 180.363 173.654 182.684 167.096C185.004 160.538 185.004 154.938 184.298 153.778C183.642 152.517 181.776 151.811 179.001 150.449Z"/>
+            </svg>
+        </a>
+    </div>
 </footer>
 
 <?php /* ==== Scripts ==== */ ?>
@@ -128,49 +181,6 @@ $(document).ready(function() {
   });
 });
 
-</script>
-<script>
-    		
-
-            function mudarTexto(classeImg) {
-			// Seleciona o elemento de texto
-			var elementoTexto = document.getElementById("conteudo");
-            var titulo = document.getElementById("titulo");
-            console.log(titulo)
-			// Altera o texto dependendo da classe da imagem
-			if (classeImg === "img_0") {
-				titulo.innerHTML = "titulo 1"
-                elementoTexto.innerHTML = "Texto para a primeira imagem!Texto para a primeira imagem!Texto para a primeira imagem!Texto para a pr";
-			} else if (classeImg === "img_1") {
-                titulo.innerHTML = "titulo 2"
-				elementoTexto.innerHTML = "Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda imagem!Texto para a segunda gem!";
-			} else if (classeImg === "img_2") {
-                titulo.innerHTML = "titulo 3"
-				elementoTexto.innerHTML = "Texto para a terceira imagem!Texto para a terceira imagem!Texto para a terceira imagem!Texto para a tercem!";
-			} else if (classeImg === "img_3") {
-                titulo.innerHTML = "titulo 4"
-				elementoTexto.innerHTML = "Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!Texto para a quarta imagem!rta imagem!";
-			} else if (classeImg === "img_4") {
-                titulo.innerHTML = "titulo 5"
-				elementoTexto.innerHTML = "Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagem!Texto para a quinta imagemagem!";
-			} else if (classeImg === "img_5") {
-                titulo.innerHTML = "titulo 6"
-				elementoTexto.innerHTML = "Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Texto para a sexta imagem!Textoem!";
-			} else if (classeImg === "img_6") {
-                titulo.innerHTML = "titulo 7"
-				elementoTexto.innerHTML = "Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagem!Texto para a sétima imagemmagem!";
-			} else if (classeImg === "img_7") {
-                titulo.innerHTML = "titulo 8"
-				elementoTexto.innerHTML = "Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!Texto para a oitava imagem!";
-			} else if (classeImg === "img_8") {
-                titulo.innerHTML = "titulo 9"
-				elementoTexto.innerHTML = "Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texto para a nona imagem!Texta imagem!";
-			}
-            else if (classeImg === "img_9") {
-                titulo.innerHTML = "titulo 10"
-				elementoTexto.innerHTML = "Texto para a décima imagem!Texto para a décima imagem!Texto para a décima imagem!Texto para a décimaem!";
-			}
-		}
 </script>
 </body>
 
